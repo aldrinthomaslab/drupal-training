@@ -55,5 +55,4 @@
  * @see \Drupal\Core\DrupalKernel::getSitePath()
  * @see https://www.drupal.org/documentation/install/multi-site
  */
-
-$sites['al.drupal_training.ctdev'] = 'drupal_traning';
+$sites['al.drupal-training.ctdev'] = 'drupal_training';
