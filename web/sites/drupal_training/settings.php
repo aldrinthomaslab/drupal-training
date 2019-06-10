@@ -787,4 +787,5 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
-$config_directories['sync'] = 'sites/drupal_training/files/config_AHMX5pg1upF2W4F-C63lSOxXZWVM9QIebXR7rsZ2YBlQ0bUrih6sKwEEC6NXVabXOHC5haPNPg/sync';
+
+$config_directories['sync'] = 'profiles/custom/drupal_training/config/sync';
