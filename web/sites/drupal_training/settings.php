@@ -788,4 +788,5 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
 );
 
+$settings['install_profile'] = 'drupal_training';
 $config_directories['sync'] = 'profiles/custom/drupal_training/config/sync';
