@@ -1,0 +1,8 @@
+uuid: 30d89251-5d76-40d5-adb7-e9733a2c4e35
+langcode: en
+status: true
+dependencies: {  }
+name: 'Article Tags'
+vid: article_tags
+description: 'Tags specifically for article type contents.'
+weight: 0
