@@ -1,4 +1,4 @@
-uuid: 11fc884c-ac79-4fb7-8c11-d77a4b7f6f3a
+uuid: ff366ad2-1b94-4649-ab84-7b7e9483c2d4
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ bundle: article
 label: Topic
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

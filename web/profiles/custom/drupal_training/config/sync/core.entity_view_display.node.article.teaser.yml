@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.article.field_hero_image
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
-    - field.field.node.article.field_topic
     - node.type.article
   module:
     - image
@@ -45,5 +44,4 @@ hidden:
   field_article_type: true
   field_image: true
   field_tags: true
-  field_topic: true
   links: true
