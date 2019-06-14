@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_tags
     - node.type.article
-    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.article_tags
 _core:
   default_config_hash: QdUgf_beeoaPiyKorFv0q1fcJpWH_uZTqe_xoVJacrw
 id: node.article.field_tags
@@ -22,8 +22,9 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      tags: tags
+      article_tags: article_tags
     sort:
       field: _none
     auto_create: true
+    auto_create_bundle: article_tags
 field_type: entity_reference
