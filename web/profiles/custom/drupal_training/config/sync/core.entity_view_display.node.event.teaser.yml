@@ -19,13 +19,13 @@ bundle: event
 mode: teaser
 content:
   field_event_date:
-    type: datetime_default
+    type: datetime_custom
     weight: 0
     region: content
     label: above
     settings:
-      format_type: medium
       timezone_override: ''
+      date_format: 'D, m-d-Y H:i A'
     third_party_settings: {  }
   field_introduction:
     type: text_trimmed
