@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.article.field_hero_image
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
+    - field.field.node.article.field_topic
     - image.style.large
     - node.type.article
   module:
@@ -55,6 +56,14 @@ content:
       image_link: ''
     third_party_settings: {  }
     label: hidden
+  field_topic:
+    weight: 5
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   links:
     weight: 3
     region: content
