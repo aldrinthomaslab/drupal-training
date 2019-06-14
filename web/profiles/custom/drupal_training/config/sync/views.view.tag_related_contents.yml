@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_hero_image
-    - image.style.thumbnail
+    - image.style.medium
     - node.type.article
     - taxonomy.vocabulary.article_tags
   module:
@@ -76,7 +76,16 @@ display:
             last: 'Last »'
           quantity: 9
       style:
-        type: default
+        type: grid
+        options:
+          grouping: {  }
+          columns: 5
+          automatic_width: true
+          alignment: horizontal
+          col_class_default: true
+          col_class_custom: ''
+          row_class_default: true
+          row_class_custom: ''
       row:
         type: fields
       fields:
@@ -131,7 +140,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: thumbnail
+            image_style: medium
             image_link: ''
           group_column: ''
           group_columns: {  }
