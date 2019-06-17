@@ -417,7 +417,7 @@ display:
             type: none
             fail: 'not found'
           validate_options: {  }
-          break_phrase: false
+          break_phrase: true
           add_table: false
           require_value: false
           reduce_duplicates: false
@@ -459,6 +459,8 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
+      defaults:
+        arguments: true
     cache_metadata:
       max-age: -1
       contexts:
