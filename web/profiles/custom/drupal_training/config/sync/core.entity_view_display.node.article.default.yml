@@ -41,7 +41,7 @@ content:
     region: content
   field_feature_article:
     weight: 6
-    label: above
+    label: hidden
     settings:
       format: default
       format_custom_false: ''
