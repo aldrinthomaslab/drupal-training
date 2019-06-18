@@ -13,7 +13,7 @@ dependencies:
     - field.field.node.article.field_tags
     - field.field.node.article.field_top_feature
     - field.field.node.article.field_topic
-    - image.style.thumbnail
+    - image.style.medium
     - node.type.article
   module:
     - image
@@ -38,7 +38,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: thumbnail
+      image_style: medium
       image_link: ''
     third_party_settings: {  }
     type: image
