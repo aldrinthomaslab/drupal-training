@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.article.field_hero_image
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
+    - field.field.node.article.field_top_feature
     - field.field.node.article.field_topic
     - image.style.large
     - node.type.article
@@ -53,7 +54,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      image_style: hero_image
       image_link: ''
     third_party_settings: {  }
     type: image
@@ -67,6 +68,16 @@ content:
       image_link: ''
     third_party_settings: {  }
     label: hidden
+  field_top_feature:
+    weight: 7
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
   field_topic:
     weight: 5
     label: above

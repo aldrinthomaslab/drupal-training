@@ -7,9 +7,13 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_article_type
+    - field.field.node.article.field_feature_article
     - field.field.node.article.field_hero_image
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
+    - field.field.node.article.field_top_feature
+    - field.field.node.article.field_topic
+    - image.style.hero_image
     - node.type.article
   module:
     - image
@@ -36,12 +40,15 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: ''
+      image_style: hero_image
       image_link: ''
     third_party_settings: {  }
 hidden:
   comment: true
   field_article_type: true
+  field_feature_article: true
   field_image: true
   field_tags: true
+  field_top_feature: true
+  field_topic: true
   links: true
