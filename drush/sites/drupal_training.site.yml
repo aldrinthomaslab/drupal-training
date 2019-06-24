@@ -7,3 +7,7 @@ ctdev:
       install:
         options:
           sites-subdir: 'drupal_training'
+
+nova:
+  root: /var/www/docroot
+  uri: http://nova.al.drupal-training.ctdev
