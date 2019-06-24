@@ -1,0 +1,41 @@
+uuid: 613c5ebd-19eb-400e-b212-2ba75a5d1bbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.list_teaser
+    - field.field.node.event.body
+    - field.field.node.event.field_event_date
+    - field.field.node.event.field_introduction
+    - field.field.node.event.field_topic
+    - node.type.event
+  module:
+    - datetime
+    - text
+    - user
+id: node.event.list_teaser
+targetEntityType: node
+bundle: event
+mode: list_teaser
+content:
+  field_event_date:
+    weight: 0
+    label: inline
+    settings:
+      timezone_override: ''
+      date_format: 'D, m-d-Y H:i A'
+    third_party_settings: {  }
+    type: datetime_custom
+    region: content
+  field_introduction:
+    weight: 1
+    label: inline
+    settings:
+      trim_length: 120
+    third_party_settings: {  }
+    type: text_trimmed
+    region: content
+hidden:
+  body: true
+  field_topic: true
+  links: true

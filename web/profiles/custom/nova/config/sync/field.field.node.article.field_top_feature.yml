@@ -1,0 +1,23 @@
+uuid: dcc12ee2-b058-4968-98a7-0601f45a6367
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_top_feature
+    - node.type.article
+id: node.article.field_top_feature
+field_name: field_top_feature
+entity_type: node
+bundle: article
+label: 'Top Feature'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Top
+  off_label: Sub
+field_type: boolean

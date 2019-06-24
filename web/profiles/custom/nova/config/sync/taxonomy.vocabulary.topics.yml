@@ -1,0 +1,8 @@
+uuid: 4cf54d15-b375-45d9-8602-610187644f3b
+langcode: en
+status: true
+dependencies: {  }
+name: Topics
+vid: topics
+description: 'Vocabulary of article topics.'
+weight: 0

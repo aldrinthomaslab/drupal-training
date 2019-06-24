@@ -1,0 +1,19 @@
+uuid: 9cbafcef-6229-459d-94c7-cb597166b8a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.home_page
+  module:
+    - user
+id: node.home_page.default
+targetEntityType: node
+bundle: home_page
+mode: default
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

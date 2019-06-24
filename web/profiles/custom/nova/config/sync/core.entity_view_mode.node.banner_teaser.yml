@@ -1,0 +1,10 @@
+uuid: bc9925e8-445f-4366-8bb8-96f411438aba
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.banner_teaser
+label: 'Banner Teaser'
+targetEntityType: node
+cache: true

@@ -1,0 +1,8 @@
+uuid: 7425f499-c17b-4ece-bf76-17b56390f2bf
+langcode: en
+status: true
+dependencies: {  }
+name: 'Article Type'
+vid: article_type
+description: 'Vocabulary for types of articles.'
+weight: 0
