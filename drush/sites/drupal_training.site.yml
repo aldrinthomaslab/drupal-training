@@ -8,7 +8,7 @@ ctdev:
         options:
           sites-subdir: 'drupal_training'
 
-ctdev:
+nova:
   root: /var/www/docroot
   uri: http://al.drupal-training.ctdev
   # This section is for setting command-specific options.
