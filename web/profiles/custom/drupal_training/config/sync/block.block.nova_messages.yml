@@ -1,15 +1,15 @@
-uuid: 881d1c41-3015-442d-a6d0-a381fe0da913
+uuid: 3eebf69b-e3c9-4a30-8822-a761442c8a78
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - nova
 _core:
   default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
-id: bartik_messages
-theme: bartik
+id: nova_messages
+theme: nova
 region: highlighted
 weight: 0
 provider: null

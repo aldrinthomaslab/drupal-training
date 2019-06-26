@@ -1,13 +1,13 @@
-uuid: f7a603d9-ae98-4f00-9c7b-05503e069ac7
+uuid: 609668b6-926b-422d-8fac-b22c89e7dfbc
 langcode: en
 status: true
 dependencies:
   theme:
-    - bartik
+    - nova
 _core:
   default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
-id: bartik_local_tasks
-theme: bartik
+id: nova_local_tasks
+theme: nova
 region: content
 weight: -40
 provider: null

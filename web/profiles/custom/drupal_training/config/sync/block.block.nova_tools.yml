@@ -1,4 +1,4 @@
-uuid: 12e3a0ab-bb4a-48d5-9be5-9ddf4e124487
+uuid: 4f07ab7e-9c33-4060-b234-ce360731793f
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
+    - nova
 _core:
   default_config_hash: rH6PpAn7-RScha1rGkohGAYSSh_1OVeZzioJPzPw6O4
-id: bartik_tools
-theme: bartik
+id: nova_tools
+theme: nova
 region: sidebar_first
 weight: 0
 provider: null

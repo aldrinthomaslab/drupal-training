@@ -1,15 +1,15 @@
-uuid: a21502db-f777-492b-830a-3b61c97c414d
+uuid: 656104d7-d1f4-4df5-90b2-ce6e6498b4bf
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - nova
 _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
-id: bartik_breadcrumbs
-theme: bartik
+id: nova_breadcrumbs
+theme: nova
 region: breadcrumb
 weight: 0
 provider: null
