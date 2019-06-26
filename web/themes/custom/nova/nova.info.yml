@@ -1,0 +1,5 @@
+name: Nova
+type: theme
+description: 'Nova theme'
+package: Custom
+core: 8.x
