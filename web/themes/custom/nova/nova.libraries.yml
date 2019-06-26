@@ -3,3 +3,4 @@ base:
   css:
     theme:
       css/fontface.css: {}
+      css/main.css: {}
