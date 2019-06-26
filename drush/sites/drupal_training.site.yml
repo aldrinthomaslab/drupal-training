@@ -17,4 +17,4 @@ nova:
     site:
       install:
         options:
-          sites-subdir: 'drupal_training'
+          sites-subdir: 'nova'
