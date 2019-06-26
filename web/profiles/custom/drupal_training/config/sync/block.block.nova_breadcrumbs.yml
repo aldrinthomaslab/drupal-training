@@ -1,0 +1,22 @@
+uuid: e122061b-99df-428d-b1d8-1482a7a598ef
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nova
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: nova_breadcrumbs
+theme: nova
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 23c601ba-57f9-4c65-8910-f65939da1d80
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nova
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: nova_local_actions
+theme: nova
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

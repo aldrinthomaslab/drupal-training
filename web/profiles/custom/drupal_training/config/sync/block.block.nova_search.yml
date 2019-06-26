@@ -1,0 +1,22 @@
+uuid: 7d2ce02d-1403-45e1-8f1e-5c4d295efff8
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - nova
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: nova_search
+theme: nova
+region: sidebar_first
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: d0579f4a-b3c7-4615-b74f-2858259181c6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nova
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: nova_page_title
+theme: nova
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }
