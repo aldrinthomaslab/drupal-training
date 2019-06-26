@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.news.body
+    - field.field.node.news.field_category
     - field.field.node.news.field_hero_image
     - image.style.hero_1600_x_500_
     - node.type.news
@@ -18,7 +19,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 8
+    weight: 9
     settings:
       rows: 9
       summary_rows: 3
@@ -31,8 +32,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_hero_image:
+  field_category:
     weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_hero_image:
+    weight: 8
     settings:
       preview_image_style: hero_1600_x_500_
       progress_indicator: throbber

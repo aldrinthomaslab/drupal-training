@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.news.body
+    - field.field.node.news.field_category
     - field.field.node.news.field_hero_image
     - node.type.news
   module:
@@ -22,9 +23,17 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_category:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_hero_image:
     weight: 0
-    label: above
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
