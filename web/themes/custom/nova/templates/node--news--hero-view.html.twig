@@ -81,28 +81,26 @@
   ]
 %}
 {{ attach_library('classy/node') }}
-<article{{ attributes.addClass(classes) }}>
-
-  {{ title_prefix }}
-  {% if label and not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
-
-  {% if display_submitted %}
-    <footer class="node__meta">
-      {{ author_picture }}
-      <div{{ author_attributes.addClass('node__submitted') }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}
-  Helllllllllooooooooooo!!!!
-  <div{{ content_attributes.addClass('node__content') }}>
-    {{ content }}
+<section{{ attributes.addClass(classes, 'hero', 'module', 'hero--dark', 'image-container') }}>
+  <div class="hero__image spinner-alto">
+    <picture>
+      {{ content.field_hero_image }}
+    </picture>
   </div>
-
-</article>
+  <div class="hero__container module__container">
+    <div class="hero__wrap">
+      <div class="hero__content animated fadeInDown finished">
+        <p class="hero__label hero__label--top label">
+          {{ content.field_category }}
+        </p>
+        <h1>{{ label }}</h1>
+        <p class="hero__description">
+          {{ content.body }}
+        </p>
+        <div class="hero__sub-content">
+          POSTED ON<br>{{ date }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
