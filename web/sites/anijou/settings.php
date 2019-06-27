@@ -790,3 +790,7 @@ $databases['default']['default'] = array (
 
 $settings['install_profile'] = 'drupal_training';
 $config_directories['sync'] = 'profiles/custom/drupal_training/config/sync';
+
+if (file_exists(__DIR__ . '/settings.local.php')) {
+	include __DIR__ . '/settings.local.php';
+}
