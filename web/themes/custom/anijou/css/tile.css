@@ -1,0 +1,18 @@
+.tile {
+  width: 250px;
+  height: 310px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.tile .tile__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tile .tile__info {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
