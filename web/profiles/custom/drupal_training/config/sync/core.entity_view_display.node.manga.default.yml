@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.manga.field_image
     - field.field.node.manga.field_summary
-    - image.style.tile
     - node.type.manga
   module:
     - image
@@ -20,7 +19,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: tile
+      image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image
@@ -28,10 +27,9 @@ content:
   field_summary:
     weight: 1
     label: hidden
-    settings:
-      trim_length: 100
+    settings: {  }
     third_party_settings: {  }
-    type: text_trimmed
+    type: text_default
     region: content
 hidden:
   links: true

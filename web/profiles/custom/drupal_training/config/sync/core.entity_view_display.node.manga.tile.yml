@@ -18,7 +18,7 @@ mode: tile
 content:
   field_image:
     weight: 0
-    label: above
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -27,10 +27,11 @@ content:
     region: content
   field_summary:
     weight: 1
-    label: above
-    settings: {  }
+    label: hidden
+    settings:
+      trim_length: 100
     third_party_settings: {  }
-    type: text_default
+    type: text_trimmed
     region: content
 hidden:
   links: true
