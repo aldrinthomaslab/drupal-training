@@ -1,0 +1,20 @@
+uuid: 7e171f3c-49e8-49e6-8e1f-aed04ee72dd2
+langcode: en
+status: true
+dependencies:
+  theme:
+    - anijou
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: anijou_local_actions
+theme: anijou
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
