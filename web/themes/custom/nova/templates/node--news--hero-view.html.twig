@@ -81,7 +81,6 @@
   ]
 %}
 {{ attach_library('classy/node') }}
-{{ kint(content|keys) }}
 <section class="hero module hero--dark image-container">
   <div class="hero__image spinner-alto">
     <picture>
@@ -101,7 +100,7 @@
           {{ content.body }}
         </div>
         <div class="hero__sub-content">
-          POSTED ON<br> Hey
+          POSTED ON<br> {{ date }}
         </div>
       </div>
     </div>
