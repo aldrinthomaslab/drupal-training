@@ -1,8 +1,9 @@
-uuid: 09a4472b-2357-4568-8ec0-b721eecec94d
+uuid: cd333555-2693-4a28-9d73-f5de86dd8a66
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.tile
     - field.field.node.manga.field_image
     - field.field.node.manga.field_summary
     - node.type.manga
@@ -10,14 +11,14 @@ dependencies:
     - image
     - text
     - user
-id: node.manga.default
+id: node.manga.tile
 targetEntityType: node
 bundle: manga
-mode: default
+mode: tile
 content:
   field_image:
     weight: 0
-    label: hidden
+    label: above
     settings:
       image_style: ''
       image_link: ''
@@ -26,11 +27,10 @@ content:
     region: content
   field_summary:
     weight: 1
-    label: hidden
-    settings:
-      trim_length: 100
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    type: text_trimmed
+    type: text_default
     region: content
 hidden:
   links: true
