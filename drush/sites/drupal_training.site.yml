@@ -7,3 +7,12 @@ ctdev:
       install:
         options:
           sites-subdir: 'drupal_training'
+
+anijou:
+  root: /var/www/docroot
+  uri: httpL://anijou.al.drupal-training.ctdev
+  command:
+    site:
+      install:
+        options:
+          sites-subdir: 'anijou'
