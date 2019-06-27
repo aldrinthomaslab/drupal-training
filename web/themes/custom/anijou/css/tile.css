@@ -1,7 +1,8 @@
 .tile {
   width: 250px;
-  height: 310px;
-  margin-right: 15px;
+  height: 305px;
+  margin-right: 25px;
+  margin-bottom: 15px;
   position: relative;
 }
 
@@ -15,4 +16,10 @@
   position: absolute;
   bottom: 0px;
   width: 100%;
+  padding: 0px 8px;
+  box-sizing: border-box
+}
+
+.tile .tile__info h3 {
+  color: #FFFFFF;
 }
