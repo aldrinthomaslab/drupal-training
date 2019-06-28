@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.news.field_category
     - field.field.node.news.field_hero_image
     - field.field.node.news.field_image_gallery
+    - image.style.gallery_tile
     - node.type.news
   module:
     - image
@@ -23,7 +24,7 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: ''
+      image_style: gallery_tile
       image_link: ''
     third_party_settings: {  }
 hidden:
