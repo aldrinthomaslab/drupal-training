@@ -151,7 +151,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Masonry Grid'
+      title: ''
       header: {  }
       footer: {  }
       empty: {  }
