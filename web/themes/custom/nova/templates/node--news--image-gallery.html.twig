@@ -80,23 +80,10 @@
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   ]
 %}
-{{ attach_library('classy/node') }}
-{{ attach_library('nova/masonryGrid') }}
-
 <section class="masonry-grid masonry-grid--image-only module">
   <div class="masonry-grid__container module__container">
     <div class="masonry-grid__items primary">
-      <div class="masonry-grid__item spinner animated fadeInUp">
-        <picture>
-          {{ content.field_image_gallery[0] }}
-        </picture>
-      </div>
-      <div class="masonry-grid__item spinner animated fadeInUp">
-        <picture>
-          {{ content.field_image_gallery[1] }}
-        </picture>
-      </div>
+      {{ content.field_image_gallery }}
     </div>
-      
   </div>
 </section>
