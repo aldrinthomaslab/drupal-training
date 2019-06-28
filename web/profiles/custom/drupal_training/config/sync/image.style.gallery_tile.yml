@@ -1,0 +1,15 @@
+uuid: 1718ded8-a638-4e02-b957-5ace411e9b30
+langcode: en
+status: true
+dependencies: {  }
+name: gallery_tile
+label: 'Gallery Tile'
+effects:
+  e79ff398-8d93-4ed4-b705-787fe752db53:
+    uuid: e79ff398-8d93-4ed4-b705-787fe752db53
+    id: image_scale
+    weight: 1
+    data:
+      width: 630
+      height: null
+      upscale: false
