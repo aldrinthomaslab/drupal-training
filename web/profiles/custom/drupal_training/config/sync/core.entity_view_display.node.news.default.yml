@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.news.body
     - field.field.node.news.field_category
     - field.field.node.news.field_hero_image
+    - field.field.node.news.field_image_gallery
     - node.type.news
   module:
     - user
@@ -18,4 +19,5 @@ hidden:
   body: true
   field_category: true
   field_hero_image: true
+  field_image_gallery: true
   links: true
