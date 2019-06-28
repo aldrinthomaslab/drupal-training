@@ -1,22 +1,22 @@
-uuid: d6c48e86-b4ad-40a6-b85e-7a83d0f54ee8
+uuid: 634653ed-47ba-4a45-89fd-ab73593f5672
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.text_block
+    - views.view.masonry_grid
   module:
     - node
     - views
   theme:
     - nova
-id: views_block__text_block_block_1
+id: views_block__masonry_grid_block_1
 theme: nova
 region: content
-weight: -2
+weight: -1
 provider: null
-plugin: 'views_block:text_block-block_1'
+plugin: 'views_block:masonry_grid-block_1'
 settings:
-  id: 'views_block:text_block-block_1'
+  id: 'views_block:masonry_grid-block_1'
   label: ''
   provider: views
   label_display: visible
