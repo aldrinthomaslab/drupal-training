@@ -9,3 +9,8 @@ heroBanner:
   css:
     component:
       css/hero-news-banner.css: {}
+
+masonryGrid:
+  css:
+    component:
+      css/masonry-grid.css: {}
