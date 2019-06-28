@@ -1,0 +1,33 @@
+uuid: d6c48e86-b4ad-40a6-b85e-7a83d0f54ee8
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.text_block
+  module:
+    - node
+    - views
+  theme:
+    - nova
+id: views_block__text_block_block_1
+theme: nova
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:text_block-block_1'
+settings:
+  id: 'views_block:text_block-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      news: news
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
