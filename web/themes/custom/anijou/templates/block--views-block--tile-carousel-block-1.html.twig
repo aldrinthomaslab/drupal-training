@@ -32,7 +32,7 @@
     'block-' ~ plugin_id|clean_class,
   ]
 %}
-Hey
+{{ attach_library('anijou/tileCarousel') }}
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}
@@ -40,7 +40,7 @@ Hey
   {% endif %}
   {{ title_suffix }}
   {% block content %}
-    <div>
+    <div class="tile-carousel">
       {{ content }}
     </div>
   {% endblock %}
