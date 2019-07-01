@@ -1,5 +1,1 @@
 <?php
-
-function anijou_theme_suggestions_block_alter(array &$suggestions, array $variables) {
-	var_dump('Sample');
-}
