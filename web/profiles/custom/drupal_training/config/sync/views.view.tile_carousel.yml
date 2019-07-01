@@ -1,15 +1,14 @@
-uuid: 8d3f579f-2b49-4e15-8e95-0737d6a93666
+uuid: 47dcaecc-5e89-42c4-8f8e-f5866842134b
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.tile
-    - node.type.manga
   module:
     - node
     - user
-id: manga_top_list
-label: 'Manga Top List'
+id: tile_carousel
+label: 'Tile Carousel'
 module: views
 description: ''
 tag: ''
@@ -51,14 +50,10 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 4
+          items_per_page: 10
           offset: 0
       style:
         type: default
-        options:
-          row_class: ''
-          default_row_class: false
-          uses_fields: false
       row:
         type: 'entity:node'
         options:
@@ -140,46 +135,6 @@ display:
           expose:
             operator: ''
           group: 1
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: in
-          value:
-            manga: manga
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
       sorts:
         created:
           id: created
@@ -196,7 +151,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Manga Top List'
+      title: 'Tile Carousel'
       header: {  }
       footer: {  }
       empty: {  }
