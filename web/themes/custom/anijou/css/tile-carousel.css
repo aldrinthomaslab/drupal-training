@@ -1,3 +1,8 @@
+.tile-carousel {
+	width: 100%;
+	overflow: auto;
+}
+
 .tile-carousel div .contextual-region div.views-row {
 	display: inline-block;
 }
