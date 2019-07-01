@@ -52,9 +52,11 @@
   ]
 %}
 <section class="text module">
-  <div class="text__container module__container animated fadeInDown">
-    <div{{ item.attributes.addClass('field__item', 'text__content') }}>
-      {{ item.content }}
+  <div{{ attributes.addClass(classes, 'text__container', 'module__container', 'animated', 'fadeInDown') }}>
+    <div class="text__content">
+      {% for item in items %}
+        {{ item.content }}
+      {% endfor %}
     </div>
   </div>
 </section>
