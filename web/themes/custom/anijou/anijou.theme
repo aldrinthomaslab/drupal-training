@@ -1,1 +1,11 @@
 <?php
+const $carousel_list_blocks = [
+	'views_block__manga_top_list_block_1'
+];
+
+
+function anijou_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+	if (in_array($variables['elements']['#id']) !== FALSE) {
+		$suggestions[] = 'block__views_block__tile_carousel_block_1';
+	}
+}
