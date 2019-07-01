@@ -151,7 +151,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Tile Carousel'
+      title: 'Top Manga'
       header: {  }
       footer: {  }
       empty: {  }

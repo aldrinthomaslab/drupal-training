@@ -1,4 +1,4 @@
-uuid: 8d3f579f-2b49-4e15-8e95-0737d6a93666
+uuid: 4e2fadb9-f1a9-43e8-bfe1-d8c8d43606ef
 langcode: en
 status: true
 dependencies:
@@ -51,14 +51,10 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 4
+          items_per_page: 10
           offset: 0
       style:
         type: default
-        options:
-          row_class: ''
-          default_row_class: false
-          uses_fields: false
       row:
         type: 'entity:node'
         options:
@@ -196,7 +192,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Manga Top List'
+      title: 'Top Manga'
       header: {  }
       footer: {  }
       empty: {  }
