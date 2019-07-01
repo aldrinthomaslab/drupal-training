@@ -51,14 +51,19 @@
     label_display == 'visually_hidden' ? 'visually-hidden',
   ]
 %}
-
-<div class="masonry-grid__items primary">
-  {% for item in items %}
-    <div class="masonry-grid__item spinner animated fadeInUp">
-      <picture>
-        {{ item.content }}
-      </picture>
+{{ attach_library('nova/masonryGrid') }}
+<section class="masonry-grid masonry-grid--image-only module">
+  <div class="masonry-grid__container module__container">
+    <div class="masonry-grid__items primary">
+      {% for item in items %}
+        <div class="masonry-grid__item spinner animated fadeInUp">
+          <picture>
+            {{ item.content }}
+          </picture>
+        </div>
+      {% endfor %}   
     </div>
-  {% endfor %}   
-</div>
+  </div>
+</section>
+
 
