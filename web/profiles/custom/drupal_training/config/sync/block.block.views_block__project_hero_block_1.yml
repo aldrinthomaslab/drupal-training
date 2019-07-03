@@ -1,22 +1,22 @@
-uuid: d191f1a7-78cf-418f-906d-4ace0109004c
+uuid: 42e67791-19f3-47de-a1c9-6f5e9ec69180
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.hero_banner
+    - views.view.project_hero
   module:
     - node
     - views
   theme:
     - nova
-id: views_block__hero_banner_block_1
+id: views_block__project_hero_block_1
 theme: nova
 region: content
-weight: -3
+weight: -2
 provider: null
-plugin: 'views_block:hero_banner-block_1'
+plugin: 'views_block:project_hero-block_1'
 settings:
-  id: 'views_block:hero_banner-block_1'
+  id: 'views_block:project_hero-block_1'
   label: ''
   provider: views
   label_display: visible
@@ -27,7 +27,7 @@ visibility:
   node_type:
     id: node_type
     bundles:
-      news: news
+      projects: projects
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
