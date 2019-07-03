@@ -1,9 +1,13 @@
 .tile {
   width: 250px;
-  height: 305px;
+  height: 100%;
   margin-right: 25px;
   margin-bottom: 15px;
   position: relative;
+}
+
+.tile .tile__image {
+  height: 344px;
 }
 
 .tile .tile__image img {
@@ -17,7 +21,8 @@
   bottom: 0px;
   width: 100%;
   padding: 0px 8px;
-  box-sizing: border-box
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .tile .tile__info h3 {
