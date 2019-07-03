@@ -4,9 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.projects.body
+    - field.field.node.projects.field_hero_image
     - field.field.node.projects.field_sub_title
+    - image.style.thumbnail
     - node.type.projects
   module:
+    - image
     - path
     - text
 id: node.projects.default
@@ -29,6 +32,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_hero_image:
+    weight: 26
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
   field_sub_title:
     weight: 7
     settings:

@@ -5,9 +5,11 @@ dependencies:
   config:
     - core.entity_view_mode.node.project_hero
     - field.field.node.projects.body
+    - field.field.node.projects.field_hero_image
     - field.field.node.projects.field_sub_title
     - node.type.projects
   module:
+    - image
     - text
     - user
 id: node.projects.project_hero
@@ -18,10 +20,19 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_hero_image:
+    type: image
+    weight: 2
+    region: content
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
   field_sub_title:
     weight: 1
     label: hidden
