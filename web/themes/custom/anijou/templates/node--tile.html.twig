@@ -84,16 +84,18 @@
 {{ attach_library('classy/node') }}
 {{ attach_library('anijou/tile') }}
 <article{{ attributes.addClass(classes) }}>
-  <div class="tile__image">
-    {{ content.field_image }}
-  </div>
-  <div class="tile__info">
-    <div>
-      <h3>{{ label }}</h3>
+  <a href="{{ url }}">
+    <div class="tile__image">
+      {{ content.field_image }}
     </div>
-    <div>
-      <p>{{ content.field_summary }}</p>
+    <div class="tile__info">
+      <div>
+        <h3>{{ label }}</h3>
+      </div>
+      <div>
+        <p>{{ content.field_summary }}</p>
+      </div>
     </div>
-  </div>
+  </a>
 </article>
 
