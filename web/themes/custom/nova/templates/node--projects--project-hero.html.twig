@@ -81,35 +81,37 @@
   ]
 %}
 {{ attach_library('classy/node') }}
-{{ kint(content|keys) }}
-<section class="hero module hero--dark image-container">
-  <div class="hero__image spinner-alto">
-    <picture>
-      {{ content.field_hero_image }}
-    </picture>
-  </div>
-  <div class="hero__container module__container">
-    <div class="hero__wrap">
-      <div class="hero__content animated fadeInDown">
-        <div class="{{ content.field_category.class }} hero__label hero__label--top label">
-            {{ content.field_sub_title }}
-        </div>
-        <div>
-          <h1>{{ label }}</h1>
-        </div>
-        <div class="hero__description">
-          {{ content.body }}
-        </div>
-        <a class="hero__buttom button">
-          PROJECT SPECIFICATIONS
-        </a>
-        <a class="hero__buttom button">
-          LEASING INQUIRIES
-        </a>
-        <div class="hero__sub-content">
-          Scroll down to explore more about {{ label }}                    
+
+<div class="main project">
+  <section class="hero module hero--dark image-container">
+    <div class="hero__image spinner-alto">
+      <picture>
+        {{ content.field_hero_image }}
+      </picture>
+    </div>
+    <div class="hero__container module__container">
+      <div class="hero__wrap">
+        <div class="hero__content animated fadeInDown">
+          <div class="{{ content.field_category.class }} hero__label hero__label--top label">
+              {{ content.field_sub_title }}
+          </div>
+          <div>
+            <h1>{{ label }}</h1>
+          </div>
+          <div class="hero__description">
+            {{ content.body }}
+          </div>
+          <a class="hero__button button">
+            PROJECT SPECIFICATIONS
+          </a>
+          <a class="hero__button button">
+            LEASING INQUIRIES
+          </a>
+          <div class="hero__sub-content">
+            Scroll down to explore more about {{ label }}                    
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
