@@ -56,4 +56,3 @@
  * @see https://www.drupal.org/documentation/install/multi-site
  */
 $sites['al.drupal-training.ctdev'] = 'drupal_training';
-$sites['anijou.al.drupal-training.ctdev'] = 'anijou';

@@ -1,34 +1,36 @@
-uuid: ca3e11e2-a0b1-4471-ac01-dd31e738f4b2
+uuid: 855eb8ff-945a-499d-ae8b-754924fa2ebe
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_image
-    - node.type.manga
+    - node.type.article
   module:
     - image
-id: node.manga.field_image
+_core:
+  default_config_hash: tgJzhA7Swh4M_gWU5FwFe5lPxPj5rebpMbvhpdNrERs
+id: node.article.field_image
 field_name: field_image
 entity_type: node
-bundle: manga
+bundle: article
 label: Image
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: '10 MB'
+  max_filesize: ''
   max_resolution: ''
-  min_resolution: 800x600
+  min_resolution: ''
   alt_field: true
-  alt_field_required: true
   title_field: false
+  alt_field_required: true
   title_field_required: false
   default_image:
-    uuid: ''
+    uuid: null
     alt: ''
     title: ''
     width: null
