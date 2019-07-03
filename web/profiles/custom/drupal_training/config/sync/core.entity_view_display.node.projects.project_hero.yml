@@ -1,35 +1,38 @@
-uuid: ffb64c84-9b5d-43af-ac3e-7088a3679781
+uuid: ac8d4728-f407-40d4-a1c6-2e52aceb0324
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.project_hero
     - field.field.node.projects.body
     - field.field.node.projects.field_sub_title
     - node.type.projects
   module:
     - text
     - user
-id: node.projects.teaser
+id: node.projects.project_hero
 targetEntityType: node
 bundle: projects
-mode: teaser
+mode: project_hero
 content:
   body:
     label: hidden
-    type: text_summary_or_trimmed
-    weight: 1
-    settings:
-      trim_length: 600
+    type: text_default
+    weight: 2
+    settings: {  }
     third_party_settings: {  }
     region: content
   field_sub_title:
-    type: string
-    weight: 0
-    region: content
+    weight: 1
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-hidden:
-  links: true
+    type: string
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
