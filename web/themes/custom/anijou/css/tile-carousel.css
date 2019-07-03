@@ -1,6 +1,15 @@
 .tile-carousel {
 	width: 100%;
 	overflow: auto;
+  white-space: nowrap;
+}
+
+.tile-carousel  div.contextual-region > * {
+  white-space: normal;
+}
+
+.tile-carousel .views-row:last-child > * {
+  margin-right: 0px;
 }
 
 .tile-carousel div .contextual-region div.views-row {
