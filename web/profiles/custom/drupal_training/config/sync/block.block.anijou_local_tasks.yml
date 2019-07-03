@@ -1,0 +1,22 @@
+uuid: 1256b342-0cc8-4225-866d-47f89c884bb6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - anijou
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: anijou_local_tasks
+theme: anijou
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

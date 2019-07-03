@@ -1,0 +1,32 @@
+uuid: 3136529a-b721-4ed5-ac21-9b9c52d73da0
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.manga_top_list
+  module:
+    - node
+    - views
+  theme:
+    - anijou
+id: views_block__manga_top_list_block_1
+theme: anijou
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:manga_top_list-block_1'
+settings:
+  id: 'views_block:manga_top_list-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      home: home
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,5 @@
+name: Anijou
+type: theme
+description: 'Experimental theme for Anijou'
+package: Custom
+core: 8.x

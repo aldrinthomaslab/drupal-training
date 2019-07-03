@@ -1,0 +1,19 @@
+uuid: ad6aeefe-3672-4488-bc5b-634177da1178
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.home
+  module:
+    - user
+id: node.home.default
+targetEntityType: node
+bundle: home
+mode: default
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

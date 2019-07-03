@@ -1,0 +1,15 @@
+uuid: fee7bafa-c3eb-4078-85c9-3f6c07929f85
+langcode: en
+status: true
+dependencies: {  }
+name: tile
+label: Tile
+effects:
+  384d2c56-cf23-40a3-8c6f-e91dd382a491:
+    uuid: 384d2c56-cf23-40a3-8c6f-e91dd382a491
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 580
+      height: 800
+      anchor: center-center

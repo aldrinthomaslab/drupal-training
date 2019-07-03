@@ -1,0 +1,24 @@
+uuid: da135b17-4276-4617-800b-6a9af7524246
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.manga
+  module:
+    - text
+id: node.manga.field_summary
+field_name: field_summary
+entity_type: node
+bundle: manga
+label: Summary
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<p>No Description provoded.</p>\r\n"
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

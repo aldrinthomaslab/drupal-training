@@ -1,0 +1,9 @@
+tile:
+  css:
+    component:
+      css/tile.css: {}
+
+tileCarousel:
+  css:
+    component:
+      css/tile-carousel.css: {}

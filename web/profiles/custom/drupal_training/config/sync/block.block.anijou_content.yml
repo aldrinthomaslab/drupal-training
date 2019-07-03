@@ -1,0 +1,22 @@
+uuid: 46958af8-fcc1-431f-bea3-6f8d19a852c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - anijou
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: anijou_content
+theme: anijou
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
