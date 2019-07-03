@@ -23,8 +23,5 @@
   padding: 0px 8px;
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.5);
-}
-
-.tile .tile__info h3 {
   color: #FFFFFF;
 }
