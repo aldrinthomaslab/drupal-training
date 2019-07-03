@@ -2,6 +2,7 @@
 	width: 100%;
 	overflow: auto;
   white-space: nowrap;
+  margin-bottom: 50px;
 }
 
 .tile-carousel  div.contextual-region > * {
