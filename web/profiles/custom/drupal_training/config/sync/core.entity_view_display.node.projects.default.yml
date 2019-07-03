@@ -7,31 +7,17 @@ dependencies:
     - field.field.node.projects.field_sub_title
     - node.type.projects
   module:
-    - text
     - user
 id: node.projects.default
 targetEntityType: node
 bundle: projects
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_sub_title:
-    weight: 1
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
   links:
     weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  body: true
+  field_sub_title: true
