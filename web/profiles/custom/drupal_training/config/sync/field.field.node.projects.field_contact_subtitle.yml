@@ -1,0 +1,19 @@
+uuid: d4716f63-7e33-4bcc-aca7-888db49350d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_subtitle
+    - node.type.projects
+id: node.projects.field_contact_subtitle
+field_name: field_contact_subtitle
+entity_type: node
+bundle: projects
+label: 'Contact Subtitle'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
