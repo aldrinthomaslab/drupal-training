@@ -84,9 +84,7 @@
 {{ attach_library('nova/heroBanner') }}
 <section class="hero module hero--dark image-container">
   <div class="hero__image spinner-alto">
-    <picture>
-      {{ content.field_hero_image }}
-    </picture>
+    {{ content.field_hero_image[0] }}
   </div>
   <div class="hero__container module__container">
     <div class="hero__wrap">
