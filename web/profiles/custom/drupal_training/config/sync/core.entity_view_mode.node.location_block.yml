@@ -1,0 +1,10 @@
+uuid: 2c79730a-65ce-46e2-b2af-96e2b520265c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.location_block
+label: 'Location Block'
+targetEntityType: node
+cache: true
