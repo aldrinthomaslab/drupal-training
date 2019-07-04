@@ -1,0 +1,30 @@
+uuid: a72a3284-2bb7-413a-b562-f0a854b02cf5
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.image_desktop
+    - image.style.image_mobile
+    - image.style.image_tablet
+  theme:
+    - nova
+id: nova_responsive_image
+label: 'Nova Responsive Image'
+image_style_mappings:
+  -
+    breakpoint_id: nova.desktop
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: image_desktop
+  -
+    breakpoint_id: nova.tablet
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: image_tablet
+  -
+    breakpoint_id: nova.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: image_mobile
+breakpoint_group: nova
+fallback_image_style: '_empty image_'
