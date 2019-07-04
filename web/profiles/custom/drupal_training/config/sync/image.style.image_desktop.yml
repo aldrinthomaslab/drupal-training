@@ -1,0 +1,15 @@
+uuid: 90c22995-06c8-40eb-a824-5265786c8653
+langcode: en
+status: true
+dependencies: {  }
+name: image_desktop
+label: 'Image Desktop'
+effects:
+  56b0f4a4-adb7-4305-a22d-25768bec2930:
+    uuid: 56b0f4a4-adb7-4305-a22d-25768bec2930
+    id: image_scale
+    weight: 1
+    data:
+      width: 1200
+      height: null
+      upscale: false
