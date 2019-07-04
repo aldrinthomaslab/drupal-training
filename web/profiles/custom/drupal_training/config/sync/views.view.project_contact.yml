@@ -160,7 +160,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Project Contact'
+      title: ''
       header: {  }
       footer: {  }
       empty: {  }
