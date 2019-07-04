@@ -1,0 +1,15 @@
+uuid: 61ad7b28-2ce6-43cf-80b7-46c417221da4
+langcode: en
+status: true
+dependencies: {  }
+name: image_mobile
+label: 'Image Mobile'
+effects:
+  a785f2fa-2401-44ed-91f2-66950e8c9334:
+    uuid: a785f2fa-2401-44ed-91f2-66950e8c9334
+    id: image_scale
+    weight: 1
+    data:
+      width: 480
+      height: null
+      upscale: false
