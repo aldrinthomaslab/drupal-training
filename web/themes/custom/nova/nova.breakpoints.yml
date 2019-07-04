@@ -9,7 +9,7 @@ nova.tablet:
   label: tablet
   mediaQuery: '(min-width: 750px)'
   weight: 1
-   multipliers:
+  multipliers:
     - 1x
 
 nova.desktop:
