@@ -1,4 +1,4 @@
-uuid: a72a3284-2bb7-413a-b562-f0a854b02cf5
+uuid: 0c9b2aaa-1197-4815-aaf4-8a0f8c681695
 langcode: en
 status: true
 dependencies:
@@ -8,8 +8,8 @@ dependencies:
     - image.style.image_tablet
   theme:
     - nova
-id: nova_responsive_image
-label: 'Nova Responsive Image'
+id: hero_responsive
+label: 'Hero Responsive'
 image_style_mappings:
   -
     breakpoint_id: nova.desktop

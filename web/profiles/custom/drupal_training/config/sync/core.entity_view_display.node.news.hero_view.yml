@@ -8,7 +8,7 @@ dependencies:
     - field.field.node.news.field_category
     - field.field.node.news.field_hero_image
     - node.type.news
-    - responsive_image.styles.nova_responsive_image
+    - responsive_image.styles.hero_responsive
   module:
     - responsive_image
     - text
@@ -34,13 +34,13 @@ content:
     type: entity_reference_label
     region: content
   field_hero_image:
+    type: responsive_image
     weight: 0
+    region: content
     label: hidden
     settings:
-      responsive_image_style: nova_responsive_image
+      responsive_image_style: hero_responsive
       image_link: ''
     third_party_settings: {  }
-    type: responsive_image
-    region: content
 hidden:
   links: true
