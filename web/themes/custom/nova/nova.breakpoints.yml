@@ -1,0 +1,20 @@
+nova.mobile:
+  label: mobile
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+
+nova.tablet:
+  label: tablet
+  mediaQuery: '(min-width: 750px)'
+  weight: 1
+   multipliers:
+    - 1x
+
+nova.desktop:
+  label: desktop
+  mediaQuery: '(min-width: 1200px)'
+  weight: 2
+  multipliers:
+    - 1x
