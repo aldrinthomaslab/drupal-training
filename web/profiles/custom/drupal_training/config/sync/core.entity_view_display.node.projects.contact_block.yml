@@ -1,0 +1,58 @@
+uuid: a2873225-3cb6-499d-9477-12909e496f8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.contact_block
+    - field.field.node.projects.body
+    - field.field.node.projects.field_contact_body
+    - field.field.node.projects.field_contact_link
+    - field.field.node.projects.field_contact_subtitle
+    - field.field.node.projects.field_contact_title
+    - field.field.node.projects.field_hero_image
+    - field.field.node.projects.field_sub_title
+    - node.type.projects
+  module:
+    - text
+    - user
+id: node.projects.contact_block
+targetEntityType: node
+bundle: projects
+mode: contact_block
+content:
+  field_contact_body:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_contact_link:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_subtitle:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  body: true
+  field_hero_image: true
+  field_sub_title: true
+  links: true
