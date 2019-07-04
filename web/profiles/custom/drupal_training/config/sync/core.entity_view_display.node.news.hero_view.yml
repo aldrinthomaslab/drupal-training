@@ -7,10 +7,10 @@ dependencies:
     - field.field.node.news.body
     - field.field.node.news.field_category
     - field.field.node.news.field_hero_image
-    - image.style.hero_1600_x_500_
     - node.type.news
+    - responsive_image.styles.nova_responsive_image
   module:
-    - image
+    - responsive_image
     - text
     - user
 id: node.news.hero_view
@@ -37,10 +37,10 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: hero_1600_x_500_
+      responsive_image_style: nova_responsive_image
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: content
 hidden:
   links: true

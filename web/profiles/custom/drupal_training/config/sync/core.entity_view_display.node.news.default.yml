@@ -35,8 +35,8 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
       image_link: ''
+      image_style: ''
     third_party_settings: {  }
     type: image
     region: content
