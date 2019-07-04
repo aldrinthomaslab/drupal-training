@@ -22,14 +22,14 @@ mode: contact_block
 content:
   field_contact_body:
     weight: 2
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_contact_link:
     weight: 3
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -37,7 +37,7 @@ content:
     region: content
   field_contact_subtitle:
     weight: 1
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -45,7 +45,7 @@ content:
     region: content
   field_contact_title:
     weight: 0
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
