@@ -5,7 +5,7 @@ base:
       css/fontface.css: {}
       css/main.css: {}
 
-heroBanner:
+herobanner:
   css:
     component:
-      css/hero-news-banner.css: {}
+      css/herobanner.css: {}

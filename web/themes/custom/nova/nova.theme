@@ -6,5 +6,11 @@ function nova_theme_suggestions_field_alter(array &$suggestions, array $variable
 	$variables['element']['#bundle'] === 'news' &&
 	$variables['element']['#field_name'] === 'body') {
 		$suggestions[] = 'field__node__body__news__full';
+
+function nova_preprocess_field(&$variables) {
+	if ($variables['element']['#field_name'] === 'field_hero_image') {
+		$variables['items'][0]['content']['#item_attributes']['class'][] = 'content-block__content__bg';
+		$variables['items'][0]['content']['#item_attributes']['class'][] = 'cover';
+		$variables['items'][0]['content']['#item_attributes']['class'][] = 'lazyloaded';
 	}
 }

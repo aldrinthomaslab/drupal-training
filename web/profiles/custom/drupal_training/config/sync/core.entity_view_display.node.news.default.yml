@@ -8,21 +8,14 @@ dependencies:
     - field.field.node.news.field_hero_image
     - node.type.news
   module:
-    - text
     - user
 id: node.news.default
 targetEntityType: node
 bundle: news
 mode: default
-content:
-  body:
-    type: text_default
-    weight: 0
-    region: content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
+content: {  }
 hidden:
+  body: true
   field_category: true
   field_hero_image: true
   links: true
