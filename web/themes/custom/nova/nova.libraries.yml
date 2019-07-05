@@ -4,8 +4,3 @@ base:
     theme:
       css/fontface.css: {}
       css/main.css: {}
-
-heroBanner:
-  css:
-    component:
-      css/hero-news-banner.css: {}
