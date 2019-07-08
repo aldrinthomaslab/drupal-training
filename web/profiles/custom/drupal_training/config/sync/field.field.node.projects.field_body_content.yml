@@ -1,0 +1,32 @@
+uuid: 3636345d-dd7c-4981-9939-36edef224be4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_content
+    - node.type.projects
+  module:
+    - entity_reference_revisions
+id: node.projects.field_body_content
+field_name: field_body_content
+entity_type: node
+bundle: projects
+label: 'Body Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop:
+      masonry_grid:
+        weight: 3
+        enabled: false
+      text_block:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

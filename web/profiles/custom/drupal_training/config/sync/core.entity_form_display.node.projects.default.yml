@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.projects.body
+    - field.field.node.projects.field_body_content
     - field.field.node.projects.field_hero_image
     - field.field.node.projects.field_subtitle
     - image.style.thumbnail
     - node.type.projects
   module:
+    - entity_reference_revisions
     - image
     - path
     - text
@@ -32,6 +34,15 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_body_content:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_autocomplete
+    region: content
   field_hero_image:
     weight: 9
     settings:
