@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.node.projects.body
     - field.field.node.projects.field_hero_image
-    - field.field.node.projects.field_sub_title
+    - field.field.node.projects.field_subtitle
     - node.type.projects
   module:
     - user
@@ -22,4 +22,4 @@ content:
 hidden:
   body: true
   field_hero_image: true
-  field_sub_title: true
+  field_subtitle: true

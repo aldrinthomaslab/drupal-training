@@ -1,16 +1,14 @@
-uuid: 2051c15f-834f-4aad-a580-95a911c300ca
+uuid: 26caba20-7e2c-4ae8-b173-efaf88d62947
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_sub_title
-field_name: field_sub_title
+id: node.field_subtitle
+field_name: field_subtitle
 entity_type: node
-type: string
+type: string_long
 settings:
-  max_length: 255
-  is_ascii: false
   case_sensitive: false
 module: core
 locked: false
