@@ -4,10 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.projects.body
-    - field.field.node.projects.field_contact_body
-    - field.field.node.projects.field_contact_link
-    - field.field.node.projects.field_contact_subtitle
-    - field.field.node.projects.field_contact_title
     - field.field.node.projects.field_hero_image
     - field.field.node.projects.field_subtitle
     - node.type.projects
@@ -17,12 +13,13 @@ id: node.projects.default
 targetEntityType: node
 bundle: projects
 mode: default
-content: {  }
+content:
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   body: true
-  field_contact_body: true
-  field_contact_link: true
-  field_contact_subtitle: true
-  field_contact_title: true
   field_hero_image: true
   field_subtitle: true

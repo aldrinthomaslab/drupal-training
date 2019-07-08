@@ -4,10 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.projects.body
-    - field.field.node.projects.field_contact_body
-    - field.field.node.projects.field_contact_link
-    - field.field.node.projects.field_contact_subtitle
-    - field.field.node.projects.field_contact_title
     - field.field.node.projects.field_hero_image
     - field.field.node.projects.field_subtitle
     - image.style.thumbnail
@@ -36,38 +32,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_contact_body:
-    weight: 29
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
-    region: content
-  field_contact_link:
-    weight: 30
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_contact_subtitle:
-    weight: 28
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_contact_title:
-    weight: 27
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_hero_image:
     weight: 9
     settings:
