@@ -3,14 +3,17 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.news.body
+    - field.field.node.news.field_body_content
     - field.field.node.news.field_category
     - field.field.node.news.field_hero_image
     - field.field.node.news.field_image_gallery
     - image.style.thumbnail
+    - field.field.node.news.field_introduction
+    - image.style.hero_1600_x_500_
     - node.type.news
   module:
     - image
+    - paragraphs
     - path
     - text
 id: node.news.default
@@ -18,21 +21,24 @@ targetEntityType: node
 bundle: news
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 9
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_body_content:
+    type: entity_reference_paragraphs
+    weight: 26
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
   field_category:
     weight: 7
     settings: {  }
@@ -54,6 +60,14 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_introduction:
+    weight: 9
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
     region: content
   path:
     type: path

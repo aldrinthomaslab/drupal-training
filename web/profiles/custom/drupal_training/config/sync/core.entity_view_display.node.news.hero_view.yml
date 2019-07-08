@@ -4,13 +4,13 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.hero_view
-    - field.field.node.news.body
     - field.field.node.news.field_category
     - field.field.node.news.field_hero_image
-    - image.style.hero_1600_x_500_
+    - field.field.node.news.field_introduction
     - node.type.news
+    - responsive_image.styles.hero_responsive_image
   module:
-    - image
+    - responsive_image
     - text
     - user
 id: node.news.hero_view
@@ -18,13 +18,6 @@ targetEntityType: node
 bundle: news
 mode: hero_view
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_category:
     weight: 2
     label: hidden
@@ -34,13 +27,20 @@ content:
     type: entity_reference_label
     region: content
   field_hero_image:
+    type: responsive_image
     weight: 0
+    region: content
     label: hidden
     settings:
-      image_style: hero_1600_x_500_
+      responsive_image_style: hero_responsive_image
       image_link: ''
     third_party_settings: {  }
-    type: image
+  field_introduction:
+    type: text_default
+    weight: 1
     region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   links: true

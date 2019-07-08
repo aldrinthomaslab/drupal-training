@@ -3,28 +3,33 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.news.body
+    - field.field.node.news.field_body_content
     - field.field.node.news.field_category
     - field.field.node.news.field_hero_image
     - field.field.node.news.field_image_gallery
     - image.style.gallery_tile
     - node.type.news
+    - field.field.node.news.field_introduction
+    - node.type.news
   module:
     - image
     - text
+    - entity_reference_revisions
     - user
 id: node.news.default
 targetEntityType: node
 bundle: news
 mode: default
 content:
-  body:
-    type: text_default
-    weight: 0
-    region: content
+  field_body_content:
+    type: entity_reference_revisions_entity_view
+    weight: 1
     label: hidden
-    settings: {  }
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
+    region: content
   field_image_gallery:
     type: image
     weight: 1
@@ -34,7 +39,9 @@ content:
       image_style: gallery_tile
       image_link: ''
     third_party_settings: {  }
+    region: content
 hidden:
   field_category: true
   field_hero_image: true
+  field_introduction: true
   links: true
