@@ -1,17 +1,17 @@
-uuid: f315f9b9-7aaa-47b7-9eec-def1a35339fc
+uuid: dfe3cb39-8c4d-4106-9453-5b61d41ab338
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image_gallery
-    - node.type.news
+    - field.storage.paragraph.field_grid_images
+    - paragraphs.paragraphs_type.masonry_grid
   module:
     - image
-id: node.news.field_image_gallery
-field_name: field_image_gallery
-entity_type: node
-bundle: news
-label: 'Image Gallery'
+id: paragraph.masonry_grid.field_grid_images
+field_name: field_grid_images
+entity_type: paragraph
+bundle: masonry_grid
+label: 'Grid Images'
 description: ''
 required: false
 translatable: false
@@ -20,9 +20,9 @@ default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: '5 MB'
+  max_filesize: '10 MB'
   max_resolution: ''
-  min_resolution: 800x600
+  min_resolution: 500x300
   alt_field: true
   alt_field_required: true
   title_field: false

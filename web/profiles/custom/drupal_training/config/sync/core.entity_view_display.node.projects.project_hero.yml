@@ -6,11 +6,11 @@ dependencies:
     - core.entity_view_mode.node.project_hero
     - field.field.node.projects.body
     - field.field.node.projects.field_hero_image
-    - field.field.node.projects.field_sub_title
-    - image.style.hero_image_large
+    - field.field.node.projects.field_subtitle
     - node.type.projects
+    - responsive_image.styles.hero_responsive_image
   module:
-    - image
+    - responsive_image
     - text
     - user
 id: node.projects.project_hero
@@ -21,30 +21,25 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 3
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     region: content
   field_hero_image:
-    type: image
+    type: responsive_image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      responsive_image_style: hero_responsive_image
+      image_link: ''
+    third_party_settings: {  }
+  field_subtitle:
+    type: basic_string
     weight: 2
     region: content
     label: hidden
-    settings:
-      image_style: hero_image_large
-      image_link: ''
-    third_party_settings: {  }
-  field_sub_title:
-    weight: 1
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  links:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  links: true

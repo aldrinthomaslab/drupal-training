@@ -8,3 +8,19 @@ function nova_theme_suggestions_field_alter(array &$suggestions, array $variable
 		$suggestions[] = 'field__node__body__news__full';
 	}
 }
+
+function nova_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+	$node = \Drupal::routeMatch()->getParameter('node');
+
+	if ($node) {
+    $suggestions[] = 'page__node__' . $node->getType();
+  }
+}
+
+function nova_preprocess_field(&$variables) {
+	if ($variables['element']['#field_name'] === 'field_hero_image') {
+		$variables['items'][0]['content']['#item_attributes']['class'][] = 'content-block__content__bg';
+		$variables['items'][0]['content']['#item_attributes']['class'][] = 'cover';
+		$variables['items'][0]['content']['#item_attributes']['class'][] = 'lazyloaded';
+	}
+}

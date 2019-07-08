@@ -9,7 +9,7 @@ dependencies:
     - field.field.node.projects.field_contact_subtitle
     - field.field.node.projects.field_contact_title
     - field.field.node.projects.field_hero_image
-    - field.field.node.projects.field_sub_title
+    - field.field.node.projects.field_subtitle
     - node.type.projects
   module:
     - user
@@ -25,5 +25,4 @@ hidden:
   field_contact_subtitle: true
   field_contact_title: true
   field_hero_image: true
-  field_sub_title: true
-  links: true
+  field_subtitle: true
