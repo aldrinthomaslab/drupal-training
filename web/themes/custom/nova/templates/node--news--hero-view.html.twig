@@ -81,29 +81,26 @@
   ]
 %}
 {{ attach_library('classy/node') }}
-{{ attach_library('nova/heroBanner') }}
+{{ attach_library('nova/herobanner') }}
 <div class="main post">
   <section class="hero module hero--dark image-container">
     <div class="hero__image spinner-alto">
-      <picture>
-        {{ content.field_hero_image }}
-      </picture>
+      {{ content.field_hero_image }}
     </div>
     <div class="hero__container module__container">
-      <div class="hero__wrap">
-        <div class="hero__content animated fadeInDown">
-          <div class="{{ content.field_category.class }} hero__label hero__label--top label">
-              {{ content.field_category }}
-          </div>
-          <div>
-            <h1>{{ label }}</h1>
-          </div>
-          <div class="hero__description">
-            {{ content.body }}
-          </div>
-          <div class="hero__sub-content">
-            POSTED ON<br> {{ date }}
-          </div>
+    <div class="hero__wrap">
+      <div class="hero__content animated fadeInDown">
+        <div class="{{ content.field_category.class }} hero__label hero__label--top label">
+            {{ content.field_category }}
+        </div>
+        <div>
+          <h1>{{ label }}</h1>
+        </div>
+        <div class="hero__description">
+          {{ content.field_introduction }}
+        </div>
+        <div class="hero__sub-content">
+          POSTED ON<br> {{ date }}
         </div>
       </div>
     </div>

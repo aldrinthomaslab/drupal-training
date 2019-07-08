@@ -1,0 +1,24 @@
+uuid: 22d6fbe6-6a1f-4355-aa1c-e59c8f9619f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.image_desktop
+    - image.style.image_tablet
+  theme:
+    - nova
+id: masonry_grid_responsive
+label: 'Masonry Grid Responsive'
+image_style_mappings:
+  -
+    breakpoint_id: nova.desktop
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: image_desktop
+  -
+    breakpoint_id: nova.tablet
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: image_tablet
+breakpoint_group: nova
+fallback_image_style: '_empty image_'
