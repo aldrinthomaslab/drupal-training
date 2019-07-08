@@ -1,0 +1,19 @@
+uuid: ad09b090-dca2-4186-9b08-3ebe91ff8b35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_title
+    - paragraphs.paragraphs_type.content_block
+id: paragraph.content_block.field_content_title
+field_name: field_content_title
+entity_type: paragraph
+bundle: content_block
+label: 'Content Title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
