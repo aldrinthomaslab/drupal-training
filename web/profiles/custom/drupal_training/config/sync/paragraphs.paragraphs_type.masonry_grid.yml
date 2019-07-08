@@ -1,0 +1,9 @@
+uuid: 0c6b9e83-0f93-477f-a77e-48e2df6656b1
+langcode: en
+status: true
+dependencies: {  }
+id: masonry_grid
+label: 'Masonry Grid'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

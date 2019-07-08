@@ -1,0 +1,24 @@
+uuid: 94a19ec5-bf89-4197-90ed-83ffa4edbdf6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.masonry_grid.field_grid_images
+    - paragraphs.paragraphs_type.masonry_grid
+  module:
+    - image
+id: paragraph.masonry_grid.default
+targetEntityType: paragraph
+bundle: masonry_grid
+mode: default
+content:
+  field_grid_images:
+    weight: 0
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }
