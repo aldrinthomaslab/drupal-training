@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_body_content
     - node.type.projects
+    - paragraphs.paragraphs_type.content_block
   module:
     - entity_reference_revisions
 id: node.projects.field_body_content
@@ -21,11 +22,15 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     negate: 0
-    target_bundles: null
+    target_bundles:
+      content_block: content_block
     target_bundles_drag_drop:
       masonry_grid:
         weight: 3
         enabled: false
+      content_block:
+        enabled: true
+        weight: 4
       text_block:
         weight: 4
         enabled: false
