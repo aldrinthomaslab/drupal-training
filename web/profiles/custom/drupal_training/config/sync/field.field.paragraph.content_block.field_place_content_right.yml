@@ -1,0 +1,23 @@
+uuid: 82882a0a-780a-4153-8096-63e050e3a197
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_place_content_right
+    - paragraphs.paragraphs_type.content_block
+id: paragraph.content_block.field_place_content_right
+field_name: field_place_content_right
+entity_type: paragraph
+bundle: content_block
+label: 'Place Content Right'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Right
+  off_label: Left
+field_type: boolean

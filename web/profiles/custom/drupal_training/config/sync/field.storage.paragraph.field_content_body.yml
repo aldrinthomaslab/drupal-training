@@ -1,18 +1,19 @@
-uuid: fcee6eb2-d4e2-4fbc-9db3-b8dfef6cf62e
+uuid: d9e63015-d06c-45dd-b819-5efc7dd28960
 langcode: en
 status: true
 dependencies:
   module:
+    - entity_reference_revisions
     - paragraphs
-    - text
 id: paragraph.field_content_body
 field_name: field_content_body
 entity_type: paragraph
-type: text_long
-settings: {  }
-module: text
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

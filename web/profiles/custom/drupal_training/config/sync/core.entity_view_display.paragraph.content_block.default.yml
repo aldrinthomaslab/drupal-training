@@ -8,23 +8,26 @@ dependencies:
     - field.field.paragraph.content_block.field_content_link
     - field.field.paragraph.content_block.field_content_subtitle
     - field.field.paragraph.content_block.field_content_title
+    - field.field.paragraph.content_block.field_place_content_right
     - paragraphs.paragraphs_type.content_block
     - responsive_image.styles.responsive_long_image
   module:
+    - entity_reference_revisions
     - link
     - responsive_image
-    - text
 id: paragraph.content_block.default
 targetEntityType: paragraph
 bundle: content_block
 mode: default
 content:
   field_content_body:
-    weight: 3
-    label: hidden
-    settings: {  }
+    type: entity_reference_revisions_entity_view
+    weight: 6
+    label: above
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
-    type: text_default
     region: content
   field_content_image:
     weight: 2
@@ -63,4 +66,14 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  field_place_content_right:
+    type: boolean
+    weight: 5
+    region: content
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
 hidden: {  }
