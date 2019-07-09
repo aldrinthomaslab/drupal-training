@@ -1,0 +1,15 @@
+uuid: d0641c87-3c9a-4267-8d30-36bca8ed0229
+langcode: en
+status: true
+dependencies: {  }
+name: image_portrait_long_tablet
+label: 'Image Portrait Long Tablet'
+effects:
+  8717061a-9dbf-4e35-b90e-29d92e100b77:
+    uuid: 8717061a-9dbf-4e35-b90e-29d92e100b77
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 1600
+      anchor: center-center
