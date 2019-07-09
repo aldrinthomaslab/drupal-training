@@ -1,0 +1,24 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+  <section{{ attributes.addClass(classes, 'field_item', 'text', 'module') }}>
+    {% block content %}
+      <div class="text__container module__container animated fadeInDown">
+        <div class="text__content">
+          {{ content.field_text_content }}
+        </div>
+      </div>
+    {% endblock %}
+  </section>
+
+  <div{{ attributes.addClass(classes) }}>
+    
+  </div>
+{% endblock paragraph %}
+
