@@ -45,7 +45,8 @@
     'field--label-' ~ label_display,
     'content-block',
     'module',
-    (content.field_place_content_right['#items'].value) ? 'content-block--right'
+    (content.field_place_content_right['#items'].value) ? 'content-block--right',
+    (content.field_set_as_featured['#items'].value) ? 'content-block--feature'
   ]
 %}
 {%
@@ -56,6 +57,9 @@
 %}
 {% block paragraph %}
   <section{{ attributes.addClass(classes) }}>
+    {% if content.field_set_as_featured['#items'].value  %}
+      <div class="content-block__content__bg"></div>
+    {% endif %}
     {% block content %}
       <div class="content-block__container module__container">
           <div class="content-block__media spinner-alto animated fadeInUp">
