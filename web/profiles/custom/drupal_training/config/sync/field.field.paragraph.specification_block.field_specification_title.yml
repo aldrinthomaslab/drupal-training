@@ -1,0 +1,19 @@
+uuid: 0f7b6237-e77d-42e0-bdde-7cdbd0a69001
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_specification_title
+    - paragraphs.paragraphs_type.specification_block
+id: paragraph.specification_block.field_specification_title
+field_name: field_specification_title
+entity_type: paragraph
+bundle: specification_block
+label: 'Specification Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,9 @@
+uuid: dfb22b70-4042-4944-99eb-ad4d31890338
+langcode: en
+status: true
+dependencies: {  }
+id: specification_block
+label: 'Specification Block'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }
