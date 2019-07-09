@@ -46,18 +46,18 @@ content:
   field_content_subtitle:
     weight: 1
     settings:
-      rows: 5
+      size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
+    type: string_textfield
     region: content
   field_content_title:
     weight: 0
     settings:
-      rows: 5
+      size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
+    type: string_textfield
     region: content
 hidden:
   created: true

@@ -26,7 +26,7 @@ content:
     type: text_default
     region: content
   field_content_image:
-    weight: 0
+    weight: 2
     label: above
     settings:
       image_style: ''
@@ -47,17 +47,19 @@ content:
     type: link
     region: content
   field_content_subtitle:
-    weight: 2
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
-    region: content
-  field_content_title:
     weight: 1
     label: above
-    settings: {  }
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-    type: basic_string
+    type: string
+    region: content
+  field_content_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
 hidden: {  }

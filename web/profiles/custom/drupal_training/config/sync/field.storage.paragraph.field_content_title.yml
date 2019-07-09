@@ -1,4 +1,4 @@
-uuid: c04b8cfc-4238-402b-bf68-f26b88692b92
+uuid: 64b4f9ad-1cbf-42ed-98e1-40ba8d0622a2
 langcode: en
 status: true
 dependencies:
@@ -7,8 +7,10 @@ dependencies:
 id: paragraph.field_content_title
 field_name: field_content_title
 entity_type: paragraph
-type: string_long
+type: string
 settings:
+  max_length: 255
+  is_ascii: false
   case_sensitive: false
 module: core
 locked: false
