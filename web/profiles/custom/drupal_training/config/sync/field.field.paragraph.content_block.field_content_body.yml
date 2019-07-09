@@ -1,4 +1,4 @@
-uuid: b3984083-122d-49a1-9093-220f267ad962
+uuid: e499fc8b-b1f2-409f-915a-3294929a674a
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - field.storage.paragraph.field_content_body
     - paragraphs.paragraphs_type.content_block
   module:
-    - entity_reference_revisions
+    - text
 id: paragraph.content_block.field_content_body
 field_name: field_content_body
 entity_type: paragraph
@@ -17,19 +17,5 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings:
-  handler: 'default:paragraph'
-  handler_settings:
-    negate: 0
-    target_bundles: null
-    target_bundles_drag_drop:
-      content_block:
-        weight: 4
-        enabled: false
-      masonry_grid:
-        weight: 5
-        enabled: false
-      text_block:
-        weight: 6
-        enabled: false
-field_type: entity_reference_revisions
+settings: {  }
+field_type: text_long

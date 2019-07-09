@@ -14,23 +14,19 @@ dependencies:
   module:
     - image
     - link
-    - paragraphs
+    - text
 id: paragraph.content_block.default
 targetEntityType: paragraph
 bundle: content_block
 mode: default
 content:
   field_content_body:
-    type: entity_reference_paragraphs
     weight: 6
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
+    type: text_textarea
     region: content
   field_content_image:
     weight: 2

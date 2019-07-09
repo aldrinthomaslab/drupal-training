@@ -12,22 +12,20 @@ dependencies:
     - paragraphs.paragraphs_type.content_block
     - responsive_image.styles.responsive_long_image
   module:
-    - entity_reference_revisions
     - link
     - responsive_image
+    - text
 id: paragraph.content_block.default
 targetEntityType: paragraph
 bundle: content_block
 mode: default
 content:
   field_content_body:
-    type: entity_reference_revisions_entity_view
     weight: 6
     label: above
-    settings:
-      view_mode: default
-      link: ''
+    settings: {  }
     third_party_settings: {  }
+    type: text_default
     region: content
   field_content_image:
     weight: 2
