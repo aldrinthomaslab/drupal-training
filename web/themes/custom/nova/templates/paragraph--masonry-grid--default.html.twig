@@ -1,0 +1,17 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+  <section class="masonry-grid masonry-grid--image-only module">
+    {% block content %}
+      <div class="masonry-grid__container module__container">
+        {{ content.field_grid_images }}
+      </div>
+    {% endblock %}
+  </section>
+{% endblock paragraph %}
