@@ -1,0 +1,37 @@
+uuid: ad5d2712-71de-40a1-b441-91673ca4542d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_content
+    - node.type.projects
+    - paragraphs.paragraphs_type.content_block
+  module:
+    - entity_reference_revisions
+id: node.projects.field_body_content
+field_name: field_body_content
+entity_type: node
+bundle: projects
+label: 'Body Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      content_block: content_block
+    target_bundles_drag_drop:
+      content_block:
+        enabled: true
+        weight: 4
+      masonry_grid:
+        weight: 5
+        enabled: false
+      text_block:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions
