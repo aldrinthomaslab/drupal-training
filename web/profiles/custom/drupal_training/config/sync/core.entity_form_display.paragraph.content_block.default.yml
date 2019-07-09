@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.content_block.field_additional_contents
     - field.field.paragraph.content_block.field_content_body
     - field.field.paragraph.content_block.field_content_image
     - field.field.paragraph.content_block.field_content_link
@@ -14,12 +15,25 @@ dependencies:
   module:
     - image
     - link
+    - paragraphs
     - text
 id: paragraph.content_block.default
 targetEntityType: paragraph
 bundle: content_block
 mode: default
 content:
+  field_additional_contents:
+    type: entity_reference_paragraphs
+    weight: 7
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
   field_content_body:
     weight: 6
     settings:

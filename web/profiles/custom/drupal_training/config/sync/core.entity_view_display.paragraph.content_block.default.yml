@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.content_block.field_additional_contents
     - field.field.paragraph.content_block.field_content_body
     - field.field.paragraph.content_block.field_content_image
     - field.field.paragraph.content_block.field_content_link
@@ -12,6 +13,7 @@ dependencies:
     - paragraphs.paragraphs_type.content_block
     - responsive_image.styles.responsive_long_image
   module:
+    - entity_reference_revisions
     - link
     - responsive_image
     - text
@@ -20,6 +22,15 @@ targetEntityType: paragraph
 bundle: content_block
 mode: default
 content:
+  field_additional_contents:
+    type: entity_reference_revisions_entity_view
+    weight: 7
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
   field_content_body:
     weight: 6
     label: above
