@@ -5,11 +5,13 @@ dependencies:
   config:
     - core.entity_view_mode.node.project_hero
     - field.field.node.projects.field_hero_image
+    - field.field.node.projects.field_introduction
     - field.field.node.projects.field_subtitle
     - node.type.projects
     - responsive_image.styles.hero_responsive_image
   module:
     - responsive_image
+    - text
     - user
 id: node.projects.project_hero
 targetEntityType: node
@@ -25,9 +27,16 @@ content:
       responsive_image_style: hero_responsive_image
       image_link: ''
     third_party_settings: {  }
+  field_introduction:
+    type: text_default
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   field_subtitle:
     type: basic_string
-    weight: 2
+    weight: 1
     region: content
     label: hidden
     settings: {  }
