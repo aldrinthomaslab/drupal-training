@@ -1,11 +1,13 @@
 <?php
+function nova_theme_suggestions_responsive_image_alter(array &$suggestions, array $variables) {
+	$node = \Drupal::routeMatch()->getParameter('node');
 
-function nova_theme_suggestions_field_alter(array &$suggestions, array $variables) {
-	if (!empty($variables['element']['#view_mode']) && 
-	$variables['element']['#view_mode'] === 'full' && 
-	$variables['element']['#bundle'] === 'news' &&
-	$variables['element']['#field_name'] === 'body') {
-		$suggestions[] = 'field__node__body__news__full';
+	if (!empty($variables['responsive_image_style_id'])) {
+		$suggestions[] = 'responsive_image__' . $variables['responsive_image_style_id'];
+		
+		if ($node) {
+			$suggestions[] = 'responsive_image__' . $node->getType() . '__' . $variables['responsive_image_style_id'];	
+		}
 	}
 }
 
@@ -15,22 +17,4 @@ function nova_theme_suggestions_page_alter(array &$suggestions, array $variables
 	if ($node) {
     $suggestions[] = 'page__node__' . $node->getType();
   }
-}
-
-function nova_preprocess_field(&$variables) {
-	# Images with Cover Class
-	if ($variables['element']['#field_name'] === 'field_hero_image' || 
-	$variables['element']['#field_name'] === 'field_content_image') {
-		$variables['items'][0]['content']['#item_attributes']['class'][] = 'cover';
-
-		if ($variables['element']['#field_name'] === 'field_hero_image') {
-			$variables['items'][0]['content']['#item_attributes']['class'][] = 'content-block__content__bg';
-			$variables['items'][0]['content']['#item_attributes']['class'][] = 'lazyloaded';
-		}
-	}
-	
-	# Content Link Class 
-	if ($variables['element']['#field_name'] === 'field_content_link') {
-		$variables['items'][0]['content']['#options']['attributes']['class'][] = 'content-block__button button';
-	}
 }
