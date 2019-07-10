@@ -1,6 +1,6 @@
 <?php
 function nova_theme_suggestions_responsive_image_alter(array &$suggestions, array $variables) {
-	if ($variables['responsive_image_style_id'] === 'hero_responsive_image') {
+	if (!empty($variables['responsive_image_style_id'])) {
 		$suggestions[] = 'responsive_image__' . $variables['responsive_image_style_id'];
 	}
 }
