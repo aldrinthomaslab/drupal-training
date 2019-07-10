@@ -6,7 +6,7 @@ function nova_theme_suggestions_responsive_image_alter(array &$suggestions, arra
 		$suggestions[] = 'responsive_image__' . $variables['responsive_image_style_id'];
 		
 		if ($node) {
-			$suggestions[] = 'responsive_image__' . $node . '__' . $variables['responsive_image_style_id'];	
+			$suggestions[] = 'responsive_image__' . $node->getType() . '__' . $variables['responsive_image_style_id'];	
 		}
 	}
 }
