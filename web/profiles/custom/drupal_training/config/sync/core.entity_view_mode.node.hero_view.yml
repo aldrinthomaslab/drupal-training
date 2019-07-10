@@ -1,0 +1,10 @@
+uuid: 6f4df053-b370-4f19-a003-789f20fcd2d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.hero_view
+label: 'Hero View'
+targetEntityType: node
+cache: true

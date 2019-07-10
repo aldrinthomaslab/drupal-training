@@ -1,0 +1,38 @@
+uuid: 7232f7d2-2a95-49ae-a71c-89e9796678fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_image
+    - node.type.news
+  module:
+    - image
+id: node.news.field_hero_image
+field_name: field_hero_image
+entity_type: node
+bundle: news
+label: 'Hero Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '10 MB'
+  max_resolution: ''
+  min_resolution: 800x600
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 3db30b51-c41d-4504-bf2b-08eb8ea2a4de
+    alt: ''
+    title: ''
+    width: 1500
+    height: 844
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

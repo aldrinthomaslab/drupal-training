@@ -1,0 +1,21 @@
+/* This CSS resource incorporates links to font software which is the
+   valuable copyrighted property of Type Network, Inc. and/or their
+   suppliers. You may not attempt to copy, install, redistribute,
+   convert, modify or reverse engineer this font software. Please
+   contact Type Network with any questions: www.typenetwork.com */
+
+
+	
+@font-face {
+	font-family: "Miller Ban Rom";
+	font-display: Auto;
+	font-weight: Normal;
+	font-style: Normal;
+	
+	src: url("//cloud.typenetwork.com/projectLicenseWeb/9860/fontfile/eot/?e569530d257ff3bdce77936e52ee788b4fbb0bad");
+        src: url("//cloud.typenetwork.com/projectLicenseWeb/9860/fontfile/eot/?e569530d257ff3bdce77936e52ee788b4fbb0bad#iefix") format("embedded-opentype"),
+             url("//cloud.typenetwork.com/projectLicenseWeb/9860/fontfile/woff2/?e569530d257ff3bdce77936e52ee788b4fbb0bad") format("woff2"),
+             url("//cloud.typenetwork.com/projectLicenseWeb/9860/fontfile/woff/?e569530d257ff3bdce77936e52ee788b4fbb0bad") format("woff");
+
+}
+

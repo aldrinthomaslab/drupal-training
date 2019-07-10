@@ -11,8 +11,7 @@ ctdev:
 nova:
   root: /var/www/docroot
   uri: http://nova.al.drupal-training.ctdev
-  # This section is for setting command-specific options. This part 
-  # can be omitted on later drush versions.
+  # This section is for setting command-specific options.
   command:
     site:
       install:

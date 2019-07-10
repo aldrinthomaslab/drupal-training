@@ -1,0 +1,46 @@
+uuid: dc35efaf-8d5b-4214-8051-13c8ec36454d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.hero_view
+    - field.field.node.news.body
+    - field.field.node.news.field_category
+    - field.field.node.news.field_hero_image
+    - node.type.news
+    - responsive_image.styles.hero_responsive_image
+  module:
+    - responsive_image
+    - text
+    - user
+id: node.news.hero_view
+targetEntityType: node
+bundle: news
+mode: hero_view
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_category:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_hero_image:
+    type: responsive_image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      responsive_image_style: hero_responsive_image
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  links: true

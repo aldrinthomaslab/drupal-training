@@ -1,0 +1,33 @@
+uuid: d191f1a7-78cf-418f-906d-4ace0109004c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.hero_banner
+  module:
+    - node
+    - views
+  theme:
+    - nova
+id: views_block__hero_banner_block_1
+theme: nova
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:hero_banner-block_1'
+settings:
+  id: 'views_block:hero_banner-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      news: news
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
