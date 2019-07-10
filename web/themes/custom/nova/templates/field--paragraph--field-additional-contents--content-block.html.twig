@@ -39,10 +39,10 @@
 #}
 {%
   set classes = [
-    'content-block__specification',
-    'specification', 
-    'animated', 
-    'fadeInUp'
+    'field',
+    'field--name-' ~ field_name|clean_class,
+    'field--type-' ~ field_type|clean_class,
+    'field--label-' ~ label_display,
   ]
 %}
 {%
@@ -51,15 +51,10 @@
     label_display == 'visually_hidden' ? 'visually-hidden',
   ]
 %}
-{% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
-    {% block content %}
-      <span class="content-block__specification__text specification__text">
-        {{ content.field_specification_title }}
-      </span>
-      <span class="content-block__specification__description specification__description">
-        {{ content.field_specification_description }}
-      </span>
-    {% endblock %}
-  </div>
-{% endblock paragraph %}
+<div>
+  {% for item in items %}
+    <div{{ item.attributes.addClass('field__item') }}>
+      {{ item.content }}
+    </div>
+  {% endfor %}
+</div>
