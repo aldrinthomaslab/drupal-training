@@ -1,0 +1,9 @@
+uuid: be24d74c-fb4a-4c12-8014-545c7fc39371
+langcode: en
+status: true
+dependencies: {  }
+id: simple_text_content
+label: 'Simple Text Content'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }
