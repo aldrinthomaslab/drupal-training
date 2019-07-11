@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_body_content
     - node.type.news
+    - paragraphs.paragraphs_type.masonry_grid
     - paragraphs.paragraphs_type.text_block
   module:
     - entity_reference_revisions
@@ -24,8 +25,12 @@ settings:
     negate: 0
     target_bundles:
       text_block: text_block
+      masonry_grid: masonry_grid
     target_bundles_drag_drop:
       text_block:
         enabled: true
         weight: 2
+      masonry_grid:
+        enabled: true
+        weight: 3
 field_type: entity_reference_revisions
