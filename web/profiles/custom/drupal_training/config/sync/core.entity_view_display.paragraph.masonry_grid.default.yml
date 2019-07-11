@@ -3,23 +3,22 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.masonry_grid.field_grid_images
+    - field.field.paragraph.masonry_grid.field_additional_contents
     - paragraphs.paragraphs_type.masonry_grid
-    - responsive_image.styles.masonry_grid_responsive
   module:
-    - responsive_image
+    - entity_reference_revisions
 id: paragraph.masonry_grid.default
 targetEntityType: paragraph
 bundle: masonry_grid
 mode: default
 content:
-  field_grid_images:
+  field_additional_contents:
     weight: 0
     label: hidden
     settings:
-      responsive_image_style: masonry_grid_responsive
-      image_link: ''
+      view_mode: default
+      link: ''
     third_party_settings: {  }
-    type: responsive_image
+    type: entity_reference_revisions_entity_view
     region: content
 hidden: {  }

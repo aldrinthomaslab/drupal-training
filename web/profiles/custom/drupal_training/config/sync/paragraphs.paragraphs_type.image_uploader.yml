@@ -1,0 +1,9 @@
+uuid: 159ba58f-2954-459b-a328-36925eac75ad
+langcode: en
+status: true
+dependencies: {  }
+id: image_uploader
+label: 'Image Uploader'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }
