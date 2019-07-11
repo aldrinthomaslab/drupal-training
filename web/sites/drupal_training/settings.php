@@ -778,7 +778,7 @@ $settings['entity_update_backup'] = TRUE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'al_drupal_training',
+  'database' => 'nova_al_drupal_training',
   'username' => 'drupal',
   'password' => 'drupal',
   'prefix' => '',
