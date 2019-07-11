@@ -1,0 +1,49 @@
+uuid: b5ad3159-980d-478b-94cb-226693b4da96
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.simple_content
+  module:
+    - ckeditor
+format: simple_content
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
+            - '-'
+            - Styles
+            - '-'
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+  plugins:
+    stylescombo:
+      styles: "h1|Heading 1\r\nh2|Heading 2\r\nh3|Heading 3\r\nh4|Heading 4\r\nh5|Heading 5\r\nh6|Heading 6"
+    language:
+      language_list: un
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null
