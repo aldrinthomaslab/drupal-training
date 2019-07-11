@@ -1,0 +1,45 @@
+uuid: ac8d4728-f407-40d4-a1c6-2e52aceb0324
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.project_hero
+    - field.field.node.projects.body
+    - field.field.node.projects.field_hero_image
+    - field.field.node.projects.field_subtitle
+    - node.type.projects
+    - responsive_image.styles.hero_responsive_image
+  module:
+    - responsive_image
+    - text
+    - user
+id: node.projects.project_hero
+targetEntityType: node
+bundle: projects
+mode: project_hero
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_hero_image:
+    type: responsive_image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      responsive_image_style: hero_responsive_image
+      image_link: ''
+    third_party_settings: {  }
+  field_subtitle:
+    type: basic_string
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  links: true

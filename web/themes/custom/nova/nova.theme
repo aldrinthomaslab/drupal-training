@@ -1,7 +1,13 @@
 <?php
 function nova_theme_suggestions_responsive_image_alter(array &$suggestions, array $variables) {
+	$node = \Drupal::routeMatch()->getParameter('node');
+
 	if (!empty($variables['responsive_image_style_id'])) {
 		$suggestions[] = 'responsive_image__' . $variables['responsive_image_style_id'];
+		
+		if ($node) {
+			$suggestions[] = 'responsive_image__' . $node->getType() . '__' . $variables['responsive_image_style_id'];	
+		}
 	}
 }
 

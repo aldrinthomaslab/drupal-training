@@ -82,6 +82,7 @@
 %}
 {{ attach_library('classy/node') }}
 {{ attach_library('nova/herobanner') }}
+
 <section class="hero module hero--dark image-container">
   <div class="hero__image spinner-alto">
       {{ content.field_hero_image }}
@@ -90,16 +91,23 @@
     <div class="hero__wrap">
       <div class="hero__content animated fadeInDown">
         <div class="{{ content.field_category.class }} hero__label hero__label--top label">
-            {{ content.field_category }}
+          {{ content.field_subtitle }}
         </div>
         <div>
           <h1>{{ label }}</h1>
         </div>
         <div class="hero__description">
-          {{ content.field_introduction }}
+          {{ content.body }}
         </div>
+        <a class="hero__button button">
+          PROJECT SPECIFICATIONS
+        </a>
+        <a class="hero__button button">
+          LEASING INQUIRIES
+        </a>
         <div class="hero__sub-content">
-          POSTED ON<br> {{ date }}
+          <svg class="o-icon o-icon--arrow-down-long" />
+          Scroll down to explore more about {{ label }}                    
         </div>
       </div>
     </div>

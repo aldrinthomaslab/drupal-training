@@ -1,0 +1,25 @@
+uuid: edb19a2f-c175-4568-a96d-6ef8797b509b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.projects.body
+    - field.field.node.projects.field_hero_image
+    - field.field.node.projects.field_subtitle
+    - node.type.projects
+  module:
+    - user
+id: node.projects.default
+targetEntityType: node
+bundle: projects
+mode: default
+content:
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_hero_image: true
+  field_subtitle: true
