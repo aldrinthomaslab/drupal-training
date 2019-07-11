@@ -72,27 +72,11 @@
 #}
 
 {{ attach_library('nova/herobanner') }}
-<section class="hero module hero--dark image-container">
-  <div class="hero__image spinner-alto">
-      {{ content.field_hero_image }}
-  </div>
-  <div class="hero__container module__container">
-    <div class="hero__wrap">
-      <div class="hero__content animated fadeInDown">
-        <div class="{{ content.field_category.class }} hero__label hero__label--top label">
-            {{ content.field_category }}
-        </div>
-        <div>
-          <h1>{{ label }}</h1>
-        </div>
-        <div class="hero__description">
-          {{ content.field_introduction }}
-        </div>
-        <div class="hero__sub-content">
-          POSTED ON<br> {{ date }}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{% include "@nova/content/herobanner.twig" with {
+  category: content.field_category,
+  body: content.field_introduction,
+  posted_date: date,
+  image: content.field_hero_image,
+  title: label
+} only %}
 {{ content.field_body_content }}
