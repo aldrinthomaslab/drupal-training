@@ -1,0 +1,15 @@
+uuid: 4076081a-d88f-4880-94e2-8b0f3eede1d8
+langcode: en
+status: true
+dependencies: {  }
+name: image_portrait_long_desktop
+label: 'Image Portrait Long Desktop'
+effects:
+  7f22e0d4-6f80-4398-8268-386ad0034c39:
+    uuid: 7f22e0d4-6f80-4398-8268-386ad0034c39
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1440
+      height: 1920
+      anchor: center-center

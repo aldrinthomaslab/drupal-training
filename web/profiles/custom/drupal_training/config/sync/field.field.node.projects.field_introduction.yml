@@ -1,22 +1,21 @@
-uuid: fb4b43af-f46f-49ac-851a-b333f94a8204
+uuid: 0555f58d-b984-413d-926a-f73b6f4a8be0
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.body
+    - field.storage.node.field_introduction
     - node.type.projects
   module:
     - text
-id: node.projects.body
-field_name: body
+id: node.projects.field_introduction
+field_name: field_introduction
 entity_type: node
 bundle: projects
-label: Body
+label: Introduction
 description: ''
 required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
-settings:
-  display_summary: true
-field_type: text_with_summary
+settings: {  }
+field_type: text_long

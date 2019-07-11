@@ -1,0 +1,34 @@
+uuid: e8b0c2ea-e603-4f1b-8f6b-de3c212ba749
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.specification_block.field_specification_description
+    - field.field.paragraph.specification_block.field_specification_title
+    - paragraphs.paragraphs_type.specification_block
+  module:
+    - text
+id: paragraph.specification_block.default
+targetEntityType: paragraph
+bundle: specification_block
+mode: default
+content:
+  field_specification_description:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_specification_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

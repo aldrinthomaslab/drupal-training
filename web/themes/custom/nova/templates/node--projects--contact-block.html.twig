@@ -81,35 +81,37 @@
   ]
 %}
 {{ attach_library('classy/node') }}
-{{ attach_library('nova/herobanner') }}
 
-<section class="hero module hero--dark image-container">
-  <div class="hero__image spinner-alto">
-      {{ content.field_hero_image }}
-  </div>
-  <div class="hero__container module__container">
-    <div class="hero__wrap">
-      <div class="hero__content animated fadeInDown">
-        <div class="{{ content.field_category.class }} hero__label hero__label--top label">
-          {{ content.field_subtitle }}
-        </div>
-        <div>
-          <h1>{{ label }}</h1>
-        </div>
-        <div class="hero__description">
-          {{ content.field_introduction }}
-        </div>
-        <a class="hero__button button">
-          PROJECT SPECIFICATIONS
-        </a>
-        <a class="hero__button button">
-          LEASING INQUIRIES
-        </a>
-        <div class="hero__sub-content">
-          <svg class="o-icon o-icon--arrow-down-long" />
-          Scroll down to explore more about {{ label }}                    
+<div class="main project">
+  <section class="content-block module">
+    <div class="content-block__container module__container">
+      <div class="content-block__media spinner-alto animated fadeInUp">
+        <picture>
+          {{ content.field_hero_image }}
+        </picture>
+      </div>
+      <div class="content-block__content animated fadeInUp">
+        <div class="content-block__content__container">
+          <div class="hero__content animated fadeInDown">
+            <div class="content-block__header">
+              <span class="content-block__label label">
+                {{ content.field_contact_subtitle }}  
+              </span>
+              <h2 class="content-block__heading heading">
+                {{ content.field_contact_title }}
+              </h2>
+            </div>
+            <div class="content-block__main">
+              <div class="content-block__text">
+                <p>{{ content.field_contact_body }}</p>
+              </div>
+            </div>
+            <a class="content-block__button button">
+              Contact Us
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>

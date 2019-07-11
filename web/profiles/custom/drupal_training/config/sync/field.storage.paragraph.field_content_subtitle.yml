@@ -1,12 +1,12 @@
-uuid: a437ac8e-0a2d-40f4-acf6-661a186e469f
+uuid: 91e16c18-0511-4a56-b98c-df5595d12a03
 langcode: en
 status: true
 dependencies:
   module:
-    - node
-id: node.field_subtitle
-field_name: field_subtitle
-entity_type: node
+    - paragraphs
+id: paragraph.field_content_subtitle
+field_name: field_content_subtitle
+entity_type: paragraph
 type: string
 settings:
   max_length: 255

@@ -3,23 +3,30 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.projects.body
+    - field.field.node.projects.field_body_content
     - field.field.node.projects.field_hero_image
+    - field.field.node.projects.field_introduction
     - field.field.node.projects.field_subtitle
     - node.type.projects
   module:
+    - entity_reference_revisions
     - user
 id: node.projects.default
 targetEntityType: node
 bundle: projects
 mode: default
 content:
-  links:
+  field_body_content:
+    type: entity_reference_revisions_entity_view
     weight: 0
     region: content
-    settings: {  }
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
 hidden:
-  body: true
   field_hero_image: true
+  field_introduction: true
   field_subtitle: true
+  links: true

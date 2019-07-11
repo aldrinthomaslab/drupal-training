@@ -1,0 +1,15 @@
+uuid: cfc0a520-160b-47b6-83b5-035c1b33fac3
+langcode: en
+status: true
+dependencies: {  }
+name: image_portrait_long_mobile
+label: 'Image Portrait Long Mobile'
+effects:
+  babc3087-dae9-40a0-90d6-edbd27de7600:
+    uuid: babc3087-dae9-40a0-90d6-edbd27de7600
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 750
+      height: 1000
+      anchor: center-center

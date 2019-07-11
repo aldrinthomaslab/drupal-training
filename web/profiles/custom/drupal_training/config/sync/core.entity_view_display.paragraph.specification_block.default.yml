@@ -1,0 +1,31 @@
+uuid: 6eb80333-891a-4876-81f9-31312185a981
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.specification_block.field_specification_description
+    - field.field.paragraph.specification_block.field_specification_title
+    - paragraphs.paragraphs_type.specification_block
+  module:
+    - text
+id: paragraph.specification_block.default
+targetEntityType: paragraph
+bundle: specification_block
+mode: default
+content:
+  field_specification_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_specification_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }
