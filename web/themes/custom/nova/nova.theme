@@ -11,10 +11,20 @@ function nova_theme_suggestions_responsive_image_alter(array &$suggestions, arra
 	}
 }
 
-function nova_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+function nova_preprocess_page(array &$variables) {
 	$node = \Drupal::routeMatch()->getParameter('node');
 
 	if ($node) {
-    $suggestions[] = 'page__node__' . $node->getType();
-  }
+		switch ($node->getType()) {
+			case 'news':
+				$variables['page_type'] = 'post';
+				break;
+			case 'projects':
+				$variables['page_type'] = 'project';
+				break;
+			default:
+				$variables['page_type'] = '';
+				break;
+		}
+	}
 }
