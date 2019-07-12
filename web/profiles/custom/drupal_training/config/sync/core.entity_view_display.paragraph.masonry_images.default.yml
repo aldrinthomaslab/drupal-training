@@ -1,0 +1,25 @@
+uuid: 3a050e63-03b9-4290-aa91-1a36f814f48e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.masonry_images.field_content_image
+    - paragraphs.paragraphs_type.masonry_images
+    - responsive_image.styles.masonry_grid_responsive
+  module:
+    - responsive_image
+id: paragraph.masonry_images.default
+targetEntityType: paragraph
+bundle: masonry_images
+mode: default
+content:
+  field_content_image:
+    weight: 0
+    label: hidden
+    settings:
+      responsive_image_style: masonry_grid_responsive
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+hidden: {  }

@@ -3,23 +3,26 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.masonry_grid.field_grid_images
-    - image.style.thumbnail
+    - field.field.paragraph.masonry_grid.field_additional_contents
     - paragraphs.paragraphs_type.masonry_grid
   module:
-    - image
+    - paragraphs
 id: paragraph.masonry_grid.default
 targetEntityType: paragraph
 bundle: masonry_grid
 mode: default
 content:
-  field_grid_images:
+  field_additional_contents:
     weight: 0
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: image_uploader
     third_party_settings: {  }
-    type: image_image
+    type: entity_reference_paragraphs
     region: content
 hidden:
   created: true

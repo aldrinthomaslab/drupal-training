@@ -1,6 +1,6 @@
 uuid: b3dbfc32-0e91-481e-b1a7-38c64a9fa91d
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - nova

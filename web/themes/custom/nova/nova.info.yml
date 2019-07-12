@@ -5,3 +5,7 @@ package: Custom
 core: 8.x
 libraries:
   - nova/base
+component-libraries:
+  nova:
+    paths:
+      - components

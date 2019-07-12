@@ -19,4 +19,5 @@ hidden:
   field_body_content: true
   field_hero_image: true
   field_introduction: true
+  field_subtitle: true
   links: true

@@ -1,0 +1,57 @@
+uuid: eb9a74d0-c76b-4bd5-aa0a-583096b22848
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.projects.field_body_content
+    - field.field.node.projects.field_hero_image
+    - field.field.node.projects.field_introduction
+    - field.field.node.projects.field_subtitle
+    - node.type.projects
+    - responsive_image.styles.hero_responsive_image
+  module:
+    - entity_reference_revisions
+    - responsive_image
+    - text
+    - user
+id: node.projects.full
+targetEntityType: node
+bundle: projects
+mode: full
+content:
+  field_body_content:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_hero_image:
+    type: responsive_image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      responsive_image_style: hero_responsive_image
+      image_link: ''
+    third_party_settings: {  }
+  field_introduction:
+    type: text_default
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_subtitle:
+    type: string
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  links: true
