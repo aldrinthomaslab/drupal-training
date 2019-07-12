@@ -12,10 +12,11 @@ dependencies:
     - field.field.paragraph.content_block.field_place_content_right
     - field.field.paragraph.content_block.field_set_as_featured
     - paragraphs.paragraphs_type.content_block
+    - responsive_image.styles.responsive_long_image
   module:
     - entity_reference_revisions
-    - image
     - link
+    - responsive_image
     - text
 id: paragraph.content_block.default
 targetEntityType: paragraph
@@ -40,12 +41,12 @@ content:
     region: content
   field_content_image:
     weight: 9
-    label: above
+    label: hidden
     settings:
-      image_style: ''
+      responsive_image_style: responsive_long_image
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: content
   field_content_link:
     weight: 4
