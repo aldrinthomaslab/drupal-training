@@ -31,16 +31,9 @@ function nova_preprocess_page(array &$variables) {
 
 function nova_theme_suggestions_paragraph_alter(array &$suggestions, array $variables) {
 	$parent = $variables['elements']['#paragraph']->getParentEntity();
-  
-  if ($parent->bundle() === 'masonry_grid') {
-  	$field_name = $variables['elements']['#paragraph']->bundle();
-  	switch ($field_name) {
-  		case 'masonry_images':
-  		case 'simple_text_content':
-  			$suggestions[] = 'paragraph__masonry_grid__' . $field_name;
-  			break;
-  		default:
-  			break;
-  	}
+  $field_name = $variables['elements']['#paragraph']->bundle();
+
+  if ($parent->bundle() === 'masonry_grid' && $field_name === 'simple_text_content') {
+  	$suggestions[] = 'paragraph__masonry_grid__' . $field_name;
   }
 }
