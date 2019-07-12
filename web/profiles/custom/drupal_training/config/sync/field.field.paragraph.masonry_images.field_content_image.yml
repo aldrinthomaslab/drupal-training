@@ -1,20 +1,20 @@
-uuid: dfe3cb39-8c4d-4106-9453-5b61d41ab338
+uuid: f38e2c79-9ebb-444d-ad03-15394adf594e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_grid_images
-    - paragraphs.paragraphs_type.masonry_grid
+    - field.storage.paragraph.field_content_image
+    - paragraphs.paragraphs_type.masonry_images
   module:
     - image
-id: paragraph.masonry_grid.field_grid_images
-field_name: field_grid_images
+id: paragraph.masonry_images.field_content_image
+field_name: field_content_image
 entity_type: paragraph
-bundle: masonry_grid
-label: 'Grid Images'
+bundle: masonry_images
+label: Images
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -22,7 +22,7 @@ settings:
   file_extensions: 'png gif jpg jpeg'
   max_filesize: '10 MB'
   max_resolution: ''
-  min_resolution: 500x300
+  min_resolution: 800x600
   alt_field: true
   alt_field_required: true
   title_field: false

@@ -1,0 +1,51 @@
+uuid: 29531391-7dc2-46d5-a645-dcc34a216d97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_additional_contents
+    - paragraphs.paragraphs_type.masonry_grid
+    - paragraphs.paragraphs_type.masonry_images
+    - paragraphs.paragraphs_type.simple_text_content
+  module:
+    - entity_reference_revisions
+id: paragraph.masonry_grid.field_additional_contents
+field_name: field_additional_contents
+entity_type: paragraph
+bundle: masonry_grid
+label: 'Masonry Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      masonry_images: masonry_images
+      simple_text_content: simple_text_content
+    target_bundles_drag_drop:
+      image_uploader:
+        weight: 7
+        enabled: false
+      masonry_images:
+        enabled: true
+        weight: 8
+      content_block:
+        weight: 8
+        enabled: false
+      masonry_grid:
+        weight: 9
+        enabled: false
+      simple_text_content:
+        enabled: true
+        weight: 10
+      specification_block:
+        weight: 11
+        enabled: false
+      text_block:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions
