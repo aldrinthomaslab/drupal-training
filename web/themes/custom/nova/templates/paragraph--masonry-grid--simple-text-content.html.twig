@@ -1,7 +1,8 @@
 {% block paragraph %}
   <div class="masonry-grid__content animated fadeInDown">
 		{% block content %}
-      {{ content }}
+      <h3>{{ content.field_content_title }}</h3>
+      {{ content.field_content }}
     {% endblock %}
 	</div>
 {% endblock paragraph %}
