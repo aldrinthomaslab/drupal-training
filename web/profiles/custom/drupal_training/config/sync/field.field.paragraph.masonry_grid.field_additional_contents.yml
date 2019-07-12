@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_additional_contents
-    - paragraphs.paragraphs_type.image_uploader
     - paragraphs.paragraphs_type.masonry_grid
+    - paragraphs.paragraphs_type.masonry_images
     - paragraphs.paragraphs_type.simple_text_content
   module:
     - entity_reference_revisions
@@ -24,12 +24,15 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      image_uploader: image_uploader
+      masonry_images: masonry_images
       simple_text_content: simple_text_content
     target_bundles_drag_drop:
       image_uploader:
-        enabled: true
         weight: 7
+        enabled: false
+      masonry_images:
+        enabled: true
+        weight: 8
       content_block:
         weight: 8
         enabled: false

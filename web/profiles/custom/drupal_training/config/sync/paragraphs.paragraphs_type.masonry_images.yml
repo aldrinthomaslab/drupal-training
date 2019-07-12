@@ -1,0 +1,9 @@
+uuid: cc395da7-bcd8-4447-96a5-e560ae42548b
+langcode: en
+status: true
+dependencies: {  }
+id: masonry_images
+label: 'Masonry Images'
+icon_uuid: null
+description: 'Image Upload Paragraph for Masonry Grid.'
+behavior_plugins: {  }

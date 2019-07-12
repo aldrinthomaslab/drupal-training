@@ -1,17 +1,17 @@
-uuid: bf4887b4-b6c5-4225-859c-3f8fb082234c
+uuid: f38e2c79-9ebb-444d-ad03-15394adf594e
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_content_image
-    - paragraphs.paragraphs_type.image_uploader
+    - paragraphs.paragraphs_type.masonry_images
   module:
     - image
-id: paragraph.image_uploader.field_content_image
+id: paragraph.masonry_images.field_content_image
 field_name: field_content_image
 entity_type: paragraph
-bundle: image_uploader
-label: 'Content Image'
+bundle: masonry_images
+label: Images
 description: ''
 required: false
 translatable: true

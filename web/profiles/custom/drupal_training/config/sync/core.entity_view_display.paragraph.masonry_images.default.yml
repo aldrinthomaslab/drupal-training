@@ -1,16 +1,16 @@
-uuid: e2bf359f-132e-4061-8f8a-1cb990f00431
+uuid: 3a050e63-03b9-4290-aa91-1a36f814f48e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.image_uploader.field_content_image
-    - paragraphs.paragraphs_type.image_uploader
+    - field.field.paragraph.masonry_images.field_content_image
+    - paragraphs.paragraphs_type.masonry_images
     - responsive_image.styles.masonry_grid_responsive
   module:
     - responsive_image
-id: paragraph.image_uploader.default
+id: paragraph.masonry_images.default
 targetEntityType: paragraph
-bundle: image_uploader
+bundle: masonry_images
 mode: default
 content:
   field_content_image:
