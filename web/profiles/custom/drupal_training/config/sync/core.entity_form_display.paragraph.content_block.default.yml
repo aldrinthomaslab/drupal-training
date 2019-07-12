@@ -44,7 +44,7 @@ content:
     type: text_textarea
     region: content
   field_content_image:
-    weight: 3
+    weight: 8
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
