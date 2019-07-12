@@ -1,18 +1,18 @@
 <section class="hero module hero--dark image-container">
   <div class="hero__image spinner-alto">
-      {{ content.field_hero_image }}
+      {{ image }}
   </div>
   <div class="hero__container module__container">
     <div class="hero__wrap">
       <div class="hero__content animated fadeInDown">
         <div class="{{ content.field_category.class }} hero__label hero__label--top label">
-          {{ content.field_subtitle }}
+          {{ subtitle }}
         </div>
         <div>
-          <h1>{{ label }}</h1>
+          <h1>{{ title }}</h1>
         </div>
         <div class="hero__description">
-          {{ content.field_introduction }}
+          {{ body }}
         </div>
         <a class="hero__button button">
           PROJECT SPECIFICATIONS
@@ -22,7 +22,7 @@
         </a>
         <div class="hero__sub-content">
           <svg class="o-icon o-icon--arrow-down-long" />
-          Scroll down to explore more about {{ label }}                    
+          Scroll down to explore more about {{ title }}                    
         </div>
       </div>
     </div>
