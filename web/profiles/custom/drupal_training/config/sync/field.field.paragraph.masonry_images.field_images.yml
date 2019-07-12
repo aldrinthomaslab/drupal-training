@@ -1,26 +1,26 @@
-uuid: f38e2c79-9ebb-444d-ad03-15394adf594e
+uuid: 4cbe620c-9f07-4cc1-b109-536dcc7359a6
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_content_image
+    - field.storage.paragraph.field_images
     - paragraphs.paragraphs_type.masonry_images
   module:
     - image
-id: paragraph.masonry_images.field_content_image
-field_name: field_content_image
+id: paragraph.masonry_images.field_images
+field_name: field_images
 entity_type: paragraph
 bundle: masonry_images
 label: Images
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: '10 MB'
+  max_filesize: '10 MbB'
   max_resolution: ''
   min_resolution: 800x600
   alt_field: true

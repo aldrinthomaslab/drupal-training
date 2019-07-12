@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.masonry_images.field_content_image
+    - field.field.paragraph.masonry_images.field_images
     - paragraphs.paragraphs_type.masonry_images
     - responsive_image.styles.masonry_grid_responsive
   module:
@@ -13,9 +13,9 @@ targetEntityType: paragraph
 bundle: masonry_images
 mode: default
 content:
-  field_content_image:
+  field_images:
     weight: 0
-    label: hidden
+    label: above
     settings:
       responsive_image_style: masonry_grid_responsive
       image_link: ''

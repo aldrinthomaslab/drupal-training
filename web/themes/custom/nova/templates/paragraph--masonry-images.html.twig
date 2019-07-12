@@ -40,19 +40,19 @@
 {% block paragraph %}
   {% block content %}
     <div class="masonry-grid__items primary">
-      {% for item in content.field_content_image['#items'] %}
+      {% for item in content.field_images['#items'] %}
         {% if loop.index is odd  %}
           <div class="masonry-grid__item spinner animated fadeInUp">
-            {{ content.field_content_image[loop.index0] }}
+            {{ content.field_images[loop.index0] }}
           </div>
         {% endif %}
       {% endfor %}
     </div>
     <div class="masonry-grid__items secondary">
-     {% for item in content.field_content_image['#items'] %}
+     {% for item in content.field_images['#items'] %}
         {% if loop.index is even  %}
           <div class="masonry-grid__item spinner animated fadeInUp">
-            {{ content.field_content_image[loop.index0] }}
+            {{ content.field_images[loop.index0] }}
           </div>
         {% endif %}
       {% endfor %}

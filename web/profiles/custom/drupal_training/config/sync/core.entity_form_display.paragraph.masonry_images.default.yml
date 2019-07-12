@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.masonry_images.field_content_image
+    - field.field.paragraph.masonry_images.field_images
     - image.style.thumbnail
     - paragraphs.paragraphs_type.masonry_images
   module:
@@ -13,7 +13,7 @@ targetEntityType: paragraph
 bundle: masonry_images
 mode: default
 content:
-  field_content_image:
+  field_images:
     weight: 0
     settings:
       progress_indicator: throbber
