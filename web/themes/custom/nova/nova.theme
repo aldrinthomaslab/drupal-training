@@ -35,7 +35,7 @@ function nova_theme_suggestions_paragraph_alter(array &$suggestions, array $vari
   if ($parent->bundle() === 'masonry_grid') {
   	$field_name = $variables['elements']['#paragraph']->bundle();
   	switch ($field_name) {
-  		case 'image_uploader':
+  		case 'masonry_images':
   		case 'simple_text_content':
   			$suggestions[] = 'paragraph__masonry_grid__' . $field_name;
   			break;
