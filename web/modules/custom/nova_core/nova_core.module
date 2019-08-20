@@ -1,0 +1,15 @@
+<?php
+use Drupal\Core\Form\FormStateInterface;
+use \Drupal\Core\Field\WidgetBase;
+
+function nova_core_field_widget_entity_reference_paragraphs_form_alter(&$element, FormStateInterface &$form_state, $context) {
+	if ($element['#paragraph_type'] === 'content_block') {
+  	$stateComposer = \Drupal::service('nova_services.export_spreadsheet');
+  	$featureSelector = sprintf(':input[name="field_body_content[%d][subform][field_set_as_featured][value]"]', $element['#delta']);
+
+  	$stateComposer->visible()
+  								->onChecked($featureSelector)
+  								->apply($element['subform']['field_additional_contents'])
+  								->clear();
+  }
+}
