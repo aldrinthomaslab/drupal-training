@@ -1,0 +1,5 @@
+name: Nova Services
+description: Simple services module for Nova Project
+package: Nova
+type: module
+core: 8.x

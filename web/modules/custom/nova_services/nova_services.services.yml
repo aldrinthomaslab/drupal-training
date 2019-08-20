@@ -1,0 +1,3 @@
+services:
+  nova_services.export_spreadsheet:
+    class: Drupal\nova_services\Services\FieldStateComposer
