@@ -99,9 +99,13 @@ class FieldStateComposer {
 		return $this;
 	}
 
+	/**
+	 * Clear currently composed state conditions
+	 */
 	public function clear() {
 		$this->fieldState = [];
 	}
+	
 	/**
 	 * Get current composed states.
 	 */
