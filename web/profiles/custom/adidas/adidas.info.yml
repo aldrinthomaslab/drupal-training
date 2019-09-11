@@ -1,0 +1,4 @@
+name: drupal_training
+type: profile
+description: 'Drupal profile for training.'
+core: 8.x
