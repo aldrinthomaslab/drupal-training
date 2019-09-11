@@ -7,3 +7,12 @@ ctdev:
       install:
         options:
           sites-subdir: 'drupal_training'
+
+adidas:
+  root: /var/www/docroot
+  uri: http://adidas.al.drupal-training.ctdev
+  command:
+    site:
+      install:
+        options:
+          sites-subdir: 'adidas'

@@ -56,3 +56,4 @@
  * @see https://www.drupal.org/documentation/install/multi-site
  */
 $sites['al.drupal-training.ctdev'] = 'drupal_training';
+$sites['adidas.al.drupal-training.ctdev'] = 'adidas';
