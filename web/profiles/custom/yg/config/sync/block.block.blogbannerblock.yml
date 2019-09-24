@@ -17,7 +17,7 @@ provider: null
 plugin: 'block_content:ddc3063a-d1a5-4f1b-bad1-932e212ab66d'
 settings:
   id: 'block_content:ddc3063a-d1a5-4f1b-bad1-932e212ab66d'
-  label: 'Blog Banner Block'
+  label: 'Our Blog'
   provider: block_content
   label_display: visible
   status: true
