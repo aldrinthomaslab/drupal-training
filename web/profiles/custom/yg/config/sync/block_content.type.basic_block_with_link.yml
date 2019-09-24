@@ -1,0 +1,8 @@
+uuid: b4dff9da-9c8b-4466-b9b5-00dc565de35f
+langcode: en
+status: true
+dependencies: {  }
+id: basic_block_with_link
+label: 'Basic Block with Link'
+revision: 0
+description: 'Basic block type with additional link field'

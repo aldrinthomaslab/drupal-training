@@ -1,0 +1,36 @@
+uuid: 1278d6d7-0f28-40a3-b1ab-f384fd68098a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic_block_with_link
+    - field.field.block_content.basic_block_with_link.body
+    - field.field.block_content.basic_block_with_link.field_content_link
+  module:
+    - link
+    - text
+id: block_content.basic_block_with_link.default
+targetEntityType: block_content
+bundle: basic_block_with_link
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_content_link:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }
