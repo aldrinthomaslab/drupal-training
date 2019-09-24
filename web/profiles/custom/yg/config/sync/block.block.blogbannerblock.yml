@@ -1,0 +1,34 @@
+uuid: eee189f3-1db6-494d-8424-477794cfddbf
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_image:ddc3063a-d1a5-4f1b-bad1-932e212ab66d'
+  module:
+    - block_content
+    - node
+  theme:
+    - bartik
+id: blogbannerblock
+theme: bartik
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:ddc3063a-d1a5-4f1b-bad1-932e212ab66d'
+settings:
+  id: 'block_content:ddc3063a-d1a5-4f1b-bad1-932e212ab66d'
+  label: 'Blog Banner Block'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      blog: blog
+      blog_main: blog_main
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
