@@ -1,0 +1,19 @@
+uuid: 302e8baf-0fcb-4f7f-b489-af06c7d9a5fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.blog_main
+  module:
+    - user
+id: node.blog_main.default
+targetEntityType: node
+bundle: blog_main
+mode: default
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
