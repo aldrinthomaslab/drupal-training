@@ -10,8 +10,8 @@ dependencies:
     - bartik
 id: socialmenu
 theme: bartik
-region: footer_fifth
-weight: 0
+region: footer_fourth
+weight: -5
 provider: null
 plugin: 'system_menu_block:social-menu'
 settings:
