@@ -1,18 +1,19 @@
-uuid: 09bc9c1c-298d-46b3-8abb-1ded3a0d8bf1
+uuid: f187e53d-fdb7-4b14-8d61-74fe5f237d67
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.blog.body
     - field.field.node.blog.field_content_image
     - node.type.blog
   module:
     - text
     - user
-id: node.blog.default
+id: node.blog.full
 targetEntityType: node
 bundle: blog
-mode: default
+mode: full
 content:
   body:
     label: hidden
