@@ -1,0 +1,25 @@
+uuid: 08259983-0f8a-4786-9664-8b5131be4aaa
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block_with_link:915d503e-d897-4676-97bf-d40bc70c0df1'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: buynowbanner
+theme: bartik
+region: featured_bottom_first
+weight: -8
+provider: null
+plugin: 'block_content:915d503e-d897-4676-97bf-d40bc70c0df1'
+settings:
+  id: 'block_content:915d503e-d897-4676-97bf-d40bc70c0df1'
+  label: 'Buy Now Banner'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
