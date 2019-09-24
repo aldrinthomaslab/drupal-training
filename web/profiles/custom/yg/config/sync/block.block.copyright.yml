@@ -1,0 +1,25 @@
+uuid: 35c4ea3d-3440-405c-8a1c-5c2c15267efa
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d8d902ad-2e0a-47a0-818c-06d50199f03e'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: copyright
+theme: bartik
+region: footer_fifth
+weight: 0
+provider: null
+plugin: 'block_content:d8d902ad-2e0a-47a0-818c-06d50199f03e'
+settings:
+  id: 'block_content:d8d902ad-2e0a-47a0-818c-06d50199f03e'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
