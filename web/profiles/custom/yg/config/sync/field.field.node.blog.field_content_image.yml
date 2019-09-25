@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_content_image
-    - media.type.image
+    - media.type.content_full_image
     - node.type.blog
 id: node.blog.field_content_image
 field_name: field_content_image
@@ -20,9 +20,9 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      image: image
+      content_full_image: content_full_image
     sort:
       field: _none
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: content_full_image
 field_type: entity_reference
