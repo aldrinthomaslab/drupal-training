@@ -1,0 +1,15 @@
+uuid: 13c077fe-e50d-4a04-af32-29178d86c3d5
+langcode: en
+status: true
+dependencies: {  }
+name: content_tile_thumbnail_tablet
+label: 'Content Tile Thumbnail Tablet'
+effects:
+  589916f4-7a3f-4a4e-aa79-fcae351ceca3:
+    uuid: 589916f4-7a3f-4a4e-aa79-fcae351ceca3
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 354
+      height: 140
+      anchor: center-center

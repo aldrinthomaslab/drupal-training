@@ -1,0 +1,15 @@
+uuid: 23687867-70c1-4e97-beac-7cebef5b563c
+langcode: en
+status: true
+dependencies: {  }
+name: content_tile_thumbnail_desktop
+label: 'Content Tile Thumbnail Desktop'
+effects:
+  459ad1d1-eaae-430a-ada5-684b6652ee67:
+    uuid: 459ad1d1-eaae-430a-ada5-684b6652ee67
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 555
+      height: 219
+      anchor: center-center

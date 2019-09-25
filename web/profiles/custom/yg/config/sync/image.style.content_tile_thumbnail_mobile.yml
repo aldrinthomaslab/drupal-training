@@ -1,0 +1,15 @@
+uuid: 47ef04fd-2cfd-41e9-9565-ae267e61fd87
+langcode: en
+status: true
+dependencies: {  }
+name: content_tile_thumbnail_mobile
+label: 'Content Tile Thumbnail Mobile'
+effects:
+  d0a9e728-ab7e-4b07-bcd3-2c370981156f:
+    uuid: d0a9e728-ab7e-4b07-bcd3-2c370981156f
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 290
+      height: 114
+      anchor: center-center
