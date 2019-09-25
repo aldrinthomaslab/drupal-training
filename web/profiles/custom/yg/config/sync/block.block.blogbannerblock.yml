@@ -6,7 +6,7 @@ dependencies:
     - 'block_content:banner_image:ddc3063a-d1a5-4f1b-bad1-932e212ab66d'
   module:
     - block_content
-    - node
+    - system
   theme:
     - bartik
 id: blogbannerblock
@@ -24,10 +24,8 @@ settings:
   info: ''
   view_mode: full
 visibility:
-  node_type:
-    id: node_type
-    bundles:
-      blog: blog
+  request_path:
+    id: request_path
+    pages: "/node/*\r\n/blog"
     negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
+    context_mapping: {  }
