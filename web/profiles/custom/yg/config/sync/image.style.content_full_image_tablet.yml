@@ -1,0 +1,15 @@
+uuid: 74f7a00d-6b71-4455-b543-91d1251c7f2b
+langcode: en
+status: true
+dependencies: {  }
+name: content_full_image_tablet
+label: 'Content Full Image Tablet'
+effects:
+  7fe863a7-b714-41ea-97ab-368973b49180:
+    uuid: 7fe863a7-b714-41ea-97ab-368973b49180
+    id: image_scale
+    weight: 1
+    data:
+      width: 476
+      height: null
+      upscale: true

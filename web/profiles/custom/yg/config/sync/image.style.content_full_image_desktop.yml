@@ -1,0 +1,15 @@
+uuid: 3db5f049-ecf7-425b-8098-0b73a312470d
+langcode: en
+status: true
+dependencies: {  }
+name: content_full_image_desktop
+label: 'Content Full Image Desktop'
+effects:
+  73d47b5e-d0dd-40e8-94c1-0919ae74eeb9:
+    uuid: 73d47b5e-d0dd-40e8-94c1-0919ae74eeb9
+    id: image_scale
+    weight: 1
+    data:
+      width: 777
+      height: null
+      upscale: true
