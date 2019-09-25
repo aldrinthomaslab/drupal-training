@@ -1,0 +1,11 @@
+uuid: 3727d6c4-0efc-4c1c-b34f-00a9fb3a5de6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bartik
+id: responsive_content_banner
+label: 'Responsive Content Banner'
+image_style_mappings: {  }
+breakpoint_group: bartik
+fallback_image_style: '_original image_'

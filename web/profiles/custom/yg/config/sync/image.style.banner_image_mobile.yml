@@ -1,0 +1,15 @@
+uuid: 3e4b7a2d-b299-4ef7-9696-ee1fb76c5436
+langcode: en
+status: true
+dependencies: {  }
+name: banner_image_mobile
+label: 'Banner Image Mobile'
+effects:
+  dc287600-6bd4-4cc2-9076-532812666fa5:
+    uuid: dc287600-6bd4-4cc2-9076-532812666fa5
+    id: image_scale
+    weight: 1
+    data:
+      width: 320
+      height: null
+      upscale: true

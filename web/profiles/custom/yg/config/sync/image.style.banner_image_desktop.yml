@@ -1,0 +1,15 @@
+uuid: 1972d69b-b195-451b-8384-9c3c8e2e6efb
+langcode: en
+status: true
+dependencies: {  }
+name: banner_image_desktop
+label: 'Banner Image Desktop'
+effects:
+  9b098aa4-59ee-46fb-a835-3a2e58cf22e1:
+    uuid: 9b098aa4-59ee-46fb-a835-3a2e58cf22e1
+    id: image_scale
+    weight: 1
+    data:
+      width: 1665
+      height: null
+      upscale: true

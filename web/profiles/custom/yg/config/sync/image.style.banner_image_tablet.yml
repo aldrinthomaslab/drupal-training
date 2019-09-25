@@ -1,0 +1,15 @@
+uuid: 91363ec1-3df2-4eee-8dcc-a00ff233fce1
+langcode: en
+status: true
+dependencies: {  }
+name: banner_image_tablet
+label: 'Banner Image Tablet'
+effects:
+  27ee9b56-90a0-4e5e-a0eb-6518741c5fe1:
+    uuid: 27ee9b56-90a0-4e5e-a0eb-6518741c5fe1
+    id: image_scale
+    weight: 1
+    data:
+      width: 768
+      height: null
+      upscale: true
