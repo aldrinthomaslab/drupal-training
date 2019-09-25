@@ -5,7 +5,7 @@ dependencies:
   config:
     - block_content.type.banner_image
     - field.storage.block_content.field_banner_image
-    - media.type.image
+    - media.type.banner_image
 id: block_content.banner_image.field_banner_image
 field_name: field_banner_image
 entity_type: block_content
@@ -20,9 +20,9 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      image: image
+      banner_image: banner_image
     sort:
       field: _none
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: banner_image
 field_type: entity_reference
