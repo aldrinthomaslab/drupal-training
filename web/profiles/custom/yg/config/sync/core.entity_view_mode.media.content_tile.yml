@@ -1,0 +1,10 @@
+uuid: 7b361321-f740-46af-895d-1ed89eb9be20
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.content_tile
+label: 'Content Tile'
+targetEntityType: media
+cache: true
