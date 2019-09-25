@@ -1,7 +1,0 @@
-uuid: 00768da6-0d42-44d6-a232-e88dd04f1b0d
-langcode: en
-status: true
-dependencies: {  }
-name: sample_style
-label: 'Sample Style'
-effects: {  }

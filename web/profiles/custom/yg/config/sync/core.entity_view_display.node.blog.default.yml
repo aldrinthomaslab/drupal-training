@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.blog.body
     - field.field.node.blog.field_content_image
+    - field.field.node.blog.field_preview_image
     - node.type.blog
   module:
     - text
@@ -31,4 +32,5 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_preview_image: true
   links: true

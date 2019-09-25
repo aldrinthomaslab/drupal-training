@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.blog.body
     - field.field.node.blog.field_content_image
+    - field.field.node.blog.field_preview_image
     - node.type.blog
   module:
     - media_library
@@ -33,6 +34,13 @@ content:
   field_content_image:
     type: media_library_widget
     weight: 7
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_preview_image:
+    type: media_library_widget
+    weight: 26
     settings:
       media_types: {  }
     third_party_settings: {  }
