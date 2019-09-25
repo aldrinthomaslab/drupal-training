@@ -2,10 +2,29 @@ uuid: 3727d6c4-0efc-4c1c-b34f-00a9fb3a5de6
 langcode: en
 status: true
 dependencies:
+  config:
+    - image.style.banner_image_desktop
+    - image.style.banner_image_mobile
+    - image.style.banner_image_tablet
   theme:
     - bartik
 id: responsive_content_banner
 label: 'Responsive Content Banner'
-image_style_mappings: {  }
+image_style_mappings:
+  -
+    breakpoint_id: bartik.wide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: banner_image_desktop
+  -
+    breakpoint_id: bartik.narrow
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: banner_image_tablet
+  -
+    breakpoint_id: bartik.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: banner_image_mobile
 breakpoint_group: bartik
 fallback_image_style: '_original image_'
