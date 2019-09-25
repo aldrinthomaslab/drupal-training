@@ -1,0 +1,30 @@
+uuid: 7882ee9c-1274-405d-8035-9b9b2f1e9311
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.content_tile
+    - field.field.media.content_full_image.field_media_image_1
+    - media.type.content_full_image
+    - responsive_image.styles.responsive_content_full_image
+  module:
+    - responsive_image
+id: media.content_full_image.content_tile
+targetEntityType: media
+bundle: content_full_image
+mode: content_tile
+content:
+  field_media_image_1:
+    weight: 0
+    label: hidden
+    settings:
+      responsive_image_style: responsive_content_full_image
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true
