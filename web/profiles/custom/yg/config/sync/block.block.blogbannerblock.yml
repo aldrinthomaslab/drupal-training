@@ -28,7 +28,6 @@ visibility:
     id: node_type
     bundles:
       blog: blog
-      blog_main: blog_main
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
