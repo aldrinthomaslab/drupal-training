@@ -157,12 +157,13 @@ display:
           expose:
             label: ''
           granularity: second
-      title: Portfolio
+      title: ''
       header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
+      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
