@@ -7,7 +7,9 @@ dependencies:
     - node.type.portfolio
     - taxonomy.vocabulary.services
   content:
-    - 'taxonomy_term:services:483c67ac-0589-46ad-bfc4-38d442ab6343'
+    - 'taxonomy_term:services:6a4d0fc9-30dd-4ef9-859b-21369262ec60'
+    - 'taxonomy_term:services:7862eb3a-5829-4316-8b8e-149c0b3e158e'
+    - 'taxonomy_term:services:8d0c2080-e826-4e10-867c-a0acaf8150e0'
   module:
     - node
     - taxonomy
@@ -161,9 +163,11 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          operator: and
+          operator: or
           value:
-            1: 1
+            10: 10
+            3: 3
+            2: 2
           group: 1
           exposed: false
           expose:
