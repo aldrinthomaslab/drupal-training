@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.portfolio.body
     - field.field.node.portfolio.field_client_name
     - field.field.node.portfolio.field_content_image
+    - field.field.node.portfolio.field_service_category
     - node.type.portfolio
   module:
     - path
@@ -40,6 +41,15 @@ content:
     region: content
   field_content_image:
     weight: 123
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_service_category:
+    weight: 124
     settings:
       match_operator: CONTAINS
       size: 60
