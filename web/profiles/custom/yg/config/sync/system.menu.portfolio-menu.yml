@@ -1,8 +1,0 @@
-uuid: e0db466c-aa7e-4dff-b105-edb89e12e72f
-langcode: en
-status: true
-dependencies: {  }
-id: portfolio-menu
-label: 'Portfolio Menu'
-description: ''
-locked: false

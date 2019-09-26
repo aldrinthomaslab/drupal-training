@@ -156,6 +156,7 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          group: 1
         field_service_category_target_id:
           id: field_service_category_target_id
           table: node__field_service_category
@@ -187,20 +188,17 @@ display:
             reduce: false
           is_grouped: false
           group_info:
-            label: 'Service Category (field_service_category)'
-            description: null
-            identifier: field_service_category_target_id
+            label: ''
+            description: ''
+            identifier: ''
             optional: true
             widget: select
             multiple: false
             remember: false
             default_group: All
             default_group_multiple: {  }
-            group_items:
-              1: {  }
-              2: {  }
-              3: {  }
-          reduce_duplicates: true
+            group_items: {  }
+          reduce_duplicates: false
           type: select
           limit: true
           vid: services
@@ -230,6 +228,10 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:
