@@ -1,0 +1,30 @@
+uuid: 83c86497-48b4-4635-b801-1992a871e985
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.portfolio-menu
+  module:
+    - system
+  theme:
+    - bartik
+id: portfoliomenu
+theme: bartik
+region: content
+weight: -5
+provider: null
+plugin: 'system_menu_block:portfolio-menu'
+settings:
+  id: 'system_menu_block:portfolio-menu'
+  label: 'Portfolio Menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: "/portfolio\r\n/portfolio/*"
+    negate: false
+    context_mapping: {  }
