@@ -190,6 +190,20 @@ display:
     display_options:
       display_extenders: {  }
       path: portfolio
+      menu:
+        type: 'default tab'
+        title: Sample
+        description: ''
+        expanded: false
+        parent: ''
+        weight: 0
+        context: '0'
+        menu_name: main
+      tab_options:
+        type: tab
+        title: 'Sample Tab'
+        description: ''
+        weight: 0
     cache_metadata:
       max-age: -1
       contexts:
