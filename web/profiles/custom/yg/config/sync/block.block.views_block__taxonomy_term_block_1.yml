@@ -1,0 +1,31 @@
+uuid: 4ea5a4cd-c58f-437e-98f3-cfb7d7037e73
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.taxonomy_term
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__taxonomy_term_block_1
+theme: bartik
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:taxonomy_term-block_1'
+settings:
+  id: 'views_block:taxonomy_term-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/portfolio/*'
+    negate: false
+    context_mapping: {  }
