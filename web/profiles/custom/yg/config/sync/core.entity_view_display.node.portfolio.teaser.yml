@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.portfolio.body
     - field.field.node.portfolio.field_client_name
     - field.field.node.portfolio.field_content_image
+    - field.field.node.portfolio.field_service_category
     - node.type.portfolio
   module:
     - text
@@ -19,17 +20,18 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 2
+    weight: 1
     settings:
       trim_length: 100
     third_party_settings: {  }
     region: content
   field_client_name:
-    type: basic_string
-    weight: 1
+    type: string
+    weight: 2
     region: content
     label: hidden
-    settings: {  }
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
   field_content_image:
     type: entity_reference_entity_view
@@ -41,4 +43,5 @@ content:
       link: false
     third_party_settings: {  }
 hidden:
+  field_service_category: true
   links: true

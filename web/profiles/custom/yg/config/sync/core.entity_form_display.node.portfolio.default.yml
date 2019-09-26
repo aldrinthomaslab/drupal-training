@@ -32,12 +32,12 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_client_name:
-    weight: 122
+    weight: 125
     settings:
-      rows: 5
+      size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
+    type: string_textfield
     region: content
   field_content_image:
     weight: 123
