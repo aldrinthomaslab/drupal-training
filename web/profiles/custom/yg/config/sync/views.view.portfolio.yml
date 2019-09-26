@@ -173,7 +173,7 @@ display:
           exposed: true
           expose:
             operator_id: field_service_category_target_id_op
-            label: 'Service Category (field_service_category)'
+            label: ''
             description: ''
             use_operator: false
             operator: field_service_category_target_id_op
