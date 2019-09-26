@@ -1,0 +1,19 @@
+uuid: 7cbc6c4d-268e-4a48-bbcd-9bccc3b519ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_client_name
+    - node.type.portfolio
+id: node.portfolio.field_client_name
+field_name: field_client_name
+entity_type: node
+bundle: portfolio
+label: 'Client Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

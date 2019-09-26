@@ -1,0 +1,28 @@
+uuid: dc1a5b53-c621-4332-824a-44f74e789ff6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_image
+    - media.type.content_full_image
+    - node.type.portfolio
+id: node.portfolio.field_content_image
+field_name: field_content_image
+entity_type: node
+bundle: portfolio
+label: 'Content Image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      content_full_image: content_full_image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

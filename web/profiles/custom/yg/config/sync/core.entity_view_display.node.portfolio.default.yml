@@ -1,0 +1,25 @@
+uuid: 06a4022a-e7f7-4414-a8c5-0549e65b8533
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.portfolio.body
+    - field.field.node.portfolio.field_client_name
+    - field.field.node.portfolio.field_content_image
+    - node.type.portfolio
+  module:
+    - user
+id: node.portfolio.default
+targetEntityType: node
+bundle: portfolio
+mode: default
+content:
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_client_name: true
+  field_content_image: true
