@@ -5,14 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - node.type.portfolio
-    - taxonomy.vocabulary.services
-  content:
-    - 'taxonomy_term:services:6a4d0fc9-30dd-4ef9-859b-21369262ec60'
-    - 'taxonomy_term:services:7862eb3a-5829-4316-8b8e-149c0b3e158e'
-    - 'taxonomy_term:services:8d0c2080-e826-4e10-867c-a0acaf8150e0'
   module:
     - node
-    - taxonomy
     - user
 id: portfolio
 label: Portfolio
@@ -157,57 +151,6 @@ display:
           entity_field: type
           plugin_id: bundle
           group: 1
-        field_service_category_target_id:
-          id: field_service_category_target_id
-          table: node__field_service_category
-          field: field_service_category_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value:
-            10: 10
-            3: 3
-            2: 2
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_service_category_target_id_op
-            label: ''
-            description: ''
-            use_operator: false
-            operator: field_service_category_target_id_op
-            identifier: field_service_category_target_id
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-            reduce: true
-          is_grouped: false
-          group_info:
-            label: 'Service Category (field_service_category)'
-            description: ''
-            identifier: field_service_category_target_id
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: '1'
-            default_group_multiple: {  }
-            group_items:
-              1: {  }
-              2: {  }
-              3: {  }
-          reduce_duplicates: false
-          type: select
-          limit: true
-          vid: services
-          hierarchy: false
-          error_message: true
-          plugin_id: taxonomy_index_tid
       sorts:
         created:
           id: created
@@ -235,15 +178,13 @@ display:
         operator: AND
         groups:
           1: AND
-      use_ajax: true
+      use_ajax: false
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url
         - url.query_args
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -275,9 +216,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url
         - url.query_args
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
