@@ -1,0 +1,25 @@
+uuid: 00721183-ac3c-4f5c-8cae-68694bcf9acc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_image:6309fbad-355a-4d38-837f-cedfaf86a16e'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: portfoliobannerblock
+theme: bartik
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:6309fbad-355a-4d38-837f-cedfaf86a16e'
+settings:
+  id: 'block_content:6309fbad-355a-4d38-837f-cedfaf86a16e'
+  label: 'Our Portfolio'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
