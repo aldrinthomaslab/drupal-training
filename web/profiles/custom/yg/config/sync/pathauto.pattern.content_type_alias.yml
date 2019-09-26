@@ -1,22 +1,23 @@
-uuid: 4cdd679a-d683-479a-b1ed-01b828de395c
+uuid: 5a209b72-ede5-4977-820e-42b1565abead
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: blog_url_alias
-label: 'Blog URL Alias'
+id: content_type_alias
+label: 'Content Type Alias'
 type: 'canonical_entities:node'
 pattern: '[node:content-type]s/[node:title]'
 selection_criteria:
-  ba751b34-9284-4812-a615-8d9125f2728a:
+  28c9afdd-d549-4e9f-8ed6-e2689ec7438a:
     id: node_type
     bundles:
       blog: blog
+      portfolio: portfolio
     negate: false
     context_mapping:
       node: node
-    uuid: ba751b34-9284-4812-a615-8d9125f2728a
+    uuid: 28c9afdd-d549-4e9f-8ed6-e2689ec7438a
 selection_logic: and
 weight: -5
 relationships: {  }
