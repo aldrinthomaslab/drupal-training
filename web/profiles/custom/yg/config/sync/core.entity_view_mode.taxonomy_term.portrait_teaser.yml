@@ -1,0 +1,10 @@
+uuid: 67ba5128-e78c-4712-841e-adf944203375
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.portrait_teaser
+label: 'Portrait Teaser'
+targetEntityType: taxonomy_term
+cache: true
