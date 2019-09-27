@@ -1,0 +1,31 @@
+uuid: 4dec583d-6098-4ebb-ace7-b5188b53e05c
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.portrait_thumbnail_desktop
+    - image.style.portrait_thumbnail_mobile
+    - image.style.portrait_thumbnail_tablet
+    - image.style.thumbnail
+  theme:
+    - bartik
+id: responsive_portrait_thumbnail
+label: 'Responsive Portrait Thumbnail'
+image_style_mappings:
+  -
+    breakpoint_id: bartik.wide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: portrait_thumbnail_desktop
+  -
+    breakpoint_id: bartik.narrow
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: portrait_thumbnail_tablet
+  -
+    breakpoint_id: bartik.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: portrait_thumbnail_mobile
+breakpoint_group: bartik
+fallback_image_style: thumbnail
