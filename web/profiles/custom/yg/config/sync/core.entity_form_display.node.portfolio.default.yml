@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.portfolio.field_service_category
     - node.type.portfolio
   module:
+    - media_library
     - path
     - text
 id: node.portfolio.default
@@ -42,11 +43,9 @@ content:
   field_content_image:
     weight: 123
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      media_types: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: media_library_widget
     region: content
   field_service_category:
     weight: 124
