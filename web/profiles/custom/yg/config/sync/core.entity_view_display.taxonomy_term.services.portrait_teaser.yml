@@ -1,0 +1,32 @@
+uuid: 5c26f268-3bc9-46bc-9133-f7c9dbf6fd7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.portrait_teaser
+    - field.field.taxonomy_term.services.field_term_image
+    - taxonomy.vocabulary.services
+  module:
+    - text
+id: taxonomy_term.services.portrait_teaser
+targetEntityType: taxonomy_term
+bundle: services
+mode: portrait_teaser
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_term_image:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: portrait_thumbnail
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }
