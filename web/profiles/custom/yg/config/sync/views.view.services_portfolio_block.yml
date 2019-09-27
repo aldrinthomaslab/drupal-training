@@ -1,49 +1,30 @@
-uuid: b46b0ef4-bf6d-4782-973b-cd071d9467c1
+uuid: 9ce36b3b-ac95-4aa6-9715-c029b6ce6fbc
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - node.type.portfolio
     - taxonomy.vocabulary.services
-  content:
-    - 'taxonomy_term:services:1252f0e4-d8e9-4f8c-ab8a-c3cc7fd0e06f'
-    - 'taxonomy_term:services:64000046-4426-49b0-b127-29267b061440'
-    - 'taxonomy_term:services:6a4d0fc9-30dd-4ef9-859b-21369262ec60'
-    - 'taxonomy_term:services:7862eb3a-5829-4316-8b8e-149c0b3e158e'
-    - 'taxonomy_term:services:834b62b9-5b92-4e42-a66b-770a2ec295c5'
-    - 'taxonomy_term:services:8d0c2080-e826-4e10-867c-a0acaf8150e0'
-    - 'taxonomy_term:services:9364f836-ceb0-48cf-ae0e-318dbade746b'
-    - 'taxonomy_term:services:a88eea6e-858e-47fd-addb-18003d74c0fb'
-    - 'taxonomy_term:services:d9e8cc61-cf01-41c1-8794-b6e1e0f1ccc8'
   module:
     - node
     - taxonomy
     - user
-_core:
-  default_config_hash: Gy5PaLdfFhtFSRqJxV-DBTF5AocKgNA2CsCNNEbvx4c
 id: services_portfolio_block
 label: 'Services Portfolio Block'
-module: taxonomy
-description: 'Content belonging to a certain taxonomy term.'
-tag: default
+module: views
+description: ''
+tag: ''
 base_table: node_field_data
 base_field: nid
-core: '8'
+core: 8.x
 display:
   default:
+    display_plugin: default
     id: default
     display_title: Master
-    display_plugin: default
     position: 0
     display_options:
-      query:
-        type: views_query
-        options:
-          query_comment: ''
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_tags: {  }
       access:
         type: perm
         options:
@@ -51,6 +32,14 @@ display:
       cache:
         type: tag
         options: {  }
+      query:
+        type: views_query
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_comment: ''
+          query_tags: {  }
       exposed_form:
         type: basic
         options:
@@ -62,41 +51,102 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
-        type: mini
+        type: none
         options:
           items_per_page: 0
           offset: 0
-          id: 0
-          total_pages: 0
-          tags:
-            previous: ‹‹
-            next: ››
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-      sorts:
-        sticky:
-          id: sticky
-          table: taxonomy_index
-          field: sticky
-          order: DESC
-          plugin_id: standard
+      style:
+        type: grid
+        options:
+          uses_fields: false
+          columns: 3
+          automatic_width: true
+          alignment: horizontal
+          col_class_default: true
+          col_class_custom: ''
+          row_class_default: true
+          row_class_custom: ''
+      row:
+        type: 'entity:node'
+        options:
+          view_mode: teaser
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          entity_type: node
+          entity_field: title
+          label: ''
+          alter:
+            alter_text: false
+            make_link: false
+            absolute: false
+            trim: false
+            word_boundary: false
+            ellipsis: false
+            strip_tags: false
+            html: false
+          hide_empty: false
+          empty_zero: false
+          settings:
+            link_to_entity: true
+          plugin_id: field
           relationship: none
           group_type: group
           admin_label: ''
-          exposed: false
+          exclude: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
           expose:
-            label: ''
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            portfolio: portfolio
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+      sorts:
         created:
           id: created
-          table: taxonomy_index
+          table: node_field_data
           field: created
           order: DESC
+          entity_type: node
+          entity_field: created
           plugin_id: date
           relationship: none
           group_type: group
@@ -105,6 +155,11 @@ display:
           expose:
             label: ''
           granularity: second
+      title: ''
+      header: {  }
+      footer: {  }
+      empty: {  }
+      relationships: {  }
       arguments:
         tid:
           id: tid
@@ -113,16 +168,20 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          default_action: 'not found'
+          default_action: default
           exception:
-            value: ''
+            value: all
             title_enable: false
             title: All
-          title_enable: true
-          title: '{{ arguments.tid }}'
-          default_argument_type: fixed
+          title_enable: false
+          title: ''
+          default_argument_type: taxonomy_tid
           default_argument_options:
-            argument: ''
+            term_page: '1'
+            anyall: ','
+            node: false
+            limit: false
+            vids: {  }
           default_argument_skip_url: false
           summary_options:
             base_path: ''
@@ -140,203 +199,37 @@ display:
           validate_options:
             bundles:
               services: services
-            access: true
             operation: view
             multiple: 0
+            access: false
           break_phrase: false
           add_table: false
           require_value: false
           reduce_duplicates: false
           plugin_id: taxonomy_index_tid
-      filters:
-        langcode:
-          id: langcode
-          table: node_field_data
-          field: langcode
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: in
-          value:
-            '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: language
-          entity_type: node
-          entity_field: langcode
-        status:
-          id: status
-          table: taxonomy_index
-          field: status
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value: '1'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: boolean
-        tid:
-          id: tid
-          table: taxonomy_index
-          field: tid
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value:
-            8: 8
-            6: 6
-            9: 9
-            7: 7
-            4: 4
-            5: 5
-            10: 10
-            3: 3
-            2: 2
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          type: select
-          limit: true
-          vid: services
-          hierarchy: false
-          error_message: true
-          plugin_id: taxonomy_index_tid
-      style:
-        type: grid
-        options:
-          uses_fields: false
-          columns: 3
-          automatic_width: true
-          alignment: horizontal
-          col_class_default: true
-          col_class_custom: ''
-          row_class_default: true
-          row_class_custom: ''
-      row:
-        type: 'entity:node'
-        options:
-          view_mode: teaser
-      header:
-        entity_taxonomy_term:
-          id: entity_taxonomy_term
-          table: views
-          field: entity_taxonomy_term
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: true
-          target: '{{ raw_arguments.tid }}'
-          view_mode: full
-          bypass_access: false
-          plugin_id: entity
-      footer: {  }
-      empty: {  }
-      relationships: {  }
-      fields: {  }
       display_extenders: {  }
-      link_url: ''
-      link_display: page_1
     cache_metadata:
+      max-age: -1
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - url.query_args
-        - user
         - 'user.node_grants:view'
         - user.permissions
-      max-age: -1
       tags: {  }
   block_1:
     display_plugin: block
     id: block_1
     display_title: Block
-    position: 3
+    position: 1
     display_options:
       display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - url.query_args
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
