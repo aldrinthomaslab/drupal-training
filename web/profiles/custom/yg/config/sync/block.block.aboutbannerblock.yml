@@ -1,0 +1,31 @@
+uuid: 9880eda1-3ce3-4374-9e7a-5d24f09f6b76
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_image:4658e589-999a-40f8-bd76-627c69846d6b'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: aboutbannerblock
+theme: bartik
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:4658e589-999a-40f8-bd76-627c69846d6b'
+settings:
+  id: 'block_content:4658e589-999a-40f8-bd76-627c69846d6b'
+  label: 'About Us'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /about
+    negate: false
+    context_mapping: {  }
