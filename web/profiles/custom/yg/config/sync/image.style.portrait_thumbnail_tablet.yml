@@ -1,0 +1,15 @@
+uuid: 5a4fb308-9e50-4c97-b257-a7f3a0250075
+langcode: en
+status: true
+dependencies: {  }
+name: portrait_thumbnail_tablet
+label: 'Portrait Thumbnail Tablet'
+effects:
+  b6cd0867-826d-4e94-b1b7-5e581e1dd630:
+    uuid: b6cd0867-826d-4e94-b1b7-5e581e1dd630
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 248
+      height: 347
+      anchor: center-center

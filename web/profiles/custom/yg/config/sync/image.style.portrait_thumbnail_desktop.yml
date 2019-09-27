@@ -1,0 +1,15 @@
+uuid: b0635bd2-cbff-4e1a-90f6-3d0a71af2741
+langcode: en
+status: true
+dependencies: {  }
+name: portrait_thumbnail_desktop
+label: 'Portrait Thumbnail Desktop'
+effects:
+  b56e841f-c265-416f-81a0-3e860d325c49:
+    uuid: b56e841f-c265-416f-81a0-3e860d325c49
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 330
+      height: 462
+      anchor: center-center

@@ -1,0 +1,15 @@
+uuid: 682e1d8c-4670-4c65-8342-0571b8cd2f7f
+langcode: en
+status: true
+dependencies: {  }
+name: portrait_thumbnail_mobile
+label: 'Portrait Thumbnail Mobile'
+effects:
+  e0d946cd-d25d-4f12-ad43-40910dcc2c4e:
+    uuid: e0d946cd-d25d-4f12-ad43-40910dcc2c4e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 273
+      height: 382
+      anchor: center-center
