@@ -1,0 +1,10 @@
+uuid: e0c5b44a-e3e4-4eaf-bbc2-8f1902330aa8
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.portrait_thumbnail
+label: 'Portrait Thumbnail'
+targetEntityType: media
+cache: true
