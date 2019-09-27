@@ -1,23 +1,23 @@
-uuid: eee189f3-1db6-494d-8424-477794cfddbf
+uuid: fb823979-b8fe-4c5e-85b1-a53d5c8c9a04
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:banner_image:ddc3063a-d1a5-4f1b-bad1-932e212ab66d'
+    - 'block_content:banner_image:aa2759bb-3f95-463a-a720-9f38b5a470c2'
   module:
     - block_content
     - system
   theme:
     - bartik
-id: blogbannerblock
+id: servicesbannerblock
 theme: bartik
 region: content
-weight: -11
+weight: -9
 provider: null
-plugin: 'block_content:ddc3063a-d1a5-4f1b-bad1-932e212ab66d'
+plugin: 'block_content:aa2759bb-3f95-463a-a720-9f38b5a470c2'
 settings:
-  id: 'block_content:ddc3063a-d1a5-4f1b-bad1-932e212ab66d'
-  label: 'Our Blog'
+  id: 'block_content:aa2759bb-3f95-463a-a720-9f38b5a470c2'
+  label: 'Our Services'
   provider: block_content
   label_display: visible
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/blogs/*\r\n/blog"
+    pages: /services
     negate: false
     context_mapping: {  }
