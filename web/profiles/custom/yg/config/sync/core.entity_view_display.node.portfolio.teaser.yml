@@ -20,14 +20,14 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 1
+    weight: 2
     settings:
       trim_length: 100
     third_party_settings: {  }
     region: content
   field_client_name:
     type: string
-    weight: 2
+    weight: 0
     region: content
     label: hidden
     settings:
@@ -35,7 +35,7 @@ content:
     third_party_settings: {  }
   field_content_image:
     type: entity_reference_entity_view
-    weight: 0
+    weight: 1
     region: content
     label: hidden
     settings:
