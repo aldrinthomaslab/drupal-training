@@ -3,16 +3,27 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.team_member.field_member_social_media
     - field.field.node.team_member.field_profile_image
     - field.field.node.team_member.field_team_designation
     - node.type.team_member
   module:
+    - entity_reference_revisions
     - user
 id: node.team_member.default
 targetEntityType: node
 bundle: team_member
 mode: default
 content:
+  field_member_social_media:
+    type: entity_reference_revisions_entity_view
+    weight: 103
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
   field_profile_image:
     type: entity_reference_entity_view
     weight: 102

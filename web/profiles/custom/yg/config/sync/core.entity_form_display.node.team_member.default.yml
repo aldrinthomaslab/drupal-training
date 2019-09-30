@@ -3,11 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.team_member.field_member_social_media
     - field.field.node.team_member.field_profile_image
     - field.field.node.team_member.field_team_designation
     - node.type.team_member
   module:
     - media_library
+    - paragraphs
     - path
 id: node.team_member.default
 targetEntityType: node
@@ -20,6 +22,18 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_member_social_media:
+    type: entity_reference_paragraphs
+    weight: 123
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
   field_profile_image:
     type: media_library_widget
     weight: 122
