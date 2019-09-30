@@ -1,0 +1,30 @@
+uuid: e8e33d13-afc7-4b8f-ba56-d074db48a945
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.content_tile
+    - field.field.media.profile_image.field_media_image
+    - media.type.profile_image
+    - responsive_image.styles.responsive_profile_image
+  module:
+    - responsive_image
+id: media.profile_image.content_tile
+targetEntityType: media
+bundle: profile_image
+mode: content_tile
+content:
+  field_media_image:
+    weight: 0
+    label: hidden
+    settings:
+      responsive_image_style: responsive_profile_image
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true
