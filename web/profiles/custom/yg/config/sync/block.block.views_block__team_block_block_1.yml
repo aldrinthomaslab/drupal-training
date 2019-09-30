@@ -17,10 +17,10 @@ provider: null
 plugin: 'views_block:team_block-block_1'
 settings:
   id: 'views_block:team_block-block_1'
-  label: 'Out Team'
+  label: 'Our Team'
   provider: views
   label_display: visible
-  views_label: 'Out Team'
+  views_label: 'Our Team'
   items_per_page: none
 visibility:
   request_path:
