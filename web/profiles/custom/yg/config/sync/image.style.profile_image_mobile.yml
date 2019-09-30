@@ -1,0 +1,15 @@
+uuid: 28db683d-6748-4342-a65d-e0cbbcafea80
+langcode: en
+status: true
+dependencies: {  }
+name: profile_image_mobile
+label: 'Profile Image Mobile'
+effects:
+  6d38f367-f613-40cd-b90e-cd78d1b82e87:
+    uuid: 6d38f367-f613-40cd-b90e-cd78d1b82e87
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 290
+      height: 279
+      anchor: center-center

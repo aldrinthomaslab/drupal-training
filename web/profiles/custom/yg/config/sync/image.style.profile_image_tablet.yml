@@ -1,0 +1,15 @@
+uuid: 6178c9ad-f5cd-476a-9337-0be7f73b10ce
+langcode: en
+status: true
+dependencies: {  }
+name: profile_image_tablet
+label: 'Profile Image Tablet'
+effects:
+  66623102-389c-4252-b2b5-c0ca858e06c4:
+    uuid: 66623102-389c-4252-b2b5-c0ca858e06c4
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 354
+      height: 341
+      anchor: center-center

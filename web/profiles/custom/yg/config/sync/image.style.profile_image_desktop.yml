@@ -1,0 +1,15 @@
+uuid: d05c650a-ba19-452f-82ca-08929baabb01
+langcode: en
+status: true
+dependencies: {  }
+name: profile_image_desktop
+label: 'Profile Image Desktop'
+effects:
+  a7ed763b-e3a4-4fc5-a85b-38a5f7b929ef:
+    uuid: a7ed763b-e3a4-4fc5-a85b-38a5f7b929ef
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 263
+      height: 253
+      anchor: center-center
