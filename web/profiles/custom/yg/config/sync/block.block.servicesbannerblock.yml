@@ -12,7 +12,7 @@ dependencies:
 id: servicesbannerblock
 theme: bartik
 region: content
-weight: -9
+weight: -10
 provider: null
 plugin: 'block_content:aa2759bb-3f95-463a-a720-9f38b5a470c2'
 settings:

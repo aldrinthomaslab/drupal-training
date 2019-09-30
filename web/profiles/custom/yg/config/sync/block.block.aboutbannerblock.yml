@@ -12,7 +12,7 @@ dependencies:
 id: aboutbannerblock
 theme: bartik
 region: content
-weight: -8
+weight: -9
 provider: null
 plugin: 'block_content:4658e589-999a-40f8-bd76-627c69846d6b'
 settings:

@@ -1,23 +1,23 @@
-uuid: 00721183-ac3c-4f5c-8cae-68694bcf9acc
+uuid: e0627a36-ab51-46ac-9775-712984ddfded
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:banner_image:6309fbad-355a-4d38-837f-cedfaf86a16e'
+    - 'block_content:content_block:068fb495-ba42-4844-a82d-dd4aff114f10'
   module:
     - block_content
     - system
   theme:
     - bartik
-id: portfoliobannerblock
+id: thecompany
 theme: bartik
 region: content
-weight: -11
+weight: -8
 provider: null
-plugin: 'block_content:6309fbad-355a-4d38-837f-cedfaf86a16e'
+plugin: 'block_content:068fb495-ba42-4844-a82d-dd4aff114f10'
 settings:
-  id: 'block_content:6309fbad-355a-4d38-837f-cedfaf86a16e'
-  label: 'Our Portfolio'
+  id: 'block_content:068fb495-ba42-4844-a82d-dd4aff114f10'
+  label: 'The Company'
   provider: block_content
   label_display: visible
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/portfolio\r\n/portfolio/*"
+    pages: /about
     negate: false
     context_mapping: {  }

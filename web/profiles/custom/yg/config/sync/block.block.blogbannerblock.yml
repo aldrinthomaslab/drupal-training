@@ -12,7 +12,7 @@ dependencies:
 id: blogbannerblock
 theme: bartik
 region: content
-weight: -11
+weight: -12
 provider: null
 plugin: 'block_content:ddc3063a-d1a5-4f1b-bad1-932e212ab66d'
 settings:
