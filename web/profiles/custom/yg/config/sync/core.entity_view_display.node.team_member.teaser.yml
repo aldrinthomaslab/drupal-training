@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.team_member.field_profile_image
+    - field.field.node.team_member.field_team_designation
     - node.type.team_member
   module:
     - user
@@ -12,9 +14,22 @@ targetEntityType: node
 bundle: team_member
 mode: teaser
 content:
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
+  field_profile_image:
+    type: entity_reference_entity_view
+    weight: 0
     region: content
-hidden: {  }
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+  field_team_designation:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  links: true
