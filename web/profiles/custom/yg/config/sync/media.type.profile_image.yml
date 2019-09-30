@@ -1,0 +1,13 @@
+uuid: bf5c8226-22f0-43fe-a862-167d9a0fd383
+langcode: en
+status: true
+dependencies: {  }
+id: profile_image
+label: 'Profile Image'
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map: {  }
