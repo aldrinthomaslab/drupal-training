@@ -3,9 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.team_member.field_profile_image
     - field.field.node.team_member.field_team_designation
     - node.type.team_member
   module:
+    - media_library
     - path
 id: node.team_member.default
 targetEntityType: node
@@ -18,6 +20,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_profile_image:
+    type: media_library_widget
+    weight: 122
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
   field_team_designation:
     weight: 121
     settings:

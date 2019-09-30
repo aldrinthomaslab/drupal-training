@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.team_member.field_profile_image
     - field.field.node.team_member.field_team_designation
     - node.type.team_member
   module:
@@ -12,9 +13,18 @@ targetEntityType: node
 bundle: team_member
 mode: default
 content:
+  field_profile_image:
+    type: entity_reference_entity_view
+    weight: 102
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
   field_team_designation:
     weight: 101
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -22,7 +32,7 @@ content:
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }
