@@ -1,0 +1,10 @@
+uuid: 3f5b1690-3acf-42bf-96c3-4406f172a108
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.full_block
+label: 'Full Block'
+targetEntityType: node
+cache: true
