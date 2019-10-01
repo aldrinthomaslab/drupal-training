@@ -1,4 +1,4 @@
-uuid: b2dacb1d-fedf-4470-9bba-14ea22485899
+uuid: 6fffb0f7-8776-4898-8ccb-9f6dc791d24b
 langcode: en
 status: true
 dependencies:
@@ -9,8 +9,8 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: Testimonial
-type: testimonial
+name: 'Client Testimonial'
+type: client_testimonial
 description: ''
 help: ''
 new_revision: true

@@ -1,18 +1,18 @@
-uuid: 0632a630-e9f0-4549-984b-689b468323ec
+uuid: 380a79d3-609d-48b9-b32f-a42aecb5eb45
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.testimonial.body
-    - field.field.node.testimonial.field_client_name
-    - field.field.node.testimonial.field_profile_image
-    - node.type.testimonial
+    - field.field.node.client_testimonial.body
+    - field.field.node.client_testimonial.field_client_name
+    - field.field.node.client_testimonial.field_profile_image
+    - node.type.client_testimonial
   module:
     - text
     - user
-id: node.testimonial.default
+id: node.client_testimonial.default
 targetEntityType: node
-bundle: testimonial
+bundle: client_testimonial
 mode: default
 content:
   body:

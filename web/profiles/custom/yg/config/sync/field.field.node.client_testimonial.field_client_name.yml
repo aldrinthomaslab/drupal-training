@@ -1,14 +1,14 @@
-uuid: b7cfb7ad-186b-483e-bb23-22df30cde1d0
+uuid: 597383d0-82c1-4e18-90fa-27d3966d51b5
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_client_name
-    - node.type.testimonial
-id: node.testimonial.field_client_name
+    - node.type.client_testimonial
+id: node.client_testimonial.field_client_name
 field_name: field_client_name
 entity_type: node
-bundle: testimonial
+bundle: client_testimonial
 label: 'Client Name'
 description: ''
 required: true

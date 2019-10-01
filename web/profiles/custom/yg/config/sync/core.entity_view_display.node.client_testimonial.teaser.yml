@@ -1,17 +1,17 @@
-uuid: c39406f5-03f2-4628-9432-9da99c83e6c5
+uuid: 60ecfacc-e485-4e29-a375-e19c86f6c658
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.testimonial.body
-    - node.type.testimonial
+    - field.field.node.client_testimonial.body
+    - node.type.client_testimonial
   module:
     - text
     - user
-id: node.testimonial.teaser
+id: node.client_testimonial.teaser
 targetEntityType: node
-bundle: testimonial
+bundle: client_testimonial
 mode: teaser
 content:
   body:

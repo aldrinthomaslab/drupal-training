@@ -1,16 +1,16 @@
-uuid: 30b9e539-2cba-48ef-a07e-b37d773f9440
+uuid: a946df1f-ca36-4ed2-9cde-9bf3e25bf445
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.testimonial
+    - node.type.client_testimonial
   module:
     - text
-id: node.testimonial.body
+id: node.client_testimonial.body
 field_name: body
 entity_type: node
-bundle: testimonial
+bundle: client_testimonial
 label: Body
 description: ''
 required: false
