@@ -3,9 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.services.field_service_testimonial
     - field.field.taxonomy_term.services.field_term_image
     - taxonomy.vocabulary.services
   module:
+    - comment
     - media_library
     - path
     - text
@@ -22,6 +24,12 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_service_testimonial:
+    weight: 32
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
+    region: content
   field_term_image:
     type: media_library_widget
     weight: 31
