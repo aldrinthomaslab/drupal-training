@@ -1,8 +1,0 @@
-uuid: 2fc58611-5a90-4139-b91f-9ff788f8ae77
-langcode: en
-status: true
-dependencies: {  }
-id: client_testimonials
-label: 'Client Testimonials'
-target_entity_type_id: taxonomy_term
-description: ''

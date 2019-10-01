@@ -1,0 +1,10 @@
+uuid: 8ea5b8d5-582a-4b72-b0a3-88ac2231517b
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+id: comment.comment_block
+label: 'Comment Block'
+targetEntityType: comment
+cache: true
