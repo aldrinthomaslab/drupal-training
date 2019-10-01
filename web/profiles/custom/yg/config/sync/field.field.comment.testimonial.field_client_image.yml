@@ -1,0 +1,28 @@
+uuid: a542fbb8-da3b-4efa-87b2-7692e055db86
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.testimonial
+    - field.storage.comment.field_client_image
+    - media.type.profile_image
+id: comment.testimonial.field_client_image
+field_name: field_client_image
+entity_type: comment
+bundle: testimonial
+label: 'Client Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      profile_image: profile_image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

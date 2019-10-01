@@ -1,0 +1,8 @@
+uuid: cadee17a-c28d-4f1b-b680-979cf3deed4d
+langcode: en
+status: true
+dependencies: {  }
+id: testimonial
+label: Testimonial
+target_entity_type_id: node
+description: 'Client Testimonial Comment Type'

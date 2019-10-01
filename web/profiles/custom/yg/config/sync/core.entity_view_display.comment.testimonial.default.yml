@@ -1,0 +1,33 @@
+uuid: ac4e85a8-e188-4ec7-9313-db4f11e3fcae
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.testimonial
+    - field.field.comment.testimonial.comment_body
+    - field.field.comment.testimonial.field_client_image
+  module:
+    - text
+id: comment.testimonial.default
+targetEntityType: comment
+bundle: testimonial
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_client_image:
+    type: entity_reference_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  links: true
