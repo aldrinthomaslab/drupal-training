@@ -12,7 +12,7 @@ dependencies:
 id: portfoliobannerblock
 theme: bartik
 region: content
-weight: -11
+weight: -12
 provider: null
 plugin: 'block_content:6309fbad-355a-4d38-837f-cedfaf86a16e'
 settings:

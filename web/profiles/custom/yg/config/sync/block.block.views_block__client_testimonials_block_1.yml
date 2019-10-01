@@ -1,31 +1,30 @@
-uuid: b90e089a-15a7-415c-bcd4-323f9e8a4d20
+uuid: 63897acb-7c58-4d2c-b8a6-105d5f1baef0
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.services_portfolio_block
+    - views.view.client_testimonials
   module:
     - system
     - views
   theme:
     - bartik
-id: views_block__services_portfolio_block_block_1
+id: views_block__client_testimonials_block_1
 theme: bartik
 region: content
-weight: -3
+weight: 0
 provider: null
-plugin: 'views_block:services_portfolio_block-block_1'
+plugin: 'views_block:client_testimonials-block_1'
 settings:
-  id: 'views_block:services_portfolio_block-block_1'
+  id: 'views_block:client_testimonials-block_1'
   label: ''
   provider: views
   label_display: visible
   views_label: ''
   items_per_page: none
-  context_mapping: {  }
 visibility:
   request_path:
     id: request_path
-    pages: '/portfolio/*'
+    pages: /about
     negate: false
     context_mapping: {  }
