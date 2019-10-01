@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - node.type.blog
+    - node.type.client_testimonial
     - node.type.portfolio
     - node.type.team_member
   module:
@@ -121,6 +122,7 @@ display:
           value:
             all: all
             blog: blog
+            client_testimonial: client_testimonial
             portfolio: portfolio
             team_member: team_member
           group: 1
