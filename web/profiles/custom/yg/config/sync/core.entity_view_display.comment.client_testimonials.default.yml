@@ -1,16 +1,16 @@
-uuid: ac4e85a8-e188-4ec7-9313-db4f11e3fcae
+uuid: f1e150d4-d82c-463a-8b55-c36c05aaf1c5
 langcode: en
 status: true
 dependencies:
   config:
-    - comment.type.testimonial
-    - field.field.comment.testimonial.comment_body
-    - field.field.comment.testimonial.field_client_image
+    - comment.type.client_testimonials
+    - field.field.comment.client_testimonials.comment_body
+    - field.field.comment.client_testimonials.field_client_image
   module:
     - text
-id: comment.testimonial.default
+id: comment.client_testimonials.default
 targetEntityType: comment
-bundle: testimonial
+bundle: client_testimonials
 mode: default
 content:
   comment_body:
@@ -22,12 +22,16 @@ content:
     region: content
   field_client_image:
     type: entity_reference_entity_view
-    weight: 2
-    label: hidden
+    weight: 101
+    label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
     region: content
-hidden:
-  links: true
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

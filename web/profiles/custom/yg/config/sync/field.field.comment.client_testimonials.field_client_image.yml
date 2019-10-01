@@ -1,15 +1,15 @@
-uuid: a542fbb8-da3b-4efa-87b2-7692e055db86
+uuid: 60eb5caa-db1d-4049-bc85-ce26a687174f
 langcode: en
 status: true
 dependencies:
   config:
-    - comment.type.testimonial
+    - comment.type.client_testimonials
     - field.storage.comment.field_client_image
     - media.type.profile_image
-id: comment.testimonial.field_client_image
+id: comment.client_testimonials.field_client_image
 field_name: field_client_image
 entity_type: comment
-bundle: testimonial
+bundle: client_testimonials
 label: 'Client Image'
 description: ''
 required: false

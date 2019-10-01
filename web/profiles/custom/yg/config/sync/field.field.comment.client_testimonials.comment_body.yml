@@ -1,16 +1,16 @@
-uuid: 60d0e7e9-806b-4a73-8f3b-59be0c203a40
+uuid: 2598c22c-94b6-474e-8676-6feee84b0299
 langcode: en
 status: true
 dependencies:
   config:
-    - comment.type.testimonial
+    - comment.type.client_testimonials
     - field.storage.comment.comment_body
   module:
     - text
-id: comment.testimonial.comment_body
+id: comment.client_testimonials.comment_body
 field_name: comment_body
 entity_type: comment
-bundle: testimonial
+bundle: client_testimonials
 label: Comment
 description: ''
 required: true
