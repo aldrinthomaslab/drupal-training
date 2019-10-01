@@ -6,6 +6,7 @@ dependencies:
     - comment.type.client_testimonials
     - field.field.comment.client_testimonials.comment_body
     - field.field.comment.client_testimonials.field_client_image
+    - field.field.comment.client_testimonials.field_client_name
   module:
     - text
 id: comment.client_testimonials.default
@@ -28,6 +29,14 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
+    region: content
+  field_client_name:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
 hidden:
   links: true
