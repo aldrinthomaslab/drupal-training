@@ -1,8 +1,9 @@
-uuid: 380a79d3-609d-48b9-b32f-a42aecb5eb45
+uuid: 4cd9e597-5b18-4008-ba66-db1d675e1110
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full_block
     - field.field.node.client_testimonial.body
     - field.field.node.client_testimonial.field_client_name
     - field.field.node.client_testimonial.field_profile_image
@@ -10,10 +11,10 @@ dependencies:
   module:
     - text
     - user
-id: node.client_testimonial.default
+id: node.client_testimonial.full_block
 targetEntityType: node
 bundle: client_testimonial
-mode: default
+mode: full_block
 content:
   body:
     label: hidden
@@ -35,9 +36,8 @@ content:
     label: hidden
     settings:
       link: true
-      view_mode: default
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    type: entity_reference_label
     region: content
 hidden:
   links: true
