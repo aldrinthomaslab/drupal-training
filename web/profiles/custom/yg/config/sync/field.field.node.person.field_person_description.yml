@@ -1,0 +1,21 @@
+uuid: a0cab34f-1625-42cb-9b37-ea84c8a5a183
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_person_description
+    - node.type.person
+  module:
+    - text
+id: node.person.field_person_description
+field_name: field_person_description
+entity_type: node
+bundle: person
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

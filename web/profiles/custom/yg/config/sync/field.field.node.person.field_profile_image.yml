@@ -1,0 +1,28 @@
+uuid: 8c5aca03-fdf1-442d-8175-fa30242e36fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_profile_image
+    - media.type.profile_image
+    - node.type.person
+id: node.person.field_profile_image
+field_name: field_profile_image
+entity_type: node
+bundle: person
+label: Image
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      profile_image: profile_image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
