@@ -1,0 +1,22 @@
+uuid: c1efa5dd-bcbb-4ac4-ba22-4d4edea23076
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_blog_listing
+    - paragraphs.paragraphs_type.blog_listing
+  module:
+    - block_field
+id: paragraph.blog_listing.field_blog_listing
+field_name: field_blog_listing
+entity_type: paragraph
+bundle: blog_listing
+label: 'Blog Listing'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  plugin_ids: {  }
+field_type: block_field

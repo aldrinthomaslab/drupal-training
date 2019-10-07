@@ -1,0 +1,22 @@
+uuid: 9edc1252-9973-4797-880c-8f9c1668a2d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.blog_listing.field_blog_listing
+    - paragraphs.paragraphs_type.blog_listing
+  module:
+    - block_field
+id: paragraph.blog_listing.default
+targetEntityType: paragraph
+bundle: blog_listing
+mode: default
+content:
+  field_blog_listing:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: block_field
+    region: content
+hidden: {  }

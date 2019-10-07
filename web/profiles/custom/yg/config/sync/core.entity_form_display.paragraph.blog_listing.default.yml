@@ -1,0 +1,26 @@
+uuid: 108a21ba-1d94-48db-a272-e7e2678e628c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.blog_listing.field_blog_listing
+    - paragraphs.paragraphs_type.blog_listing
+  module:
+    - block_field
+id: paragraph.blog_listing.default
+targetEntityType: paragraph
+bundle: blog_listing
+mode: default
+content:
+  field_blog_listing:
+    weight: 0
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+    type: block_field_default
+    region: content
+hidden:
+  created: true
+  status: true

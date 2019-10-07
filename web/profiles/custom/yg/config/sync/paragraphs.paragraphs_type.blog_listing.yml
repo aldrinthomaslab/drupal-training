@@ -1,0 +1,9 @@
+uuid: 7ffd8ad3-1256-434d-947d-e122ecd944e6
+langcode: en
+status: true
+dependencies: {  }
+id: blog_listing
+label: 'Blog Listing'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }
