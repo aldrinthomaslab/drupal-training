@@ -1,0 +1,22 @@
+uuid: 811e58e8-f282-4aea-b18b-97cc27c07a63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_portfolio_listing
+    - paragraphs.paragraphs_type.portfolio_listing
+  module:
+    - block_field
+id: paragraph.portfolio_listing.field_portfolio_listing
+field_name: field_portfolio_listing
+entity_type: paragraph
+bundle: portfolio_listing
+label: 'Portfolio Listing'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  plugin_ids: {  }
+field_type: block_field

@@ -1,0 +1,9 @@
+uuid: ce37e78f-01a7-417c-a3cd-4d5447848340
+langcode: en
+status: true
+dependencies: {  }
+id: portfolio_listing
+label: 'Portfolio Listing'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

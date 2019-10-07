@@ -1,0 +1,26 @@
+uuid: f497f686-b318-46f7-b2e7-dac0bcb5d299
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.portfolio_listing.field_portfolio_listing
+    - paragraphs.paragraphs_type.portfolio_listing
+  module:
+    - block_field
+id: paragraph.portfolio_listing.default
+targetEntityType: paragraph
+bundle: portfolio_listing
+mode: default
+content:
+  field_portfolio_listing:
+    weight: 0
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+    type: block_field_default
+    region: content
+hidden:
+  created: true
+  status: true
