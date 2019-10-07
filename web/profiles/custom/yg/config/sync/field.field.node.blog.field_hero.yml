@@ -1,15 +1,15 @@
-uuid: 2db00710-c8ab-4d04-b004-8485bfc9139d
+uuid: 97756664-09be-4536-acd9-cdd280286ef8
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_blog_hero
+    - field.storage.node.field_hero
     - node.type.blog
     - paragraphs.paragraphs_type.basic_hero
   module:
     - entity_reference_revisions
-id: node.blog.field_blog_hero
-field_name: field_blog_hero
+id: node.blog.field_hero
+field_name: field_hero
 entity_type: node
 bundle: blog
 label: Hero
