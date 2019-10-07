@@ -1,0 +1,42 @@
+uuid: 808d1ef5-d412-48e8-ba51-01de5701880f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.services_paragraph.field_service_listin
+    - field.field.paragraph.services_paragraph.field_title
+    - field.field.paragraph.services_paragraph.field_variation
+    - paragraphs.paragraphs_type.services_paragraph
+  module:
+    - block_field
+id: paragraph.services_paragraph.default
+targetEntityType: paragraph
+bundle: services_paragraph
+mode: default
+content:
+  field_service_listin:
+    weight: 1
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+    type: block_field_default
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_variation:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
