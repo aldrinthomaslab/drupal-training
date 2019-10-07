@@ -1,0 +1,34 @@
+uuid: 2db00710-c8ab-4d04-b004-8485bfc9139d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blog_hero
+    - node.type.blog
+    - paragraphs.paragraphs_type.basic_hero
+  module:
+    - entity_reference_revisions
+id: node.blog.field_blog_hero
+field_name: field_blog_hero
+entity_type: node
+bundle: blog
+label: Hero
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      basic_hero: basic_hero
+    target_bundles_drag_drop:
+      basic_hero:
+        enabled: true
+        weight: 3
+      social_media_link:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions
