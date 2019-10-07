@@ -19,5 +19,14 @@ default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:paragraph'
-  handler_settings: {  }
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop:
+      basic_hero:
+        weight: 3
+        enabled: false
+      social_media_link:
+        weight: 4
+        enabled: false
 field_type: entity_reference_revisions
