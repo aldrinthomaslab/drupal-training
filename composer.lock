@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "61541eae1193027234d5057a5d9d7fd7",
+    "content-hash": "fc2a8ee0ba76c2cc79312d570dd83547",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2866,6 +2866,74 @@
             "support": {
                 "source": "http://git.drupal.org/project/geolocation.git",
                 "issues": "https://www.drupal.org/project/issues/geolocation"
+            }
+        },
+        {
+            "name": "drupal/onlyone",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/onlyone.git",
+                "reference": "8.x-1.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/onlyone-8.x-1.8.zip",
+                "reference": "8.x-1.8",
+                "shasum": "24ce43efcae9d500c0c3290d8cffd6fd403b0815"
+            },
+            "require": {
+                "drupal/core": "~8.5"
+            },
+            "require-dev": {
+                "drupal/admin_toolbar_tools": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.8",
+                    "datestamp": "1549390960",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Cid Almaguer (adriancid)",
+                    "homepage": "https://www.drupal.org/u/adriancid",
+                    "email": "adriancid@gmail.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Pierre Vriens (Pierre.Vriens)",
+                    "homepage": "https://www.drupal.org/u/pierrevriens",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Jorge Diaz (jorgediazhav)",
+                    "homepage": "https://www.drupal.org/u/jorgediazhav",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Allows Only One node per content type and language.",
+            "homepage": "https://www.drupal.org/project/onlyone",
+            "keywords": [
+                "Drupal",
+                "Limit",
+                "Nodes"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/onlyone",
+                "issues": "https://www.drupal.org/project/issues/onlyone"
             }
         },
         {
