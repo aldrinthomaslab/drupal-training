@@ -24,14 +24,14 @@ mode: default
 content:
   field_business_hours:
     weight: 106
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_company_address:
     weight: 103
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -39,7 +39,7 @@ content:
     region: content
   field_company_name:
     weight: 102
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -47,7 +47,7 @@ content:
     region: content
   field_contact:
     weight: 109
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -55,7 +55,7 @@ content:
     region: content
   field_contact_numbers:
     weight: 104
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -63,14 +63,14 @@ content:
     region: content
   field_description:
     weight: 101
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_email:
     weight: 105
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -78,14 +78,14 @@ content:
     region: content
   field_geolocation:
     weight: 108
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: geolocation_latlng
     region: content
   field_hero:
     weight: 107
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
@@ -94,7 +94,7 @@ content:
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

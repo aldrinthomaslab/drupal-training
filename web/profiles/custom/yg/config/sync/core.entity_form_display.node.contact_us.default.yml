@@ -14,8 +14,8 @@ dependencies:
     - field.field.node.contact_us.field_hero
     - node.type.contact_us
   module:
-    - entity_reference_revisions
     - geolocation
+    - paragraphs
     - path
 id: node.contact_us.default
 targetEntityType: node
@@ -54,12 +54,9 @@ content:
     region: content
   field_contact:
     weight: 129
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_contact_numbers:
     weight: 124
@@ -94,11 +91,14 @@ content:
   field_hero:
     weight: 127
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
     third_party_settings: {  }
-    type: entity_reference_revisions_autocomplete
+    type: entity_reference_paragraphs
     region: content
   path:
     type: path
