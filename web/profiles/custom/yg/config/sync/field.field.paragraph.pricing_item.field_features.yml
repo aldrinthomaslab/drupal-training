@@ -1,0 +1,29 @@
+uuid: 1b4cf5f2-6e8a-49b4-95b2-703e9e715410
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_features
+    - paragraphs.paragraphs_type.pricing_item
+    - taxonomy.vocabulary.plan_features
+id: paragraph.pricing_item.field_features
+field_name: field_features
+entity_type: paragraph
+bundle: pricing_item
+label: Features
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      plan_features: plan_features
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
