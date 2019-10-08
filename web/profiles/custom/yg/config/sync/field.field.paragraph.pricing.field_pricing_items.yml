@@ -1,0 +1,58 @@
+uuid: f3463b38-135c-4540-afb3-35536b760bff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pricing_items
+    - paragraphs.paragraphs_type.pricing
+    - paragraphs.paragraphs_type.pricing_item
+  module:
+    - entity_reference_revisions
+id: paragraph.pricing.field_pricing_items
+field_name: field_pricing_items
+entity_type: paragraph
+bundle: pricing
+label: Items
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      pricing_item: pricing_item
+    target_bundles_drag_drop:
+      pricing:
+        weight: 11
+        enabled: false
+      basic_hero:
+        weight: 12
+        enabled: false
+      blog_listing:
+        weight: 13
+        enabled: false
+      carousel_hero:
+        weight: 14
+        enabled: false
+      carousel_hero_item:
+        weight: 15
+        enabled: false
+      content_block:
+        weight: 16
+        enabled: false
+      portfolio_listing:
+        weight: 17
+        enabled: false
+      pricing_item:
+        enabled: true
+        weight: 18
+      services_paragraph:
+        weight: 19
+        enabled: false
+      social_media_link:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

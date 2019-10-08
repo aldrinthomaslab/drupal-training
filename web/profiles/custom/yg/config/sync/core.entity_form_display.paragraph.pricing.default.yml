@@ -1,0 +1,39 @@
+uuid: ff786b8e-c5fc-4292-b25b-e0b040b85e7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pricing.field_formatted_title
+    - field.field.paragraph.pricing.field_pricing_items
+    - paragraphs.paragraphs_type.pricing
+  module:
+    - paragraphs
+    - text
+id: paragraph.pricing.default
+targetEntityType: paragraph
+bundle: pricing
+mode: default
+content:
+  field_formatted_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_pricing_items:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

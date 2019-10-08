@@ -1,0 +1,21 @@
+uuid: 6938607b-083a-4cef-9738-b72e9d4b57df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_formatted_title
+    - paragraphs.paragraphs_type.pricing
+  module:
+    - text
+id: paragraph.pricing.field_formatted_title
+field_name: field_formatted_title
+entity_type: paragraph
+bundle: pricing
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
