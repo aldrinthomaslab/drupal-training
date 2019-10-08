@@ -1,0 +1,12 @@
+uuid: e0ec5d4c-0da0-4a22-b689-c7a721e7607f
+langcode: en
+status: true
+dependencies: {  }
+id: yg_contact_form
+label: 'YG Contact Form'
+recipients:
+  - aldrin.thomas.labarda@codeandtheory.com
+reply: ''
+weight: 0
+message: ''
+redirect: ''

@@ -1,0 +1,45 @@
+uuid: eaf369ce-5ccf-45a4-ad03-402d747f4be4
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.yg_contact_form
+    - field.field.contact_message.yg_contact_form.field_contact_email
+    - field.field.contact_message.yg_contact_form.field_contact_name
+    - field.field.contact_message.yg_contact_form.field_contact_subject
+id: contact_message.yg_contact_form.default
+targetEntityType: contact_message
+bundle: yg_contact_form
+mode: default
+content:
+  field_contact_email:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_contact_name:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_subject:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  message:
+    type: basic_string
+    weight: 3
+    label: hidden
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
