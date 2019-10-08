@@ -1,16 +1,15 @@
-uuid: 9ffb1175-b951-4de3-978d-4a2b279517a1
+uuid: 5e0ce693-b652-4e0f-b39f-bb4a40b0b045
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
-    - text
-id: paragraph.field_description
-field_name: field_description
+id: paragraph.field_include_background
+field_name: field_include_background
 entity_type: paragraph
-type: text_long
+type: boolean
 settings: {  }
-module: text
+module: core
 locked: false
 cardinality: 1
 translatable: true

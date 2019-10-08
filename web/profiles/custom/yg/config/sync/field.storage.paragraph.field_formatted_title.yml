@@ -1,15 +1,16 @@
-uuid: 9ffb1175-b951-4de3-978d-4a2b279517a1
+uuid: 7c66dd63-720a-4135-a3b2-730667c35e53
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
     - text
-id: paragraph.field_description
-field_name: field_description
+id: paragraph.field_formatted_title
+field_name: field_formatted_title
 entity_type: paragraph
-type: text_long
-settings: {  }
+type: text
+settings:
+  max_length: 255
 module: text
 locked: false
 cardinality: 1

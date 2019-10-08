@@ -10,6 +10,7 @@ dependencies:
     - paragraphs.paragraphs_type.carousel_hero_item
   module:
     - link
+    - text
 id: paragraph.carousel_hero_item.default
 targetEntityType: paragraph
 bundle: carousel_hero_item
@@ -28,11 +29,11 @@ content:
     type: link
     region: content
   field_description:
-    weight: 1
+    weight: 4
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    type: text_default
     region: content
   field_image:
     type: entity_reference_entity_view

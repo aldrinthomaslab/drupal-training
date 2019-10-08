@@ -1,0 +1,23 @@
+uuid: f26c2943-2096-4c84-8205-4cad2e264b9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_include_background
+    - paragraphs.paragraphs_type.content_block
+id: paragraph.content_block.field_include_background
+field_name: field_include_background
+entity_type: paragraph
+bundle: content_block
+label: 'Include Background'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

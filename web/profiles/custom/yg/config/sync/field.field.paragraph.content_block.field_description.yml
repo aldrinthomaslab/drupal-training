@@ -1,20 +1,20 @@
-uuid: c0be07c2-64cd-4da1-96f1-443db49cfc3f
+uuid: 4f189a89-8ce7-4cb3-995d-c3a2b7bf44a2
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_description
-    - paragraphs.paragraphs_type.carousel_hero_item
+    - paragraphs.paragraphs_type.content_block
   module:
     - text
-id: paragraph.carousel_hero_item.field_description
+id: paragraph.content_block.field_description
 field_name: field_description
 entity_type: paragraph
-bundle: carousel_hero_item
+bundle: content_block
 label: Description
 description: ''
-required: false
-translatable: false
+required: true
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
