@@ -1,0 +1,29 @@
+uuid: 2a807ada-35a0-4f15-9fac-0e3c280f3893
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.carousel_hero.field_carousel_hero_items
+    - paragraphs.paragraphs_type.carousel_hero
+  module:
+    - paragraphs
+id: paragraph.carousel_hero.default
+targetEntityType: paragraph
+bundle: carousel_hero
+mode: default
+content:
+  field_carousel_hero_items:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

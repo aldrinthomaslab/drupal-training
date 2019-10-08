@@ -1,0 +1,49 @@
+uuid: 946425aa-34e3-4d37-9b4b-20b7e43f55b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_carousel_hero_items
+    - paragraphs.paragraphs_type.carousel_hero
+    - paragraphs.paragraphs_type.carousel_hero_item
+  module:
+    - entity_reference_revisions
+id: paragraph.carousel_hero.field_carousel_hero_items
+field_name: field_carousel_hero_items
+entity_type: paragraph
+bundle: carousel_hero
+label: Items
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      carousel_hero_item: carousel_hero_item
+    target_bundles_drag_drop:
+      carousel_hero:
+        weight: 8
+        enabled: false
+      basic_hero:
+        weight: 9
+        enabled: false
+      blog_listing:
+        weight: 10
+        enabled: false
+      carousel_hero_item:
+        enabled: true
+        weight: 11
+      portfolio_listing:
+        weight: 12
+        enabled: false
+      services_paragraph:
+        weight: 13
+        enabled: false
+      social_media_link:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions
