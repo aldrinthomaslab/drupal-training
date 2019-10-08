@@ -1,0 +1,19 @@
+uuid: c90674fc-f51c-4aec-8818-d8813164b872
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_company_name
+    - node.type.contact_us
+id: node.contact_us.field_company_name
+field_name: field_company_name
+entity_type: node
+bundle: contact_us
+label: 'Company Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

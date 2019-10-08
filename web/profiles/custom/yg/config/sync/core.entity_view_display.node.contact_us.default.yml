@@ -1,0 +1,91 @@
+uuid: 760ec4da-e7a5-43e8-a185-393fb9e6bb72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contact_us.field_business_hours
+    - field.field.node.contact_us.field_company_address
+    - field.field.node.contact_us.field_company_name
+    - field.field.node.contact_us.field_contact_numbers
+    - field.field.node.contact_us.field_description
+    - field.field.node.contact_us.field_email
+    - field.field.node.contact_us.field_geolocation
+    - field.field.node.contact_us.field_hero
+    - node.type.contact_us
+  module:
+    - entity_reference_revisions
+    - geolocation
+    - user
+id: node.contact_us.default
+targetEntityType: node
+bundle: contact_us
+mode: default
+content:
+  field_business_hours:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_company_address:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_company_name:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_numbers:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_description:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_email:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_geolocation:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: geolocation_latlng
+    region: content
+  field_hero:
+    weight: 107
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

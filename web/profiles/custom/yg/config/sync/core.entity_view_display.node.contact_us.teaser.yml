@@ -1,0 +1,20 @@
+uuid: dc6f27b6-7213-43ee-9352-ac7c147d54c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.contact_us
+  module:
+    - user
+id: node.contact_us.teaser
+targetEntityType: node
+bundle: contact_us
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

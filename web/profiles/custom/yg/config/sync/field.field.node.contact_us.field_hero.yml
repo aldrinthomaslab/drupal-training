@@ -1,0 +1,43 @@
+uuid: 41b9328f-8041-4fc0-9deb-9250ffc3d568
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero
+    - node.type.contact_us
+    - paragraphs.paragraphs_type.basic_hero
+  module:
+    - entity_reference_revisions
+id: node.contact_us.field_hero
+field_name: field_hero
+entity_type: node
+bundle: contact_us
+label: Hero
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      basic_hero: basic_hero
+    target_bundles_drag_drop:
+      basic_hero:
+        enabled: true
+        weight: 6
+      blog_listing:
+        weight: 7
+        enabled: false
+      portfolio_listing:
+        weight: 8
+        enabled: false
+      services_paragraph:
+        weight: 9
+        enabled: false
+      social_media_link:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions
