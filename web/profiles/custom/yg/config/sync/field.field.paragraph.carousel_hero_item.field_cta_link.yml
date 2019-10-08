@@ -1,0 +1,23 @@
+uuid: 056d6ab3-1173-418d-8dbb-ba2beea87408
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cta_link
+    - paragraphs.paragraphs_type.carousel_hero_item
+  module:
+    - link
+id: paragraph.carousel_hero_item.field_cta_link
+field_name: field_cta_link
+entity_type: paragraph
+bundle: carousel_hero_item
+label: 'CTA Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 1
+field_type: link

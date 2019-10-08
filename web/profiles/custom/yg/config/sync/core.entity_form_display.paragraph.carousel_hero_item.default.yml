@@ -1,0 +1,52 @@
+uuid: 8e9ae06c-c3a7-4cd0-b228-34c7503ebce1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.carousel_hero_item.field_cta_link
+    - field.field.paragraph.carousel_hero_item.field_description
+    - field.field.paragraph.carousel_hero_item.field_image
+    - field.field.paragraph.carousel_hero_item.field_title
+    - paragraphs.paragraphs_type.carousel_hero_item
+  module:
+    - link
+    - media_library
+id: paragraph.carousel_hero_item.default
+targetEntityType: paragraph
+bundle: carousel_hero_item
+mode: default
+content:
+  field_cta_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_image:
+    type: media_library_widget
+    weight: 2
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
