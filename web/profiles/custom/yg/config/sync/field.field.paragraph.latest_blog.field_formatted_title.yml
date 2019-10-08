@@ -1,0 +1,21 @@
+uuid: e5cccb79-4f3d-4bfb-8e05-ae5e21841f79
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_formatted_title
+    - paragraphs.paragraphs_type.latest_blog
+  module:
+    - text
+id: paragraph.latest_blog.field_formatted_title
+field_name: field_formatted_title
+entity_type: paragraph
+bundle: latest_blog
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
