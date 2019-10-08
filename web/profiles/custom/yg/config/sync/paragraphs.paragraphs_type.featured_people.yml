@@ -1,0 +1,9 @@
+uuid: 98f9413b-e8d5-43d1-82e8-f3a4f11d8236
+langcode: en
+status: true
+dependencies: {  }
+id: featured_people
+label: 'Featured People'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

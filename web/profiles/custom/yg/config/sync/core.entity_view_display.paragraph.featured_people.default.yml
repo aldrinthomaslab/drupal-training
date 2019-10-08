@@ -1,0 +1,31 @@
+uuid: 30c724a9-1244-4750-b6bd-9bb8a7ecba86
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.featured_people.field_formatted_title
+    - field.field.paragraph.featured_people.field_people
+    - paragraphs.paragraphs_type.featured_people
+  module:
+    - text
+id: paragraph.featured_people.default
+targetEntityType: paragraph
+bundle: featured_people
+mode: default
+content:
+  field_formatted_title:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_people:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

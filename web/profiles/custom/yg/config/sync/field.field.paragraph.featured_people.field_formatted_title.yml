@@ -1,0 +1,21 @@
+uuid: ef0a78ae-eef2-46a8-8c1b-1e7b509723e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_formatted_title
+    - paragraphs.paragraphs_type.featured_people
+  module:
+    - text
+id: paragraph.featured_people.field_formatted_title
+field_name: field_formatted_title
+entity_type: paragraph
+bundle: featured_people
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
