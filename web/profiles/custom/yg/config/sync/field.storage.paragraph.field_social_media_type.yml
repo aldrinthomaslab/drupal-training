@@ -1,12 +1,12 @@
-uuid: 649136fb-d38a-4049-979c-e6fbfa3d99fb
+uuid: bce29388-f68d-41c9-b713-b63e97c3fc2c
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
     - taxonomy
-id: paragraph.field_media
-field_name: field_media
+id: paragraph.field_social_media_type
+field_name: field_social_media_type
 entity_type: paragraph
 type: entity_reference
 settings:

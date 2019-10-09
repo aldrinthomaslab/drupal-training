@@ -1,0 +1,9 @@
+uuid: d02ec55c-adcd-4ae2-a063-cb8398d2806e
+langcode: en
+status: true
+dependencies: {  }
+id: social_link_item
+label: 'Social Link Item'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

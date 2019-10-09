@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_social_links
     - node.type.person
-    - paragraphs.paragraphs_type.social_media_link
   module:
     - entity_reference_revisions
 id: node.person.field_social_links
@@ -22,8 +21,7 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     negate: 0
-    target_bundles:
-      social_media_link: social_media_link
+    target_bundles: {  }
     target_bundles_drag_drop:
       social_media_link:
         enabled: true

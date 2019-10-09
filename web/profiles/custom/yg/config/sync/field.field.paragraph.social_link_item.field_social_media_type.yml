@@ -1,18 +1,18 @@
-uuid: 98f3f343-2bfb-4590-963f-f95385a04779
+uuid: 6e9e5db4-4979-4b34-8bd3-c471e072e7e6
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_media
-    - paragraphs.paragraphs_type.social_media_link
+    - field.storage.paragraph.field_social_media_type
+    - paragraphs.paragraphs_type.social_link_item
     - taxonomy.vocabulary.social_media
-id: paragraph.social_media_link.field_media
-field_name: field_media
+id: paragraph.social_link_item.field_social_media_type
+field_name: field_social_media_type
 entity_type: paragraph
-bundle: social_media_link
-label: Media
+bundle: social_link_item
+label: 'Social Media'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

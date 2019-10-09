@@ -1,0 +1,23 @@
+uuid: 72fc2266-ce5e-4faf-970b-4c63293b9283
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.social_link_item
+  module:
+    - link
+id: paragraph.social_link_item.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: social_link_item
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

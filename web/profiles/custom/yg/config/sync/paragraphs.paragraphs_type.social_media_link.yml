@@ -1,9 +1,0 @@
-uuid: 3166fd1b-b62d-47bf-b7e9-447b28305487
-langcode: en
-status: true
-dependencies: {  }
-id: social_media_link
-label: 'Social Media Link'
-icon_uuid: null
-description: 'Paragraph for different Social Media Links'
-behavior_plugins: {  }
