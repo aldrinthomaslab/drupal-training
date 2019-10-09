@@ -6,15 +6,21 @@ dependencies:
     - field.storage.paragraph.field_image
     - media.type.banner_image
     - paragraphs.paragraphs_type.carousel_hero_item
+  content:
+    - 'media:banner_image:4af4547e-52ce-43ad-8025-0680f499e3cb'
 id: paragraph.carousel_hero_item.field_image
 field_name: field_image
 entity_type: paragraph
 bundle: carousel_hero_item
 label: Image
 description: ''
-required: true
+required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    preview: {  }
+    weight: '0'
+    target_uuid: 4af4547e-52ce-43ad-8025-0680f499e3cb
 default_value_callback: ''
 settings:
   handler: 'default:media'
