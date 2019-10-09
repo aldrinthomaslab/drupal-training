@@ -1,4 +1,6 @@
-onlyone_node_types: {  }
+onlyone_node_types:
+  - contact_us
+  - homepage
 onlyone_new_menu_entry: false
 _core:
   default_config_hash: SV-A6-tWOochLLtOO2k_FkXh7fF2MURbyx-aYMIgf8Q
