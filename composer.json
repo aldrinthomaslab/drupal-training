@@ -84,6 +84,11 @@
                 ".editorconfig": "../.editorconfig",
                 ".gitattributes": "../.gitattributes"
             }
+        },
+        "patches": {
+           "drupal/onlyone": {
+               "node/add patch": "https://www.drupal.org/files/issues/2019-02-04/onlyone-node-add-fails-3030560-2-8.6.7.patch"
+           }
         }
     }
 }
