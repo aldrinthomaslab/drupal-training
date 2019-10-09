@@ -1,0 +1,47 @@
+uuid: db0e6f3e-3009-4278-bb78-6a865824c49b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_person_listing
+    - paragraphs.paragraphs_type.person_listing
+  module:
+    - viewfield
+id: paragraph.person_listing.field_person_listing
+field_name: field_person_listing
+entity_type: paragraph
+bundle: person_listing
+label: 'Person Listing'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  force_default: false
+  allowed_views:
+    user_admin_people: user_admin_people
+    blogs: '0'
+    comment: '0'
+    content: '0'
+    block_content: '0'
+    files: '0'
+    frontpage: '0'
+    media: '0'
+    media_library: '0'
+    portfolio: '0'
+    comments_recent: '0'
+    content_recent: '0'
+    views_services_page: '0'
+    services_portfolio_block: '0'
+    watchdog: '0'
+    who_s_new: '0'
+    who_s_online: '0'
+  allowed_display_types:
+    block: block
+    feed: '0'
+    default: '0'
+    page: '0'
+  handler: 'default:view'
+  handler_settings: {  }
+field_type: viewfield

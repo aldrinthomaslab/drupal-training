@@ -1,0 +1,33 @@
+uuid: 9f20ec4b-11c3-49ff-8fe9-58c4d6ece3ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.person_listing.field_formatted_title
+    - field.field.paragraph.person_listing.field_person_listing
+    - paragraphs.paragraphs_type.person_listing
+  module:
+    - text
+    - viewfield
+id: paragraph.person_listing.default
+targetEntityType: paragraph
+bundle: person_listing
+mode: default
+content:
+  field_formatted_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_person_listing:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: viewfield_select
+    region: content
+hidden:
+  created: true
+  status: true

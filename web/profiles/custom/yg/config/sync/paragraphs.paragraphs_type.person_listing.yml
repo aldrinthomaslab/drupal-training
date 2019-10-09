@@ -1,0 +1,9 @@
+uuid: 42be9ce9-02cc-41f8-bcff-2cd9948234c3
+langcode: en
+status: true
+dependencies: {  }
+id: person_listing
+label: 'Person Listing'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

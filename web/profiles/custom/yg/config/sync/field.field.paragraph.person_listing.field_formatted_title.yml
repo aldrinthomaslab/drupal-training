@@ -1,0 +1,21 @@
+uuid: 089ab3ca-7fd0-44ee-b4c6-f2f63c5b52a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_formatted_title
+    - paragraphs.paragraphs_type.person_listing
+  module:
+    - text
+id: paragraph.person_listing.field_formatted_title
+field_name: field_formatted_title
+entity_type: paragraph
+bundle: person_listing
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
