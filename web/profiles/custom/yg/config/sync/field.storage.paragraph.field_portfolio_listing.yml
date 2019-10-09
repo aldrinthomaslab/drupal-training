@@ -1,16 +1,18 @@
-uuid: 58b37815-5954-4163-afd4-54baa886d477
+uuid: 8112ca91-54da-4e91-a147-0c578ac7b568
 langcode: en
 status: true
 dependencies:
   module:
-    - block_field
     - paragraphs
+    - viewfield
+    - views
 id: paragraph.field_portfolio_listing
 field_name: field_portfolio_listing
 entity_type: paragraph
-type: block_field
-settings: {  }
-module: block_field
+type: viewfield
+settings:
+  target_type: view
+module: viewfield
 locked: false
 cardinality: 1
 translatable: true

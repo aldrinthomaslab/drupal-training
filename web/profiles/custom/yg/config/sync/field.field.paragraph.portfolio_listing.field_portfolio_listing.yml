@@ -1,4 +1,4 @@
-uuid: 811e58e8-f282-4aea-b18b-97cc27c07a63
+uuid: a5f32462-d1f6-4e56-84a2-c1d3374b8b3e
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - field.storage.paragraph.field_portfolio_listing
     - paragraphs.paragraphs_type.portfolio_listing
   module:
-    - block_field
+    - viewfield
 id: paragraph.portfolio_listing.field_portfolio_listing
 field_name: field_portfolio_listing
 entity_type: paragraph
@@ -18,5 +18,30 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  plugin_ids: {  }
-field_type: block_field
+  force_default: false
+  allowed_views:
+    portfolio: portfolio
+    blogs: '0'
+    comment: '0'
+    content: '0'
+    block_content: '0'
+    files: '0'
+    frontpage: '0'
+    media: '0'
+    media_library: '0'
+    user_admin_people: '0'
+    comments_recent: '0'
+    content_recent: '0'
+    views_services_page: '0'
+    services_portfolio_block: '0'
+    watchdog: '0'
+    who_s_new: '0'
+    who_s_online: '0'
+  allowed_display_types:
+    block: block
+    page: page
+    feed: '0'
+    default: '0'
+  handler: 'default:view'
+  handler_settings: {  }
+field_type: viewfield

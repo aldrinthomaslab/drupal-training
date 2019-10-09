@@ -6,7 +6,7 @@ dependencies:
     - field.field.paragraph.portfolio_listing.field_portfolio_listing
     - paragraphs.paragraphs_type.portfolio_listing
   module:
-    - block_field
+    - viewfield
 id: paragraph.portfolio_listing.default
 targetEntityType: paragraph
 bundle: portfolio_listing
@@ -14,12 +14,9 @@ mode: default
 content:
   field_portfolio_listing:
     weight: 0
-    settings:
-      plugin_id: ''
-      settings: {  }
-      configuration_form: full
+    settings: {  }
     third_party_settings: {  }
-    type: block_field_default
+    type: viewfield_select
     region: content
 hidden:
   created: true
