@@ -1,16 +1,16 @@
-uuid: ba83da0b-df26-4a55-83e6-3128f2f81b24
+uuid: 41954cf1-646f-48fd-8e17-b79e52469263
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_formatted_title
-    - paragraphs.paragraphs_type.faetured_portfolio
+    - paragraphs.paragraphs_type.featured_portfolio
   module:
     - text
-id: paragraph.faetured_portfolio.field_formatted_title
+id: paragraph.featured_portfolio.field_formatted_title
 field_name: field_formatted_title
 entity_type: paragraph
-bundle: faetured_portfolio
+bundle: featured_portfolio
 label: Title
 description: ''
 required: true

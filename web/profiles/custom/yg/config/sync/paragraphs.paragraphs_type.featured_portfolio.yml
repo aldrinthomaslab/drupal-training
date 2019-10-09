@@ -1,9 +1,9 @@
-uuid: 98536bc0-ed12-40c0-b2f2-9a2d3ce7725e
+uuid: c8170192-ad93-4c7a-8ebc-92ac7bbf54fc
 langcode: en
 status: true
 dependencies: {  }
-id: faetured_portfolio
-label: 'Faetured Portfolio'
+id: featured_portfolio
+label: 'Featured Portfolio'
 icon_uuid: null
 description: ''
 behavior_plugins: {  }

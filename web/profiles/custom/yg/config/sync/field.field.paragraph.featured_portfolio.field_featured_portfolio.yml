@@ -1,16 +1,16 @@
-uuid: 03b839cd-e602-45c8-8def-a75f9178cd7b
+uuid: 6bfed4b1-a4ea-4895-bc1b-824d57995616
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_featured_portfolios
-    - paragraphs.paragraphs_type.faetured_portfolio
+    - field.storage.paragraph.field_featured_portfolio
+    - paragraphs.paragraphs_type.featured_portfolio
   module:
     - viewfield
-id: paragraph.faetured_portfolio.field_featured_portfolios
-field_name: field_featured_portfolios
+id: paragraph.featured_portfolio.field_featured_portfolio
+field_name: field_featured_portfolio
 entity_type: paragraph
-bundle: faetured_portfolio
+bundle: featured_portfolio
 label: 'Portfolio Listing'
 description: ''
 required: false

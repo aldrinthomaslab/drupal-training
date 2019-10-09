@@ -1,21 +1,21 @@
-uuid: 681939c8-e1b4-42d0-a64a-1a85e2ae3e29
+uuid: e6da9629-28c4-4666-a417-12f0da3f1777
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.faetured_portfolio.field_featured_portfolios
-    - field.field.paragraph.faetured_portfolio.field_formatted_title
-    - field.field.paragraph.faetured_portfolio.field_short_description
-    - paragraphs.paragraphs_type.faetured_portfolio
+    - field.field.paragraph.featured_portfolio.field_featured_portfolio
+    - field.field.paragraph.featured_portfolio.field_formatted_title
+    - field.field.paragraph.featured_portfolio.field_short_description
+    - paragraphs.paragraphs_type.featured_portfolio
   module:
     - text
     - viewfield
-id: paragraph.faetured_portfolio.default
+id: paragraph.featured_portfolio.default
 targetEntityType: paragraph
-bundle: faetured_portfolio
+bundle: featured_portfolio
 mode: default
 content:
-  field_featured_portfolios:
+  field_featured_portfolio:
     weight: 2
     settings: {  }
     third_party_settings: {  }

@@ -1,4 +1,4 @@
-uuid: 0b6a7c44-9ced-4f40-be28-4259c21a3e11
+uuid: c7c4827a-8f70-4271-a3d3-9c390aafb716
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     - paragraphs
     - viewfield
     - views
-id: paragraph.field_featured_portfolios
-field_name: field_featured_portfolios
+id: paragraph.field_featured_portfolio
+field_name: field_featured_portfolio
 entity_type: paragraph
 type: viewfield
 settings:

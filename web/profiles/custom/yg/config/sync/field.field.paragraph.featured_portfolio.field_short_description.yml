@@ -1,19 +1,19 @@
-uuid: bd581145-5263-45d0-89a8-405b95f62bf3
+uuid: 0e4b903d-5ab9-429b-bd42-c6ae244aab1b
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_short_description
-    - paragraphs.paragraphs_type.faetured_portfolio
+    - paragraphs.paragraphs_type.featured_portfolio
   module:
     - text
-id: paragraph.faetured_portfolio.field_short_description
+id: paragraph.featured_portfolio.field_short_description
 field_name: field_short_description
 entity_type: paragraph
-bundle: faetured_portfolio
+bundle: featured_portfolio
 label: Description
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
