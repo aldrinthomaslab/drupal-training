@@ -1,0 +1,25 @@
+uuid: 1a24c01a-d97c-461e-8c30-ae00b7ea8adc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.testimonials.field_formatted_title
+    - paragraphs.paragraphs_type.testimonials
+  module:
+    - text
+id: paragraph.testimonials.default
+targetEntityType: paragraph
+bundle: testimonials
+mode: default
+content:
+  field_formatted_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+hidden:
+  created: true
+  status: true

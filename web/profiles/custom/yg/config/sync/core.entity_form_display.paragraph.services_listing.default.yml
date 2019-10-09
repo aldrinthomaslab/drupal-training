@@ -1,0 +1,26 @@
+uuid: 837e2d09-da77-4877-9b2b-e4c79bc2259a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.services_listing.field_services_list
+    - paragraphs.paragraphs_type.services_listing
+  module:
+    - block_field
+id: paragraph.services_listing.default
+targetEntityType: paragraph
+bundle: services_listing
+mode: default
+content:
+  field_services_list:
+    weight: 0
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+    type: block_field_default
+    region: content
+hidden:
+  created: true
+  status: true

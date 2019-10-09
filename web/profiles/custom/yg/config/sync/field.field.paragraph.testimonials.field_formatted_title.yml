@@ -1,0 +1,21 @@
+uuid: 93a7fb35-54cb-4496-879a-b33b8e75195f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_formatted_title
+    - paragraphs.paragraphs_type.testimonials
+  module:
+    - text
+id: paragraph.testimonials.field_formatted_title
+field_name: field_formatted_title
+entity_type: paragraph
+bundle: testimonials
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

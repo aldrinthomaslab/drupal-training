@@ -1,0 +1,22 @@
+uuid: c1ae506e-9c46-41ed-adee-5854a5e8e4cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_services_list
+    - paragraphs.paragraphs_type.services_listing
+  module:
+    - block_field
+id: paragraph.services_listing.field_services_list
+field_name: field_services_list
+entity_type: paragraph
+bundle: services_listing
+label: 'Services List'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  plugin_ids: {  }
+field_type: block_field
