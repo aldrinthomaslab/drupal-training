@@ -5,8 +5,8 @@ dependencies:
   config:
     - field.field.paragraph.carousel_hero_item.field_cta_link
     - field.field.paragraph.carousel_hero_item.field_description
+    - field.field.paragraph.carousel_hero_item.field_formatted_title
     - field.field.paragraph.carousel_hero_item.field_image
-    - field.field.paragraph.carousel_hero_item.field_title
     - paragraphs.paragraphs_type.carousel_hero_item
   module:
     - link
@@ -33,20 +33,20 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
+  field_formatted_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
   field_image:
     type: media_library_widget
     weight: 1
     settings:
       media_types: {  }
     third_party_settings: {  }
-    region: content
-  field_title:
-    weight: 0
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
     region: content
 hidden:
   created: true

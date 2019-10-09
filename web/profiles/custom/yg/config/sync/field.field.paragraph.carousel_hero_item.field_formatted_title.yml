@@ -1,19 +1,21 @@
-uuid: d132419e-6cb6-4d5e-9d5e-0eb86806d2be
+uuid: 89396a56-5865-4a95-81ca-baea086963af
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_title
+    - field.storage.paragraph.field_formatted_title
     - paragraphs.paragraphs_type.carousel_hero_item
-id: paragraph.carousel_hero_item.field_title
-field_name: field_title
+  module:
+    - text
+id: paragraph.carousel_hero_item.field_formatted_title
+field_name: field_formatted_title
 entity_type: paragraph
 bundle: carousel_hero_item
 label: Title
 description: ''
-required: true
+required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: text
