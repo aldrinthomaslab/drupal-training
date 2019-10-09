@@ -1,0 +1,9 @@
+uuid: 98536bc0-ed12-40c0-b2f2-9a2d3ce7725e
+langcode: en
+status: true
+dependencies: {  }
+id: faetured_portfolio
+label: 'Faetured Portfolio'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,21 @@
+uuid: ba83da0b-df26-4a55-83e6-3128f2f81b24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_formatted_title
+    - paragraphs.paragraphs_type.faetured_portfolio
+  module:
+    - text
+id: paragraph.faetured_portfolio.field_formatted_title
+field_name: field_formatted_title
+entity_type: paragraph
+bundle: faetured_portfolio
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

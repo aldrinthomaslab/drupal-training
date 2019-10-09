@@ -1,0 +1,42 @@
+uuid: e2dc3fd6-750e-400e-be50-f8a411a50805
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.faetured_portfolio.field_featured_portfolios
+    - field.field.paragraph.faetured_portfolio.field_formatted_title
+    - field.field.paragraph.faetured_portfolio.field_short_description
+    - paragraphs.paragraphs_type.faetured_portfolio
+  module:
+    - text
+    - viewfield
+id: paragraph.faetured_portfolio.default
+targetEntityType: paragraph
+bundle: faetured_portfolio
+mode: default
+content:
+  field_featured_portfolios:
+    weight: 2
+    label: above
+    settings:
+      view_title: hidden
+      always_build_output: false
+      empty_view_title: hidden
+    third_party_settings: {  }
+    type: viewfield_default
+    region: content
+  field_formatted_title:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_short_description:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }
