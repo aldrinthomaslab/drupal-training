@@ -1,0 +1,92 @@
+uuid: a59d5e82-70a8-4468-b22a-d91774848fc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_components
+    - node.type.homepage
+    - paragraphs.paragraphs_type.content_block
+    - paragraphs.paragraphs_type.featured_people
+    - paragraphs.paragraphs_type.latest_blog
+    - paragraphs.paragraphs_type.pricing
+    - paragraphs.paragraphs_type.services_listing
+    - paragraphs.paragraphs_type.testimonials
+  module:
+    - entity_reference_revisions
+id: node.homepage.field_components
+field_name: field_components
+entity_type: node
+bundle: homepage
+label: Components
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      content_block: content_block
+      featured_people: featured_people
+      latest_blog: latest_blog
+      pricing: pricing
+      services_listing: services_listing
+      testimonials: testimonials
+    target_bundles_drag_drop:
+      basic_hero:
+        weight: 19
+        enabled: false
+      blog_listing:
+        weight: 20
+        enabled: false
+      carousel_hero:
+        weight: 21
+        enabled: false
+      carousel_hero_item:
+        weight: 22
+        enabled: false
+      content_block:
+        enabled: true
+        weight: 23
+      faetured_portfolio:
+        weight: 24
+        enabled: false
+      featured_people:
+        enabled: true
+        weight: 25
+      latest_blog:
+        enabled: true
+        weight: 26
+      person_listing:
+        weight: 27
+        enabled: false
+      portfolio_listing:
+        weight: 28
+        enabled: false
+      pricing:
+        enabled: true
+        weight: 29
+      pricing_item:
+        weight: 30
+        enabled: false
+      services_carousel:
+        weight: 31
+        enabled: false
+      services_listing:
+        enabled: true
+        weight: 32
+      services_paragraph:
+        weight: 33
+        enabled: false
+      social_link_item:
+        weight: 34
+        enabled: false
+      social_links:
+        weight: 35
+        enabled: false
+      testimonials:
+        enabled: true
+        weight: 36
+field_type: entity_reference_revisions

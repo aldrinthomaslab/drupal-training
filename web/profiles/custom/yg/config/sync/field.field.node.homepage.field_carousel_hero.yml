@@ -1,0 +1,82 @@
+uuid: e4bf5632-f7cc-4a94-9efe-5a2048697404
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_carousel_hero
+    - node.type.homepage
+    - paragraphs.paragraphs_type.carousel_hero
+  module:
+    - entity_reference_revisions
+id: node.homepage.field_carousel_hero
+field_name: field_carousel_hero
+entity_type: node
+bundle: homepage
+label: Hero
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      carousel_hero: carousel_hero
+    target_bundles_drag_drop:
+      basic_hero:
+        weight: 19
+        enabled: false
+      blog_listing:
+        weight: 20
+        enabled: false
+      carousel_hero:
+        enabled: true
+        weight: 21
+      carousel_hero_item:
+        weight: 22
+        enabled: false
+      content_block:
+        weight: 23
+        enabled: false
+      faetured_portfolio:
+        weight: 24
+        enabled: false
+      featured_people:
+        weight: 25
+        enabled: false
+      latest_blog:
+        weight: 26
+        enabled: false
+      person_listing:
+        weight: 27
+        enabled: false
+      portfolio_listing:
+        weight: 28
+        enabled: false
+      pricing:
+        weight: 29
+        enabled: false
+      pricing_item:
+        weight: 30
+        enabled: false
+      services_carousel:
+        weight: 31
+        enabled: false
+      services_listing:
+        weight: 32
+        enabled: false
+      services_paragraph:
+        weight: 33
+        enabled: false
+      social_link_item:
+        weight: 34
+        enabled: false
+      social_links:
+        weight: 35
+        enabled: false
+      testimonials:
+        weight: 36
+        enabled: false
+field_type: entity_reference_revisions
