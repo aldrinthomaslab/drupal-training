@@ -1,0 +1,33 @@
+uuid: 8d8c209e-44a6-4f39-a308-8b5b1fd5f6b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.text_style_limited_format
+  module:
+    - ckeditor
+format: text_style_limited_format
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Underline
+  plugins:
+    stylescombo:
+      styles: ''
+    language:
+      language_list: un
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

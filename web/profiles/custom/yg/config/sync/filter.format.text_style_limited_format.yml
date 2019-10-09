@@ -1,0 +1,17 @@
+uuid: dd261c90-a0d1-4e1e-bb49-e0ca83a21aad
+langcode: en
+status: true
+dependencies: {  }
+name: 'Text Style Limited Format'
+format: text_style_limited_format
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol type start> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <u>'
+      filter_html_help: true
+      filter_html_nofollow: false
