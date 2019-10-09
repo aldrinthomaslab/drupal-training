@@ -1,0 +1,21 @@
+uuid: 90096b94-ae91-46d4-9fcb-5f229303c859
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.services_carousel.field_service_items
+    - paragraphs.paragraphs_type.services_carousel
+id: paragraph.services_carousel.default
+targetEntityType: paragraph
+bundle: services_carousel
+mode: default
+content:
+  field_service_items:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

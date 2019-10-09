@@ -1,0 +1,24 @@
+uuid: b2dfde12-e806-479d-bc7c-04fe1af667cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.services_carousel.field_service_items
+    - paragraphs.paragraphs_type.services_carousel
+id: paragraph.services_carousel.default
+targetEntityType: paragraph
+bundle: services_carousel
+mode: default
+content:
+  field_service_items:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true
