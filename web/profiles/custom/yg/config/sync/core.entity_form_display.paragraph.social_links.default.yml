@@ -1,0 +1,29 @@
+uuid: 3afb95cf-4d64-4d28-b0bc-3903a8858594
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.social_links.field_social_link
+    - paragraphs.paragraphs_type.social_links
+  module:
+    - paragraphs
+id: paragraph.social_links.default
+targetEntityType: paragraph
+bundle: social_links
+mode: default
+content:
+  field_social_link:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

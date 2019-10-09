@@ -1,0 +1,24 @@
+uuid: f0e71629-eb95-4ca9-ab46-8443e3f4d8a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.social_links.field_social_link
+    - paragraphs.paragraphs_type.social_links
+  module:
+    - entity_reference_revisions
+id: paragraph.social_links.default
+targetEntityType: paragraph
+bundle: social_links
+mode: default
+content:
+  field_social_link:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }
