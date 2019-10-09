@@ -27,6 +27,7 @@
         "drupal/onlyone": "^1.8",
         "drupal/paragraphs": "^1.9",
         "drupal/pathauto": "^1.4",
+        "drupal/viewfield": "^3.0",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
