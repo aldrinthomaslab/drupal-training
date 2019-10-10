@@ -1,19 +1,21 @@
-uuid: 7a58243c-5596-4cd8-b361-efdccc458880
+uuid: 9e8eb2e5-4437-4367-9cb1-661507a14ee5
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_title
+    - field.storage.paragraph.field_formatted_title
     - paragraphs.paragraphs_type.services_paragraph
-id: paragraph.services_paragraph.field_title
-field_name: field_title
+  module:
+    - text
+id: paragraph.services_paragraph.field_formatted_title
+field_name: field_formatted_title
 entity_type: paragraph
 bundle: services_paragraph
 label: Title
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: text

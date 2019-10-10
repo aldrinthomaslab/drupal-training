@@ -3,39 +3,36 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.services_paragraph.field_service_listin
-    - field.field.paragraph.services_paragraph.field_title
-    - field.field.paragraph.services_paragraph.field_variation
+    - field.field.paragraph.services_paragraph.field_formatted_title
+    - field.field.paragraph.services_paragraph.field_service
     - paragraphs.paragraphs_type.services_paragraph
   module:
-    - block_field
+    - paragraphs
+    - text
 id: paragraph.services_paragraph.default
 targetEntityType: paragraph
 bundle: services_paragraph
 mode: default
 content:
-  field_service_listin:
-    weight: 1
-    settings:
-      plugin_id: ''
-      settings: {  }
-      configuration_form: full
-    third_party_settings: {  }
-    type: block_field_default
-    region: content
-  field_title:
+  field_formatted_title:
     weight: 0
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: text_textfield
     region: content
-  field_variation:
-    weight: 2
-    settings: {  }
+  field_service:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
     third_party_settings: {  }
-    type: options_select
     region: content
 hidden:
   created: true

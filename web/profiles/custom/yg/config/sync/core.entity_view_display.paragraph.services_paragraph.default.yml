@@ -3,38 +3,31 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.services_paragraph.field_service_listin
-    - field.field.paragraph.services_paragraph.field_title
-    - field.field.paragraph.services_paragraph.field_variation
+    - field.field.paragraph.services_paragraph.field_formatted_title
+    - field.field.paragraph.services_paragraph.field_service
     - paragraphs.paragraphs_type.services_paragraph
   module:
-    - block_field
-    - options
+    - entity_reference_revisions
+    - text
 id: paragraph.services_paragraph.default
 targetEntityType: paragraph
 bundle: services_paragraph
 mode: default
 content:
-  field_service_listin:
-    weight: 1
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: block_field
-    region: content
-  field_title:
+  field_formatted_title:
     weight: 0
     label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_variation:
-    weight: 2
-    label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    type: text_default
+    region: content
+  field_service:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
     region: content
 hidden: {  }
