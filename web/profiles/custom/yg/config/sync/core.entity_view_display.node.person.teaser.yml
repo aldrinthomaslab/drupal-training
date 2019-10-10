@@ -4,17 +4,51 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.person.field_job_title
+    - field.field.node.person.field_person_description
+    - field.field.node.person.field_profile_image
+    - field.field.node.person.field_social_links
     - node.type.person
   module:
+    - entity_reference_revisions
+    - text
     - user
 id: node.person.teaser
 targetEntityType: node
 bundle: person
 mode: teaser
 content:
-  links:
-    weight: 100
+  field_job_title:
+    type: string
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_person_description:
+    type: text_default
+    weight: 1
+    region: content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+  field_profile_image:
+    type: entity_reference_label
+    weight: 0
     region: content
-hidden: {  }
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_social_links:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+hidden:
+  links: true
