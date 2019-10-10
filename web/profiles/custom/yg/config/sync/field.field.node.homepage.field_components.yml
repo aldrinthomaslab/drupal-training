@@ -9,7 +9,7 @@ dependencies:
     - paragraphs.paragraphs_type.featured_people
     - paragraphs.paragraphs_type.latest_blog
     - paragraphs.paragraphs_type.pricing
-    - paragraphs.paragraphs_type.services_listing
+    - paragraphs.paragraphs_type.services_paragraph
     - paragraphs.paragraphs_type.testimonials
   module:
     - entity_reference_revisions
@@ -32,7 +32,7 @@ settings:
       featured_people: featured_people
       latest_blog: latest_blog
       pricing: pricing
-      services_listing: services_listing
+      services_paragraph: services_paragraph
       testimonials: testimonials
     target_bundles_drag_drop:
       basic_hero:
@@ -50,12 +50,12 @@ settings:
       content_block:
         enabled: true
         weight: 23
-      faetured_portfolio:
-        weight: 24
-        enabled: false
       featured_people:
         enabled: true
         weight: 25
+      featured_portfolio:
+        weight: 25
+        enabled: false
       latest_blog:
         enabled: true
         weight: 26
@@ -75,11 +75,11 @@ settings:
         weight: 31
         enabled: false
       services_listing:
-        enabled: true
         weight: 32
-      services_paragraph:
-        weight: 33
         enabled: false
+      services_paragraph:
+        enabled: true
+        weight: 33
       social_link_item:
         weight: 34
         enabled: false
