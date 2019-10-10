@@ -11,6 +11,7 @@ dependencies:
     - paragraphs.paragraphs_type.content_block
   module:
     - link
+    - media_library
     - text
 id: paragraph.content_block.default
 targetEntityType: paragraph
@@ -44,11 +45,9 @@ content:
   field_image:
     weight: 2
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      media_types: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: media_library_widget
     region: content
   field_include_background:
     weight: 4
