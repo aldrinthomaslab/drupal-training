@@ -3,20 +3,23 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.services_listing.field_services_list
+    - field.field.paragraph.services_listing.field_services_listing
     - paragraphs.paragraphs_type.services_listing
   module:
-    - block_field
+    - viewfield
 id: paragraph.services_listing.default
 targetEntityType: paragraph
 bundle: services_listing
 mode: default
 content:
-  field_services_list:
+  field_services_listing:
     weight: 0
     label: above
-    settings: {  }
+    settings:
+      view_title: hidden
+      always_build_output: false
+      empty_view_title: hidden
     third_party_settings: {  }
-    type: block_field
+    type: viewfield_default
     region: content
 hidden: {  }

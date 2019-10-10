@@ -3,23 +3,20 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.services_listing.field_services_list
+    - field.field.paragraph.services_listing.field_services_listing
     - paragraphs.paragraphs_type.services_listing
   module:
-    - block_field
+    - viewfield
 id: paragraph.services_listing.default
 targetEntityType: paragraph
 bundle: services_listing
 mode: default
 content:
-  field_services_list:
+  field_services_listing:
     weight: 0
-    settings:
-      plugin_id: ''
-      settings: {  }
-      configuration_form: full
+    settings: {  }
     third_party_settings: {  }
-    type: block_field_default
+    type: viewfield_select
     region: content
 hidden:
   created: true
