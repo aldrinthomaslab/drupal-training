@@ -3,26 +3,17 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.latest_blog.field_blog_listing_field
     - field.field.paragraph.latest_blog.field_formatted_title
+    - field.field.paragraph.latest_blog.field_latest_blog_view
     - paragraphs.paragraphs_type.latest_blog
   module:
-    - block_field
     - text
+    - viewfield
 id: paragraph.latest_blog.default
 targetEntityType: paragraph
 bundle: latest_blog
 mode: default
 content:
-  field_blog_listing_field:
-    weight: 1
-    settings:
-      plugin_id: ''
-      settings: {  }
-      configuration_form: full
-    third_party_settings: {  }
-    type: block_field_default
-    region: content
   field_formatted_title:
     weight: 0
     settings:
@@ -30,6 +21,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textfield
+    region: content
+  field_latest_blog_view:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: viewfield_select
     region: content
 hidden:
   created: true

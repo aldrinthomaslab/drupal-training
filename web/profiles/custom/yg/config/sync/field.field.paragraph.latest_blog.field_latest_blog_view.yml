@@ -1,0 +1,47 @@
+uuid: e9909210-e2e5-4ab0-8886-472b19fcd582
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_latest_blog_view
+    - paragraphs.paragraphs_type.latest_blog
+  module:
+    - viewfield
+id: paragraph.latest_blog.field_latest_blog_view
+field_name: field_latest_blog_view
+entity_type: paragraph
+bundle: latest_blog
+label: 'Latest Blog View'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  force_default: false
+  allowed_views:
+    blogs: blogs
+    comment: '0'
+    content: '0'
+    block_content: '0'
+    files: '0'
+    frontpage: '0'
+    media: '0'
+    media_library: '0'
+    user_admin_people: '0'
+    portfolio: '0'
+    comments_recent: '0'
+    content_recent: '0'
+    views_services_page: '0'
+    services_portfolio_block: '0'
+    watchdog: '0'
+    who_s_new: '0'
+    who_s_online: '0'
+  allowed_display_types:
+    block: block
+    page: page
+    feed: '0'
+    default: '0'
+  handler: 'default:view'
+  handler_settings: {  }
+field_type: viewfield
