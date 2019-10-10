@@ -7,6 +7,7 @@ dependencies:
     - node.type.homepage
     - paragraphs.paragraphs_type.content_block
     - paragraphs.paragraphs_type.featured_people
+    - paragraphs.paragraphs_type.featured_portfolio
     - paragraphs.paragraphs_type.latest_blog
     - paragraphs.paragraphs_type.pricing
     - paragraphs.paragraphs_type.services_paragraph
@@ -30,6 +31,7 @@ settings:
     target_bundles:
       content_block: content_block
       featured_people: featured_people
+      featured_portfolio: featured_portfolio
       latest_blog: latest_blog
       pricing: pricing
       services_paragraph: services_paragraph
@@ -54,8 +56,8 @@ settings:
         enabled: true
         weight: 25
       featured_portfolio:
+        enabled: true
         weight: 25
-        enabled: false
       latest_blog:
         enabled: true
         weight: 26
