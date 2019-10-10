@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_social_links
     - node.type.person
+    - paragraphs.paragraphs_type.social_links
   module:
     - entity_reference_revisions
 id: node.person.field_social_links
@@ -21,9 +22,61 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     negate: 0
-    target_bundles: {  }
+    target_bundles:
+      social_links: social_links
     target_bundles_drag_drop:
-      social_media_link:
+      basic_hero:
+        weight: 19
+        enabled: false
+      blog_listing:
+        weight: 20
+        enabled: false
+      carousel_hero:
+        weight: 21
+        enabled: false
+      carousel_hero_item:
+        weight: 22
+        enabled: false
+      content_block:
+        weight: 23
+        enabled: false
+      featured_people:
+        weight: 24
+        enabled: false
+      featured_portfolio:
+        weight: 25
+        enabled: false
+      latest_blog:
+        weight: 26
+        enabled: false
+      person_listing:
+        weight: 27
+        enabled: false
+      portfolio_listing:
+        weight: 28
+        enabled: false
+      pricing:
+        weight: 29
+        enabled: false
+      pricing_item:
+        weight: 30
+        enabled: false
+      services_carousel:
+        weight: 31
+        enabled: false
+      services_listing:
+        weight: 32
+        enabled: false
+      services_paragraph:
+        weight: 33
+        enabled: false
+      social_link_item:
+        weight: 34
+        enabled: false
+      social_links:
         enabled: true
-        weight: 2
+        weight: 35
+      testimonials:
+        weight: 36
+        enabled: false
 field_type: entity_reference_revisions
