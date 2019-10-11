@@ -1,0 +1,21 @@
+uuid: 4b96f2c6-af65-4c02-a006-36b33c289828
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - viewfield
+    - views
+id: paragraph.field_testimonials
+field_name: field_testimonials
+entity_type: paragraph
+type: viewfield
+settings:
+  target_type: view
+module: viewfield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

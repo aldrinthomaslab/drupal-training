@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.testimonials.field_formatted_title
+    - field.field.paragraph.testimonials.field_testimonials
     - paragraphs.paragraphs_type.testimonials
   module:
     - text
+    - viewfield
 id: paragraph.testimonials.default
 targetEntityType: paragraph
 bundle: testimonials
@@ -14,9 +16,19 @@ mode: default
 content:
   field_formatted_title:
     weight: 0
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
+  field_testimonials:
+    weight: 1
+    label: hidden
+    settings:
+      view_title: hidden
+      always_build_output: false
+      empty_view_title: hidden
+    third_party_settings: {  }
+    type: viewfield_default
     region: content
 hidden: {  }
